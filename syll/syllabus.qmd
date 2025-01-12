@@ -111,7 +111,7 @@ There are five main components that contribute to the grade in this course.
 ### Grading
 
 The components described above will be weighted as shown in the table below.
-Please note that attendance is also required, and attendance policies affect    
+Please note that attendance is also required, and attendance policies affect
 grades. Adjustments to grades will be applied on top of base grades according to
 [policy](#attendance-and-lateness).
 
@@ -157,8 +157,8 @@ grades. Adjustments to grades will be applied on top of base grades according to
 All graded components of the course are expected to be turned in on time.
 
 Due dates will be stated in the
-[Assignment Deadline Schedule](../assignments.qmd)
-and [Discord](../discord.qmd). Electronic versions of the Engineering and Specification Labs
+[Assignment Deadline Schedule](assignments.qmd)
+and [Discord](discord.qmd). Electronic versions of the Engineering and Specification Labs
 must be submitted to through a student's GitHub repository created by GitHub
 Classroom. No credit will be awarded for any course work that you submit to the
 incorrect GitHub repository.
