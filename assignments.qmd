@@ -1,0 +1,260 @@
+---
+title: "Assignments"
+---
+
+
+## Software Operations (Week 1)
+<!-- out T Jan 14, quiz W jan 15, due T Jan 21 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 1
+
+> ### _Specification Lab: CLI vs Script vs Notebook_
+
+> 20 Points  
+Due Date: Tu Jan 21 at 2:30pm  
+[GitHub Classroom Link](https://forms.gle/dKZEbkjUUHzWc1ns8)
+[Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/cli-vs-script-starter/blob/main/README.md)
+
+> If you have already accepted the GitHub Classroom assignment, find your
+repos by navigating to the repositories tab from the course GitHub organization page:
+[https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/](https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/)
+
+</details>
+
+## Python Foundations (Week 2)
+<!-- out T Jan 21, quiz W jan 22, due T Jan 28 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 2
+
+> ### _Engineering Lab: Integer Squaring_
+
+> 40 Points  
+Due Date:  
+
+</details>
+
+## Numerical Programs (Week 3)
+<!-- out T Jan 28, quiz W jan 29, due T Feb 4 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 3
+
+> ### _Specification Lab: Number Comparison_
+
+> 20 Points  
+Due Date: 
+[Link]()
+
+</details>
+
+## Function Scope (Week 4)
+<!-- out T Feb 4, quiz W Feb 5, due T Feb 11 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 4
+
+> ### _Specification Lab: Square Roots_
+
+> 20 Points  
+Due Date:
+
+</details>
+
+## Structured Types (Week 5)
+<!-- out T Feb 11, quiz W Feb 12, due T Feb 18 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 5
+
+> ### _Engineering Lab: Prime Testing_
+
+> 40 Points  
+Due Date:
+
+</details>
+
+## Mutability and Aliasing (Week 6)
+<!-- out T Feb 18, quiz W Feb 19, due T Feb 25 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 5 continued
+
+> ### _Specification Lab: Structured Types_
+
+> 20 Points  
+Due Date:
+
+</details>
+
+## Recursion (Week 7)
+<!-- out T Feb 25, quiz W Feb 26, due T Feb Mar 4 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 6
+
+> ### _Engineering Lab: Intersection Algorithms_
+
+> 40 Points  
+Due Date:
+
+</details>
+
+## Spring Break (Week 8)
+<!-- SPRING BREAK out F Feb 28, NO QUIZ, due T Mar 11 -->
+
+<details>
+
+> ### _Engineering Lab: Palindromes_
+
+> 40 Points  
+Due Date:
+
+</details>
+
+## Modules and Files (Week 9) 
+<!-- out T Mar 11, quiz W Mar 12, due T Mar 18 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 7
+
+> ### _Specification Lab: Alias vs Clone_
+
+> 20 Points  
+Due Date:
+
+</details>
+
+## Testing and Handling Exceptions (Week 10)
+<!-- out T Mar 18, quiz W Mar 19, due T Mar 25 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 8  
+Guttag Chapter 9
+
+> ### _Engineering Lab: Fibonacci Algorithms_
+
+> 40 Points  
+Due Date:
+
+</details>
+
+## Object-Oriented Programming (Week 11)
+<!-- out T Mar 25, quiz W Mar 26, due T Apr 1 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 10
+
+> ### _Specification Lab: Debugging_
+
+> 20 Points  
+Due Date:
+
+</details>
+
+## Algorithmic Complexity (Week 12)
+<!-- out T Apr 1, quiz W Apr 2, due T Apr 8 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 11
+
+> ### _Engineering Lab: Object Processing_
+
+> 40 Points  
+Due Date:
+
+</details>
+
+## Data Structures (Week 13)
+<!-- out T Apr 8, quiz W Apr 9, due T Apr 15 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 12
+
+> ### _Engineering Lab: Containment Checking_
+
+> 40 Points  
+Due Date:
+
+</details>
+
+## Data Structures Continued (Week 14)
+<!-- out T Apr 15, quiz W Apr 16, due T Apr 22 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 12 continuted
+
+> ### _Engineering Lab: Sorting Algorithms_
+
+> 40 Points  
+Due Date:
+
+</details>
+
+## Optimization Problems (Week 15)
+<!-- out T Apr 22, quiz W Apr 23, due T Apr 29 -->
+
+<details>
+
+> ### _Reading_
+
+> Guttag Chapter 14
+
+> ### _Specification Lab: Matrix Processing_
+
+> 20 Points  
+Due Date:
+
+</details>
+
+## Review (Week 16)
+<!-- GIVEN AS FINAL Th May 1, 9am -->
+
+<details>
+
+> ### _Final: Knapsack Solvers_
+
+> 20 Points  
+Due Date:
+
+</details>

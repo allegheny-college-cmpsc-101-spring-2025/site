@@ -1,0 +1,151 @@
+---
+title: "Materials"
+format:
+  live-html:
+    toc: true
+    toc-depth: 3
+---
+
+## Quick Links
+
+- [Course Website](https://allegheny-college-cmpsc-101-spring-2025.github.io/site/)
+- [Course GitHub Organization](https://github.com/allegheny-college-cmpsc-101-spring-2025)
+- [Course GitHub Website Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/site)
+- [Python Notebooks Directory](https://github.com/allegheny-college-cmpsc-101-spring-2025/site/tree/main/code)
+
+## Content
+
+<details>
+<summary>Week One: Jan 13: Software Operations</summary>
+
+```{.markdown code-preview="slides/01-welcome.qmd" width="780"}
+```
+
+![software installation instructions](slides/01-software-installation.pdf){width="780" height="500"}
+
+[assignments](assignments.qmd#software-operations-week-1)
+
+</details>
+
+
+<details>
+<summary>Week Two: January 20: Python Foundations</summary>
+
+
+```{pyodide}
+
+```
+
+<!-- [notebook in repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb) -->
+
+[assignments](assignments.qmd#python-foundations-week-2)
+
+</details>
+
+
+<details>
+<summary>Week Three: Jan 27: Numerical Programs</summary>
+
+[assignments](assignments.qmd#numerical-programs-week-3)
+
+</details>
+
+
+<details>
+<summary>Week Four: Feb 3: Function Scope </summary>
+
+[assignments](assignments.qmd#function-scope-week-4)
+
+</details>
+
+
+<details>
+<summary>Week Five: Feb 10: Structured Types</summary>
+
+[assignments](assignments.qmd#structured-types-week-5)
+
+</details>
+
+
+<details>
+<summary>Week Six: Feb 17: Mutability and Aliasing</summary>
+
+[assignments](assignments.qmd#mutability-and-aliasing-week-6)
+
+</details>
+
+
+<details>
+<summary>Week Seven: Feb 24: Recursion</summary>
+
+[assignments](assignments.qmd#recursion-week-7)
+
+</details>
+
+
+<details>
+<summary>Week Nine: March 10: Modules and Files</summary>
+
+[assignments](assignments.qmd#modules-and-files-week-9)
+
+</details>
+
+
+<details>
+<summary>Week Ten: March 17: Testing and Handling Exceptions</summary>
+
+[assignments](assignments.qmd#testing-and-handling-exceptions-week-10)
+
+</details>
+
+
+<details>
+<summary>Week Eleven: March 24: Object-Oriented Programming</summary>
+
+[assignments](assignments.qmd#object-oriented-programming-week-11)
+
+</details>
+
+
+<details>
+<summary>Week Twelve: March 31: Algorithmic Complexity</summary>
+
+[assignments](assignments.qmd#algorithmic-complexity-week-12)
+
+</details>
+
+
+<details>
+<summary>Week Thirteen: April 7: Data Structures</summary>
+
+[assignments](assignments.qmd#data-structures-week-13)
+
+</details>
+
+
+<details>
+<summary>Week Fourteen: April 14: Data Structures Continued</summary>
+
+[assignments](assignments.qmd#data-structures-continued-week-14)
+
+</details>
+
+
+<details>
+<summary>Week Fifteen: April 21: Optimization Problems</summary>
+
+[assignments](assignments.qmd#optimization-problems-week-15)
+
+</details>
+
+
+<details>
+<summary>Week Sixteen: April 28: Review</summary>
+
+[assignments](assignments.qmd#review-week-16)
+
+</details>
+
+## Final
+
+- Thursday, May 1, 2025 at 9:00 AM

@@ -1,0 +1,9 @@
+---
+title: "Grades"
+format: html
+embed-resources: true
+---
+
+Please check Canvas for your grades [here](https://allegheny.instructure.com/courses/12154).
+
+For detailed discussion of grades, please attend [office hours](syll/syllabus.qmd)

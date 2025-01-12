@@ -1,0 +1,122 @@
+---
+title: "Welcome to CMPSC 101"
+author: "Prof. Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+---
+
+## CMPSC 101 - Data Structures
+
+Spring 2025  
+M/W/F 9-9:50am  
+Tu 2:30-4pm  
+Alden 101  
+
+## Where are we?
+
+::: incremental
+- Department of Computer and Information Science
+- Four Majors/Minors
+  - Computer Science
+  - Data Science
+  - Informatics
+  - Software Engineering
+  
+- Common Doubles
+  - Art, Science, and Innovation
+  - Economics
+:::
+
+## What is this course about?
+
+::: incremental
+- breaking apart complex problems 
+- organizing all subproblems
+- calculating solutions to subproblems with algorithm
+- storing and structuring the calculations
+:::
+
+::: {.fragment}
+![](https://miro.medium.com/v2/resize:fit:1400/1*XWuuEVYKinps27PyUPKOeQ.png){width="40%"}
+:::
+
+::: {.fragment}
+![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191016135223/What-is-Algorithm_-1024x631.jpg){.absolute bottom=0 right=50 height="300"}
+:::
+
+## Learning Outcomes
+
+1. Describe data structures and algorithms and their inherent trade-offs.
+2. Solve problems using data structures and algorithms.
+3. Characterize the performance of data structures and algorithms with empirical methods.
+4. Use IDEs, version control, test suites, and other industry standard tools.
+5. Document code in markdown.
+
+
+## Other Syllabus Highlights
+
+- Discord usage is a major part of participation (20% of overall grade)
+- Quizzes on the day following lab, including this week
+- Labs are due before lab!
+- Four tokens grant automatic extensions for one week
+- After the first week, five absences will be excused before overall grade is impacted
+  - three lates are equivalent to an absence
+
+## Materials
+
+::: incremental
+- Course Website
+  - syllabus
+  - assignment schedule for reading and assignment due dates
+  - links to all course materials
+:::
+
+## Materials Continued
+
+::: incremental
+- GitHub for accessing and submitting assignments
+- Python Notebooks/Google Colab for coding examples
+- Google Forms for participation and group activities
+- Discord for announcements and participation
+- Canvas for grades
+:::
+
+## Tell us about yourself!
+
+![](https://2.bp.blogspot.com/-Nc9YO_-F8yI/TcSIAB-nR-I/AAAAAAAAAGI/hPkuxqkqVcU/s1600/music-clipartMUSIC1.jpg)
+
+Name, where you are from, first favorite band, and some of your current favorite foods?
+ 
+## CIS Shared Values
+
+![](https://www.cis.allegheny.edu/images/values.png)
+
+## What if?
+
+![](https://www.cis.allegheny.edu/images/values.png){.absolute top=0 right=-150 height="200"}
+
+:::{.column width=80%}
+::: incremental
+- a student knows they are going to be late to a one-on-one office hours appointment?
+- a student wants to submit their work late but not use a token?
+- 40% of students in a course listed the same 8 foods as their favorite foods on an exam
+- a student has a question but has not reviewed notes or read the textbook?
+- a student writes about a topic that is not in the textbook or notes on an exam?
+:::
+:::
+
+## Setting up
+
+- bookmark the [website](https://allegheny-college-cmpsc-101-spring-2025.github.io/site/)
+- bookmark access to [your repos](https://github.com/allegheny-college-cmpsc-101-spring-2025)
+- bookmark the [101 Discord Channel](https://discord.com/channels/877320365825749002/1326565523042992159),
+  or [access from the course website](../discord.qmd)
+- bookmark notes that you take in Google Colab or elsewhere
+- bookmark [Canvas](https://allegheny.instructure.com/courses/12154)
+- etc.
+
+## Software Installation!
+
+Switch over to the next document

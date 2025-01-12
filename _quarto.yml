@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Data Structures"
+  favicon: images/cube.png
+  navbar:
+    left:
+      - href: index.qmd
+        text: Syllabus
+      - materials.qmd
+      - assignments.qmd
+      - discord.qmd
+      - grades.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
