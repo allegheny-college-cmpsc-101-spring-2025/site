@@ -117,7 +117,7 @@ grades. Adjustments to grades will be applied on top of base grades according to
 
 | Category             | Percentage |
 |----------------------|------------|
-| Quizzes (15)         |     20     |
+| Quizzes (14)         |     20     |
 | Participation        |     20     |
 | Spec Labs (8)        |     20     |
 | Engineering Labs (8) |     40     |

@@ -81,7 +81,7 @@
     "href": "index.html#course-components",
     "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
     "section": "Course Components",
-    "text": "Course Components\nThere are five main components that contribute to the grade in this course.\n\nSpecifications Labs: Generally shorter labs to be started in lab session and completed outside of class. Graded pass/fail and falling in the remember, understand, and apply categories of Bloom’s Taxonomy.\nEngineering Labs: Generally longer labs to be started in lab session and completed outside of class. Graded by percentage with rubric and falling in the analyze, evaluate, and create categories of Bloom’s Taxonomy.\nQuizzes: Questions to be answered in person or through forms online or on paper about recently materials, including labs.\nParticipation: Demonstration of effective and collaborative communication in Discord by asking or answering questions weekly. Completion of reading and reading reports.\nAttendance. See section below.\n\n\n\n\nBlooms Taxonomy\n\n\n\nGrading\nThe components described above will be weighted as shown in the table below. Please note that attendance is also required, and attendance policies affect grades. Adjustments to grades will be applied on top of base grades according to policy.\n\n\n\nCategory\nPercentage\n\n\n\n\nQuizzes (15)\n20\n\n\nParticipation\n20\n\n\nSpec Labs (8)\n20\n\n\nEngineering Labs (8)\n40"
+    "text": "Course Components\nThere are five main components that contribute to the grade in this course.\n\nSpecifications Labs: Generally shorter labs to be started in lab session and completed outside of class. Graded pass/fail and falling in the remember, understand, and apply categories of Bloom’s Taxonomy.\nEngineering Labs: Generally longer labs to be started in lab session and completed outside of class. Graded by percentage with rubric and falling in the analyze, evaluate, and create categories of Bloom’s Taxonomy.\nQuizzes: Questions to be answered in person or through forms online or on paper about recently materials, including labs.\nParticipation: Demonstration of effective and collaborative communication in Discord by asking or answering questions weekly. Completion of reading and reading reports.\nAttendance. See section below.\n\n\n\n\nBlooms Taxonomy\n\n\n\nGrading\nThe components described above will be weighted as shown in the table below. Please note that attendance is also required, and attendance policies affect grades. Adjustments to grades will be applied on top of base grades according to policy.\n\n\n\nCategory\nPercentage\n\n\n\n\nQuizzes (14)\n20\n\n\nParticipation\n20\n\n\nSpec Labs (8)\n20\n\n\nEngineering Labs (8)\n40"
   },
   {
     "objectID": "index.html#schedule-at-a-glance",
@@ -291,7 +291,7 @@
     "href": "syll/syllabus.html#course-components",
     "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
     "section": "Course Components",
-    "text": "Course Components\nThere are five main components that contribute to the grade in this course.\n\nSpecifications Labs: Generally shorter labs to be started in lab session and completed outside of class. Graded pass/fail and falling in the remember, understand, and apply categories of Bloom’s Taxonomy.\nEngineering Labs: Generally longer labs to be started in lab session and completed outside of class. Graded by percentage with rubric and falling in the analyze, evaluate, and create categories of Bloom’s Taxonomy.\nQuizzes: Questions to be answered in person or through forms online or on paper about recently materials, including labs.\nParticipation: Demonstration of effective and collaborative communication in Discord by asking or answering questions weekly. Completion of reading and reading reports.\nAttendance. See section below.\n\n\n\n\nBlooms Taxonomy\n\n\n\nGrading\nThe components described above will be weighted as shown in the table below. Please note that attendance is also required, and attendance policies affect grades. Adjustments to grades will be applied on top of base grades according to policy.\n\n\n\nCategory\nPercentage\n\n\n\n\nQuizzes (15)\n20\n\n\nParticipation\n20\n\n\nSpec Labs (8)\n20\n\n\nEngineering Labs (8)\n40"
+    "text": "Course Components\nThere are five main components that contribute to the grade in this course.\n\nSpecifications Labs: Generally shorter labs to be started in lab session and completed outside of class. Graded pass/fail and falling in the remember, understand, and apply categories of Bloom’s Taxonomy.\nEngineering Labs: Generally longer labs to be started in lab session and completed outside of class. Graded by percentage with rubric and falling in the analyze, evaluate, and create categories of Bloom’s Taxonomy.\nQuizzes: Questions to be answered in person or through forms online or on paper about recently materials, including labs.\nParticipation: Demonstration of effective and collaborative communication in Discord by asking or answering questions weekly. Completion of reading and reading reports.\nAttendance. See section below.\n\n\n\n\nBlooms Taxonomy\n\n\n\nGrading\nThe components described above will be weighted as shown in the table below. Please note that attendance is also required, and attendance policies affect grades. Adjustments to grades will be applied on top of base grades according to policy.\n\n\n\nCategory\nPercentage\n\n\n\n\nQuizzes (14)\n20\n\n\nParticipation\n20\n\n\nSpec Labs (8)\n20\n\n\nEngineering Labs (8)\n40"
   },
   {
     "objectID": "syll/syllabus.html#schedule-at-a-glance",
@@ -448,11 +448,109 @@
     "text": "Course Website\nCourse GitHub Organization\nCourse GitHub Website Repo\nPython Notebooks Directory"
   },
   {
-    "objectID": "materials.html#content",
-    "href": "materials.html#content",
+    "objectID": "materials.html#week-one-software-operations",
+    "href": "materials.html#week-one-software-operations",
     "title": "Materials",
-    "section": "Content",
-    "text": "Content\n\n\nWeek One: Jan 13: Software Operations\n\n\n\n\n\nsoftware installation instructions\n\n\nassignments\n\n\n\nWeek Two: January 20: Python Foundations\n\n\n\n\n\n\n\n\nassignments\n\n\n\nWeek Three: Jan 27: Numerical Programs\n\nassignments\n\n\n\nWeek Four: Feb 3: Function Scope\n\nassignments\n\n\n\nWeek Five: Feb 10: Structured Types\n\nassignments\n\n\n\nWeek Six: Feb 17: Mutability and Aliasing\n\nassignments\n\n\n\nWeek Seven: Feb 24: Recursion\n\nassignments\n\n\n\nWeek Nine: March 10: Modules and Files\n\nassignments\n\n\n\nWeek Ten: March 17: Testing and Handling Exceptions\n\nassignments\n\n\n\nWeek Eleven: March 24: Object-Oriented Programming\n\nassignments\n\n\n\nWeek Twelve: March 31: Algorithmic Complexity\n\nassignments\n\n\n\nWeek Thirteen: April 7: Data Structures\n\nassignments\n\n\n\nWeek Fourteen: April 14: Data Structures Continued\n\nassignments\n\n\n\nWeek Fifteen: April 21: Optimization Problems\n\nassignments\n\n\n\nWeek Sixteen: April 28: Review\n\nassignments"
+    "section": "Week One: Software Operations",
+    "text": "Week One: Software Operations\n\nassignments\n\nSlides: Welcome\nSlides: Software installation instructions\nSlides: Workflow for 101 labs"
+  },
+  {
+    "objectID": "materials.html#week-two-january-20-python-foundations",
+    "href": "materials.html#week-two-january-20-python-foundations",
+    "title": "Materials",
+    "section": "Week Two: January 20: Python Foundations",
+    "text": "Week Two: January 20: Python Foundations\n\n\n\n\n\n\n\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-three-jan-27-numerical-programs",
+    "href": "materials.html#week-three-jan-27-numerical-programs",
+    "title": "Materials",
+    "section": "Week Three: Jan 27: Numerical Programs",
+    "text": "Week Three: Jan 27: Numerical Programs\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-four-feb-3-function-scope",
+    "href": "materials.html#week-four-feb-3-function-scope",
+    "title": "Materials",
+    "section": "Week Four: Feb 3: Function Scope",
+    "text": "Week Four: Feb 3: Function Scope\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-five-feb-10-structured-types",
+    "href": "materials.html#week-five-feb-10-structured-types",
+    "title": "Materials",
+    "section": "Week Five: Feb 10: Structured Types",
+    "text": "Week Five: Feb 10: Structured Types\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-six-feb-17-mutability-and-aliasing",
+    "href": "materials.html#week-six-feb-17-mutability-and-aliasing",
+    "title": "Materials",
+    "section": "Week Six: Feb 17: Mutability and Aliasing",
+    "text": "Week Six: Feb 17: Mutability and Aliasing\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-seven-feb-24-recursion",
+    "href": "materials.html#week-seven-feb-24-recursion",
+    "title": "Materials",
+    "section": "Week Seven: Feb 24: Recursion",
+    "text": "Week Seven: Feb 24: Recursion\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-nine-march-10-modules-and-files",
+    "href": "materials.html#week-nine-march-10-modules-and-files",
+    "title": "Materials",
+    "section": "Week Nine: March 10: Modules and Files",
+    "text": "Week Nine: March 10: Modules and Files\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-ten-march-17-testing-and-handling-exceptions",
+    "href": "materials.html#week-ten-march-17-testing-and-handling-exceptions",
+    "title": "Materials",
+    "section": "Week Ten: March 17: Testing and Handling Exceptions",
+    "text": "Week Ten: March 17: Testing and Handling Exceptions\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-eleven-march-24-object-oriented-programming",
+    "href": "materials.html#week-eleven-march-24-object-oriented-programming",
+    "title": "Materials",
+    "section": "Week Eleven: March 24: Object-Oriented Programming",
+    "text": "Week Eleven: March 24: Object-Oriented Programming\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-twelve-march-31-algorithmic-complexity",
+    "href": "materials.html#week-twelve-march-31-algorithmic-complexity",
+    "title": "Materials",
+    "section": "Week Twelve: March 31: Algorithmic Complexity",
+    "text": "Week Twelve: March 31: Algorithmic Complexity\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-thirteen-april-7-data-structures",
+    "href": "materials.html#week-thirteen-april-7-data-structures",
+    "title": "Materials",
+    "section": "Week Thirteen: April 7: Data Structures",
+    "text": "Week Thirteen: April 7: Data Structures\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-fourteen-april-14-data-structures-continued",
+    "href": "materials.html#week-fourteen-april-14-data-structures-continued",
+    "title": "Materials",
+    "section": "Week Fourteen: April 14: Data Structures Continued",
+    "text": "Week Fourteen: April 14: Data Structures Continued\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-fifteen-april-21-optimization-problems",
+    "href": "materials.html#week-fifteen-april-21-optimization-problems",
+    "title": "Materials",
+    "section": "Week Fifteen: April 21: Optimization Problems",
+    "text": "Week Fifteen: April 21: Optimization Problems\n\nassignments"
+  },
+  {
+    "objectID": "materials.html#week-sixteen-april-28-review",
+    "href": "materials.html#week-sixteen-april-28-review",
+    "title": "Materials",
+    "section": "Week Sixteen: April 28: Review",
+    "text": "Week Sixteen: April 28: Review\n\nassignments"
   },
   {
     "objectID": "materials.html#final",
