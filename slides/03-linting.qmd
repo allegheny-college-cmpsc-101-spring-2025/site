@@ -1,0 +1,139 @@
+---
+title: "Linting"
+author: "Prof. Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+---
+
+## Goals
+
+- Define linting
+- Review linting errors
+- Review linting solutions
+
+## Linting Definition
+
+> Linting highlights semantic and stylistic problems in your Python source code, which often helps you identify and correct subtle programming errors or coding practices that can lead to errors. For example, linting can detect the use of an undefined variable, calls to undefined functions, missing parentheses, and even more subtle issues such as attempting to redefine built-in types or functions.
+
+::: footer
+https://code.visualstudio.com/docs/python/linting
+:::
+
+## Stylistic Errors in English {.smaller}
+
+"hI , mY nAME    is Emily .   ."
+
+::: incremental
+- 1:1 The first letter of the first word should be capitalized
+- 1:2 Inner letters should not be capitalized
+- 1:3 Found white space before a comma, expected none
+- 1:7 Inner letters should not be capitalized
+- 1:10 Inner letters should not be capitalized
+- 1:13 Found white space before a word, expected one white space
+- 1:25 Found white space before a period, expected none
+- 1:29 Found two periods, expected one
+:::
+
+## Stylistic Errors in Code
+
+```cmd
+egraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruff
+cli/main.py:1:1: D400 First line should end with a period
+cli/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point
+cli/main.py:10:1: E302 [*] Expected 2 blank lines, found 1
+cli/main.py:11:5: D400 First line should end with a period
+cli/main.py:11:5: D415 First line should end with a period, question mark, or exclamation point
+cli/main.py:17:1: E302 [*] Expected 2 blank lines, found 1
+cli/main.py:18:5: D400 First line should end with a period
+cli/main.py:18:5: D415 First line should end with a period, question mark, or exclamation point
+cli/main.py:22:1: E302 [*] Expected 2 blank lines, found 1
+cli/main.py:29:1: E302 [*] Expected 2 blank lines, found 1
+cli/main.py:33:5: D202 [*] No blank lines allowed after function docstring (found 1)
+cli/main.py:49:15: F541 [*] f-string without any placeholders
+cli/main.py:54:9: E303 [*] Too many blank lines (2)
+cli/main.py:59:9: E303 [*] Too many blank lines (2)
+cli/main.py:64:9: E303 [*] Too many blank lines (2)
+cli/main.py:69:9: E303 [*] Too many blank lines (2)
+cli/main.py:74:9: E303 [*] Too many blank lines (2)
+cli/main.py:82:1: W391 [*] Too many newlines at end of file
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D400 First line should end with a period
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:5:1: E302 [*] Expected 2 blank lines, found 1
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D400 First line should end with a period
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D415 First line should end with a period, question mark, or exclamation point
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:12:1: E302 [*] Expected 2 blank lines, found 1
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D400 First line should end with a period
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D415 First line should end with a period, question mark, or exclamation point
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:17:1: E302 [*] Expected 2 blank lines, found 1
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:42:15: F541 [*] f-string without any placeholders
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:51:9: E303 [*] Too many blank lines (2)
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:56:9: E303 [*] Too many blank lines (2)
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:61:9: E303 [*] Too many blank lines (2)
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:66:9: E303 [*] Too many blank lines (2)
+/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:74:1: W391 [*] Too many newlines at end of file
+Found 33 errors.
+[*] 21 fixable with the `--fix` option (12 hidden fixes can be enabled with the `--unsafe-fixes` option).
+```
+
+## Read Slowly
+
+```cmd
+cli/main.py:1:1: D400 First line should end with a period
+```
+
+::: incremental
+- `cli/main.py` is the file
+- `1:1` is the line number : character number
+- `D400` ignore this for now
+- `First line should end with a period` message explaining the issue
+- Solution:
+  - Go the location indicated
+  - read your code _at_ and _around_ the area
+  - try to fix the issue
+:::
+
+## Fixing
+
+Original:
+
+```python
+"""a variety of numerical operations based on the value of an option to the CLI"""
+```
+
+Corrected:
+
+```python
+"""Do a variety of numerical operations based on the value of an option to the CLI."""
+```
+
+
+## Linting Commands
+
+- `poetry run task ruff`
+
+```cmd
+egraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruff
+cli/main.py:1:1: D400 First line should end with a period
+```
+
+- `poetry run task ruffdetails`
+
+```cmd
+egraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruffdetails
+cli/main.py:1:1: D400 First line should end with a period
+  |
+1 | """a variety of numerical operations based on the value of an option to the CLI"""
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ D400
+2 | 
+3 | # TODO: add at least ten single-line comments to this file to describe individual line of code.
+  |
+  = help: Add period
+```
+
+## Automatic fixes
+
+- `poetry run task fix`
+- or
+- `poetry run ruff --fix`

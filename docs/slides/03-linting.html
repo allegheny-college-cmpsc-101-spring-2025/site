@@ -10,8 +10,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.39">
 
-  <meta name="author" content="Emily Graber">
-  <title>Data Structures – Week 2: Data Display</title>
+  <meta name="author" content="Prof.&nbsp;Graber">
+  <title>Data Structures – Linting</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -193,13 +193,12 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 2: Data Display</h1>
-  <p class="subtitle">Display Types &amp; Anatomy of Charts</p>
+  <h1 class="title">Linting</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Emily Graber 
+Prof.&nbsp;Graber 
 </div>
 </div>
 </div>
@@ -207,58 +206,128 @@ Emily Graber
 </section>
 <section id="goals" class="slide level2">
 <h2>Goals</h2>
+<ul>
+<li>Define linting</li>
+<li>Review linting errors</li>
+<li>Review linting solutions</li>
+</ul>
+</section>
+<section id="linting-definition" class="slide level2">
+<h2>Linting Definition</h2>
+<blockquote>
+<p>Linting highlights semantic and stylistic problems in your Python source code, which often helps you identify and correct subtle programming errors or coding practices that can lead to errors. For example, linting can detect the use of an undefined variable, calls to undefined functions, missing parentheses, and even more subtle issues such as attempting to redefine built-in types or functions.</p>
+</blockquote>
+<div class="footer">
+<p>https://code.visualstudio.com/docs/python/linting</p>
+</div>
+</section>
+<section id="stylistic-errors-in-english" class="slide level2 smaller">
+<h2>Stylistic Errors in English</h2>
+<p>“hI , mY nAME is Emily . .”</p>
 <div>
 <ul>
-<li class="fragment">review graph types</li>
-<li class="fragment">review chart types</li>
-<li class="fragment">review anatomy of a chart</li>
+<li class="fragment">1:1 The first letter of the first word should be capitalized</li>
+<li class="fragment">1:2 Inner letters should not be capitalized</li>
+<li class="fragment">1:3 Found white space before a comma, expected none</li>
+<li class="fragment">1:7 Inner letters should not be capitalized</li>
+<li class="fragment">1:10 Inner letters should not be capitalized</li>
+<li class="fragment">1:13 Found white space before a word, expected one white space</li>
+<li class="fragment">1:25 Found white space before a period, expected none</li>
+<li class="fragment">1:29 Found two periods, expected one</li>
 </ul>
 </div>
 </section>
-<section id="critical-thinking-in-groups" class="slide level2">
-<h2>Critical Thinking in Groups</h2>
+<section id="stylistic-errors-in-code" class="slide level2">
+<h2>Stylistic Errors in Code</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource cmd number-lines code-with-copy"><code class="sourceCode dosbat"><span id="cb1-1"><a></a>egraber ~<span class="at">/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli</span> % 🦚🦚🦚 poetry run task ruff</span>
+<span id="cb1-2"><a></a>cli/main.py:1:1: D400 First line should end with a period</span>
+<span id="cb1-3"><a></a>cli/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point</span>
+<span id="cb1-4"><a></a>cli/main.py:10:1: E302 [*] Expected 2 blank lines, found 1</span>
+<span id="cb1-5"><a></a>cli/main.py:11:5: D400 First line should end with a period</span>
+<span id="cb1-6"><a></a>cli/main.py:11:5: D415 First line should end with a period, question mark, or exclamation point</span>
+<span id="cb1-7"><a></a>cli/main.py:17:1: E302 [*] Expected 2 blank lines, found 1</span>
+<span id="cb1-8"><a></a>cli/main.py:18:5: D400 First line should end with a period</span>
+<span id="cb1-9"><a></a>cli/main.py:18:5: D415 First line should end with a period, question mark, or exclamation point</span>
+<span id="cb1-10"><a></a>cli/main.py:22:1: E302 [*] Expected 2 blank lines, found 1</span>
+<span id="cb1-11"><a></a>cli/main.py:29:1: E302 [*] Expected 2 blank lines, found 1</span>
+<span id="cb1-12"><a></a>cli/main.py:33:5: D202 [*] No blank lines allowed after function docstring (found 1<span class="kw">)</span></span>
+<span id="cb1-13"><a></a>cli/main.py:49:15: F541 [*] f<span class="at">-string</span> without any placeholders</span>
+<span id="cb1-14"><a></a>cli/main.py:54:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-15"><a></a>cli/main.py:59:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-16"><a></a>cli/main.py:64:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-17"><a></a>cli/main.py:69:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-18"><a></a>cli/main.py:74:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-19"><a></a>cli/main.py:82:1: W391 [*] Too many newlines at end of file</span>
+<span id="cb1-20"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D400 First line should end with a period</span>
+<span id="cb1-21"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point</span>
+<span id="cb1-22"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:5:1: E302 [*] Expected 2 blank lines, found 1</span>
+<span id="cb1-23"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D400 First line should end with a period</span>
+<span id="cb1-24"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D415 First line should end with a period, question mark, or exclamation point</span>
+<span id="cb1-25"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:12:1: E302 [*] Expected 2 blank lines, found 1</span>
+<span id="cb1-26"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D400 First line should end with a period</span>
+<span id="cb1-27"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D415 First line should end with a period, question mark, or exclamation point</span>
+<span id="cb1-28"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:17:1: E302 [*] Expected 2 blank lines, found 1</span>
+<span id="cb1-29"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:42:15: F541 [*] f<span class="at">-string</span> without any placeholders</span>
+<span id="cb1-30"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:51:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-31"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:56:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-32"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:61:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-33"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:66:9: E303 [*] Too many blank lines (2<span class="kw">)</span></span>
+<span id="cb1-34"><a></a>/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:74:1: W391 [*] Too many newlines at end of file</span>
+<span id="cb1-35"><a></a>Found 33 errors.</span>
+<span id="cb1-36"><a></a>[*] 21 fixable with the `-<span class="at">-fix</span>` option (12 hidden fixes can be enabled with the `-<span class="at">-unsafe-fixes</span>` option<span class="kw">)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="read-slowly" class="slide level2">
+<h2>Read Slowly</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource cmd number-lines code-with-copy"><code class="sourceCode dosbat"><span id="cb2-1"><a></a>cli/main.py:1:1: D400 First line should end with a period</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div>
 <ul>
-<li class="fragment">Form pairs</li>
-<li class="fragment">Discuss a data visualization that you recently admired</li>
-<li class="fragment">Discuss what it made clear that was unclear before</li>
-<li class="fragment">In Discord, send in a link to your partner’s vis and their name</li>
-<li class="fragment">Present your partner’s visualization in 30 seconds</li>
+<li class="fragment"><code>cli/main.py</code> is the file</li>
+<li class="fragment"><code>1:1</code> is the line number : character number</li>
+<li class="fragment"><code>D400</code> ignore this for now</li>
+<li class="fragment"><code>First line should end with a period</code> message explaining the issue</li>
+<li class="fragment">Solution:
+<ul>
+<li class="fragment">Go the location indicated</li>
+<li class="fragment">read your code <em>at</em> and <em>around</em> the area</li>
+<li class="fragment">try to fix the issue</li>
+</ul></li>
 </ul>
 </div>
 </section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<div>
+<section id="fixing" class="slide level2">
+<h2>Fixing</h2>
+<p>Original:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="co">"""a variety of numerical operations based on the value of an option to the CLI"""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Corrected:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="co">"""Do a variety of numerical operations based on the value of an option to the CLI."""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="linting-commands" class="slide level2">
+<h2>Linting Commands</h2>
 <ul>
-<li class="fragment">What are important parts of a chart?</li>
+<li><code>poetry run task ruff</code></li>
 </ul>
-</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource cmd number-lines code-with-copy"><code class="sourceCode dosbat"><span id="cb5-1"><a></a>egraber ~<span class="at">/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli</span> % 🦚🦚🦚 poetry run task ruff</span>
+<span id="cb5-2"><a></a>cli/main.py:1:1: D400 First line should end with a period</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>poetry run task ruffdetails</code></li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource cmd number-lines code-with-copy"><code class="sourceCode dosbat"><span id="cb6-1"><a></a>egraber ~<span class="at">/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli</span> % 🦚🦚🦚 poetry run task ruffdetails</span>
+<span id="cb6-2"><a></a>cli/main.py:1:1: D400 First line should end with a period</span>
+<span id="cb6-3"><a></a>  <span class="kw">|</span></span>
+<span id="cb6-4"><a></a>1 <span class="kw">|</span> <span class="st">"""a variety of numerical operations based on the value of an option to the CLI"""</span></span>
+<span id="cb6-5"><a></a>  <span class="kw">|</span> ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ D400</span>
+<span id="cb6-6"><a></a>2 <span class="kw">|</span> </span>
+<span id="cb6-7"><a></a>3 <span class="kw">|</span> # TODO: add at least ten single<span class="at">-line</span> comments to this file to describe individual line of code.</span>
+<span id="cb6-8"><a></a>  <span class="kw">|</span></span>
+<span id="cb6-9"><a></a>  = help: Add period</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="notebook-excerpt" class="slide level2">
-<h2>notebook excerpt</h2>
-<div class="quarto-embed-nb-cell" data-notebook="/Users/egraber/Documents/Teaching/S2025-CMPSC101/site/code/temp.ipynb" data-notebook-cellid="cell-print-hello">
-<div id="print-hello" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="1|2|3|4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>(<span class="st">"hello"</span>)</span>
-<span id="cb1-2"><a></a><span class="bu">print</span>(<span class="st">"line 2"</span>)</span>
-<span id="cb1-3"><a></a><span class="bu">print</span>(<span class="st">"line 3"</span>)</span>
-<span id="cb1-4"><a></a><span class="bu">print</span>(<span class="st">"line 4"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell fragment" data-execution_count="1">
-<div class="cell-output cell-output-stdout">
-<pre><code>hello
-line 2
-line 3
-line 4</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="pyodide-test-grabbing-markdown-w-live-html" class="slide level2">
-<h2>pyodide test grabbing markdown w live-html</h2>
-<!-- ```{.markdown code-preview="../code/interactive.qmd" width="780" height="500"}
-``` -->
-<p>n.b.&nbsp;live-html format in the ipynb allows live execution, but cell must be raw…</p>
+<section id="automatic-fixes" class="slide level2">
+<h2>Automatic fixes</h2>
+<ul>
+<li><code>poetry run task fix</code></li>
+<li>or</li>
+<li><code>poetry run ruff --fix</code></li>
+</ul>
 
 
 </section>

@@ -68,6 +68,7 @@ by [John V. Guttag](https://people.csail.mit.edu/guttag/)
 
 - [Course Website](https://allegheny-college-cmpsc-101-spring-2025.github.io/site/)
 - [Course GitHub Organization](https://github.com/allegheny-college-cmpsc-101-spring-2025)
+- [Jupyter Notebooks Directory](https://github.com/allegheny-college-cmpsc-101-spring-2025/site/tree/main/code)
 - [Guttag Textbook Publisher Preview](https://mitpress.ublish.com/ebook/itcapup3-preview/12609/1)
 - [Guttag Textbook Google Previews](https://books.google.com/books?id=f57uDwAAQBAJ&source=gbs_book_other_versions)
 - [Additional Guttag Textbook Availability](https://www.google.com/search?q=Introduction+to+Computation+and+Programming+Using+Python+.pdf)

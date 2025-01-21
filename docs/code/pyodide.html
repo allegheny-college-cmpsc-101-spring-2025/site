@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignments – Data Structures</title>
+<title>pyodide – Data Structures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/cube.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/cube.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-784abe5e31b0e972d25c6c2e828d7d0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,19 +69,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Data Structures</span>
     </a>
   </div>
@@ -90,23 +93,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./materials.html"> 
+    <a class="nav-link" href="../materials.html"> 
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./assignments.html" aria-current="page"> 
-<span class="menu-text">Assignments</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./discord.html"> 
+    <a class="nav-link" href="../discord.html"> 
 <span class="menu-text">Discord Channel</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./grades.html"> 
+    <a class="nav-link" href="../grades.html"> 
 <span class="menu-text">Grades</span></a>
   </li>  
 </ul>
@@ -120,353 +119,53 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#software-operations-week-1" id="toc-software-operations-week-1" class="nav-link active" data-scroll-target="#software-operations-week-1">Software Operations (Week 1)</a></li>
-  <li><a href="#python-foundations-week-2" id="toc-python-foundations-week-2" class="nav-link" data-scroll-target="#python-foundations-week-2">Python Foundations (Week 2)</a></li>
-  <li><a href="#numerical-programs-week-3" id="toc-numerical-programs-week-3" class="nav-link" data-scroll-target="#numerical-programs-week-3">Numerical Programs (Week 3)</a></li>
-  <li><a href="#function-scope-week-4" id="toc-function-scope-week-4" class="nav-link" data-scroll-target="#function-scope-week-4">Function Scope (Week 4)</a></li>
-  <li><a href="#structured-types-week-5" id="toc-structured-types-week-5" class="nav-link" data-scroll-target="#structured-types-week-5">Structured Types (Week 5)</a></li>
-  <li><a href="#mutability-and-aliasing-week-6" id="toc-mutability-and-aliasing-week-6" class="nav-link" data-scroll-target="#mutability-and-aliasing-week-6">Mutability and Aliasing (Week 6)</a></li>
-  <li><a href="#recursion-week-7" id="toc-recursion-week-7" class="nav-link" data-scroll-target="#recursion-week-7">Recursion (Week 7)</a></li>
-  <li><a href="#spring-break-week-8" id="toc-spring-break-week-8" class="nav-link" data-scroll-target="#spring-break-week-8">Spring Break (Week 8)</a></li>
-  <li><a href="#modules-and-files-week-9" id="toc-modules-and-files-week-9" class="nav-link" data-scroll-target="#modules-and-files-week-9">Modules and Files (Week 9)</a></li>
-  <li><a href="#testing-and-handling-exceptions-week-10" id="toc-testing-and-handling-exceptions-week-10" class="nav-link" data-scroll-target="#testing-and-handling-exceptions-week-10">Testing and Handling Exceptions (Week 10)</a></li>
-  <li><a href="#object-oriented-programming-week-11" id="toc-object-oriented-programming-week-11" class="nav-link" data-scroll-target="#object-oriented-programming-week-11">Object-Oriented Programming (Week 11)</a></li>
-  <li><a href="#algorithmic-complexity-week-12" id="toc-algorithmic-complexity-week-12" class="nav-link" data-scroll-target="#algorithmic-complexity-week-12">Algorithmic Complexity (Week 12)</a></li>
-  <li><a href="#data-structures-week-13" id="toc-data-structures-week-13" class="nav-link" data-scroll-target="#data-structures-week-13">Data Structures (Week 13)</a></li>
-  <li><a href="#data-structures-continued-week-14" id="toc-data-structures-continued-week-14" class="nav-link" data-scroll-target="#data-structures-continued-week-14">Data Structures Continued (Week 14)</a></li>
-  <li><a href="#optimization-problems-week-15" id="toc-optimization-problems-week-15" class="nav-link" data-scroll-target="#optimization-problems-week-15">Optimization Problems (Week 15)</a></li>
-  <li><a href="#review-week-16" id="toc-review-week-16" class="nav-link" data-scroll-target="#review-week-16">Review (Week 16)</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Assignments</h1>
+
+
+
+<div>
+<div id="pyodide-1" class="exercise-cell">
+
+</div>
+<script type="pyodide-1-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIn0=
+</script>
 </div>
 
 
+<script type="pyodide-data">
+eyJvcHRpb25zIjp7ImVudiI6eyJQTE9UTFlfUkVOREVSRVIiOiJwbG90bHlfbWltZXR5cGUifSwiaW5kZXhVUkwiOiJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvcHlvZGlkZS92MC4yNy4wL2Z1bGwvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsicHlvZGlkZV9odHRwIiwibWljcm9waXAiLCJpcHl0aG9uIl19fQ==
+</script>
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTEiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8xID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0xLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzEgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLXByZWx1ZGUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJweW9kaWRlT2pzID0ge1xuICBjb25zdCB7XG4gICAgUHlvZGlkZUV2YWx1YXRvcixcbiAgICBQeW9kaWRlRW52aXJvbm1lbnRNYW5hZ2VyLFxuICAgIHNldHVwUHl0aG9uLFxuICAgIHN0YXJ0UHlvZGlkZVdvcmtlcixcbiAgICBiNjREZWNvZGUsXG4gICAgY29sbGFwc2VQYXRoLFxuICB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcblxuICBjb25zdCBzdGF0dXNDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctc3RhdHVzXCIpO1xuICBjb25zdCBpbmRpY2F0b3JDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctaW5kaWNhdG9yXCIpO1xuICBpbmRpY2F0b3JDb250YWluZXIuY2xhc3NMaXN0LnJlbW92ZShcImQtbm9uZVwiKTtcblxuICBsZXQgc3RhdHVzVGV4dCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIilcbiAgc3RhdHVzVGV4dC5jbGFzc0xpc3QgPSBcImV4ZXJjaXNlLWxvYWRpbmctZGV0YWlsc1wiO1xuICBzdGF0dXNUZXh0ID0gc3RhdHVzQ29udGFpbmVyLmFwcGVuZENoaWxkKHN0YXR1c1RleHQpO1xuICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYEluaXRpYWxpc2VgO1xuXG4gIC8vIEhvaXN0IGluZGljYXRvciBvdXQgZnJvbSBmaW5hbCBzbGlkZSB3aGVuIHJ1bm5pbmcgdW5kZXIgcmV2ZWFsXG4gIGNvbnN0IHJldmVhbFN0YXR1cyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmV2ZWFsIC5leGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaWYgKHJldmVhbFN0YXR1cykge1xuICAgIHJldmVhbFN0YXR1cy5yZW1vdmUoKTtcbiAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCA+IC5zbGlkZXNcIikuYXBwZW5kQ2hpbGQocmV2ZWFsU3RhdHVzKTtcbiAgfVxuXG4gIC8vIE1ha2UgYW55IHJldmVhbCBzbGlkZXMgd2l0aCBsaXZlIGNlbGxzIHNjcm9sbGFibGVcbiAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIi5yZXZlYWwgLmV4ZXJjaXNlLWNlbGxcIikuZm9yRWFjaCgoZWwpID0+IHtcbiAgICBlbC5jbG9zZXN0KCdzZWN0aW9uLnNsaWRlJykuY2xhc3NMaXN0LmFkZChcInNjcm9sbGFibGVcIik7XG4gIH0pXG5cbiAgLy8gUHlvZGlkZSBzdXBwbGVtZW50YWwgZGF0YSBhbmQgb3B0aW9uc1xuICBjb25zdCBkYXRhQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLWRhdGFcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBkYXRhID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZGF0YUNvbnRlbnQpKTtcblxuICAvLyBHcmFiIGxpc3Qgb2YgcmVzb3VyY2VzIHRvIGJlIGRvd25sb2FkZWRcbiAgY29uc3QgZmlsZXNDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcInZmcy1maWxlXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZmlsZXMgPSBKU09OLnBhcnNlKGI2NERlY29kZShmaWxlc0NvbnRlbnQpKTtcblxuICBsZXQgcHlvZGlkZVByb21pc2UgPSAoYXN5bmMgKCkgPT4ge1xuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgUHlvZGlkZWA7XG4gICAgY29uc3QgcHlvZGlkZSA9IGF3YWl0IHN0YXJ0UHlvZGlkZVdvcmtlcihkYXRhLm9wdGlvbnMpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBwYWNrYWdlOiBtaWNyb3BpcGA7XG4gICAgYXdhaXQgcHlvZGlkZS5sb2FkUGFja2FnZShcIm1pY3JvcGlwXCIpO1xuICAgIGNvbnN0IG1pY3JvcGlwID0gYXdhaXQgcHlvZGlkZS5weWltcG9ydChcIm1pY3JvcGlwXCIpO1xuICAgIGF3YWl0IGRhdGEucGFja2FnZXMucGtncy5tYXAoKHBrZykgPT4gKCkgPT4ge1xuICAgICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBwYWNrYWdlOiAke3BrZ31gO1xuICAgICAgcmV0dXJuIG1pY3JvcGlwLmluc3RhbGwocGtnKTtcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcbiAgICBhd2FpdCBtaWNyb3BpcC5kZXN0cm95KCk7XG5cbiAgICAvLyBEb3dubG9hZCBhbmQgaW5zdGFsbCByZXNvdXJjZXNcbiAgICBhd2FpdCBmaWxlcy5tYXAoKGZpbGUpID0+IGFzeW5jICgpID0+IHtcbiAgICAgIGNvbnN0IG5hbWUgPSBmaWxlLnN1YnN0cmluZyhmaWxlLmxhc3RJbmRleE9mKCcvJykgKyAxKTtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcmVzb3VyY2U6ICR7bmFtZX1gO1xuICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChmaWxlKTtcbiAgICAgIGlmICghcmVzcG9uc2Uub2spIHtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBDYW4ndCBkb3dubG9hZCBcXGAke2ZpbGV9XFxgLiBFcnJvciAke3Jlc3BvbnNlLnN0YXR1c306IFwiJHtyZXNwb25zZS5zdGF0dXNUZXh0fVwiLmApO1xuICAgICAgfVxuICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmFycmF5QnVmZmVyKCk7XG5cbiAgICAgIC8vIFN0b3JlIFVSTHMgaW4gdGhlIGN3ZCB3aXRob3V0IGFueSBzdWJkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBpZiAoZmlsZS5pbmNsdWRlcyhcIjovL1wiKSkge1xuICAgICAgICBmaWxlID0gbmFtZTtcbiAgICAgIH1cblxuICAgICAgLy8gQ29sbGFwc2UgaGlnaGVyIGRpcmVjdG9yeSBzdHJ1Y3R1cmVcbiAgICAgIGZpbGUgPSBjb2xsYXBzZVBhdGgoZmlsZSk7XG5cbiAgICAgIC8vIENyZWF0ZSBkaXJlY3RvcnkgdHJlZSwgaWdub3JpbmcgXCJkaXJlY3RvcnkgZXhpc3RzXCIgVkZTIGVycm9yc1xuICAgICAgY29uc3QgcGFydHMgPSBmaWxlLnNwbGl0KCcvJykuc2xpY2UoMCwgLTEpO1xuICAgICAgbGV0IHBhdGggPSAnJztcbiAgICAgIHdoaWxlIChwYXJ0cy5sZW5ndGggPiAwKSB7XG4gICAgICAgIHBhdGggKz0gcGFydHMuc2hpZnQoKSArICcvJztcbiAgICAgICAgdHJ5IHtcbiAgICAgICAgICBhd2FpdCBweW9kaWRlLkZTLm1rZGlyKHBhdGgpO1xuICAgICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgICAgaWYgKGUubmFtZSAhPT0gXCJFcnJub0Vycm9yXCIpIHRocm93IGU7XG4gICAgICAgICAgaWYgKGUuZXJybm8gIT09IDIwKSB7XG4gICAgICAgICAgICBjb25zdCBlcnJvclRleHRQdHIgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuX3N0cmVycm9yKGUuZXJybm8pO1xuICAgICAgICAgICAgY29uc3QgZXJyb3JUZXh0ID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLlVURjhUb1N0cmluZyhlcnJvclRleHRQdHIpO1xuICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBGaWxlc3lzdGVtIEVycm9yICR7ZS5lcnJub30gXCIke2Vycm9yVGV4dH1cIi5gKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgLy8gV3JpdGUgdGhpcyBmaWxlIHRvIHRoZSBWRlNcbiAgICAgIHRyeSB7XG4gICAgICAgIHJldHVybiBhd2FpdCBweW9kaWRlLkZTLndyaXRlRmlsZShmaWxlLCBuZXcgVWludDhBcnJheShkYXRhKSk7XG4gICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgIGlmIChlLm5hbWUgIT09IFwiRXJybm9FcnJvclwiKSB0aHJvdyBlO1xuICAgICAgICBjb25zdCBlcnJvclRleHRQdHIgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuX3N0cmVycm9yKGUuZXJybm8pO1xuICAgICAgICBjb25zdCBlcnJvclRleHQgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuVVRGOFRvU3RyaW5nKGVycm9yVGV4dFB0cik7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvciAke2UuZXJybm99IFwiJHtlcnJvclRleHR9XCIuYCk7XG4gICAgICB9XG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XG5cbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYFB5b2RpZGUgZW52aXJvbm1lbnQgc2V0dXBgO1xuICAgIGF3YWl0IHNldHVwUHl0aG9uKHB5b2RpZGUpO1xuXG4gICAgc3RhdHVzVGV4dC5yZW1vdmUoKTtcbiAgICBpZiAoc3RhdHVzQ29udGFpbmVyLmNoaWxkcmVuLmxlbmd0aCA9PSAwKSB7XG4gICAgICBzdGF0dXNDb250YWluZXIucGFyZW50Tm9kZS5yZW1vdmUoKTtcbiAgICB9XG4gICAgcmV0dXJuIHB5b2RpZGU7XG4gIH0pKCkuY2F0Y2goKGVycikgPT4ge1xuICAgIHN0YXR1c1RleHQuc3R5bGUuY29sb3IgPSBcInZhcigtLWV4ZXJjaXNlLWVkaXRvci1obC1lciwgI0FEMDAwMClcIjtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gZXJyLm1lc3NhZ2U7XG4gICAgLy9pbmRpY2F0b3JDb250YWluZXIucXVlcnlTZWxlY3RvcihcIi5zcGlubmVyLWdyb3dcIikuY2xhc3NMaXN0LmFkZChcImQtbm9uZVwiKTtcbiAgICB0aHJvdyBlcnI7XG4gIH0pO1xuXG4gIC8vIEtlZXAgdHJhY2sgb2YgaW5pdGlhbCBPSlMgYmxvY2sgcmVuZGVyXG4gIGNvbnN0IHJlbmRlcmVkT2pzID0ge307XG5cbiAgY29uc3QgcHJvY2VzcyA9IGFzeW5jIChjb250ZXh0LCBpbnB1dHMpID0+IHtcbiAgICBjb25zdCBweW9kaWRlID0gYXdhaXQgcHlvZGlkZVByb21pc2U7XG4gICAgY29uc3QgZXZhbHVhdG9yID0gbmV3IFB5b2RpZGVFdmFsdWF0b3IocHlvZGlkZSwgY29udGV4dCk7XG4gICAgYXdhaXQgZXZhbHVhdG9yLnByb2Nlc3MoaW5wdXRzKTtcbiAgICByZXR1cm4gZXZhbHVhdG9yLmNvbnRhaW5lcjtcbiAgfVxuXG4gIHJldHVybiB7XG4gICAgcHlvZGlkZVByb21pc2UsXG4gICAgcmVuZGVyZWRPanMsXG4gICAgcHJvY2VzcyxcbiAgfTtcbn1cbiJ9XX0=
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
 
-<div class="quarto-title-meta">
+</div>
+<div class="spinner-grow spinner-grow-sm">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="software-operations-week-1" class="level2">
-<h2 class="anchored" data-anchor-id="software-operations-week-1">Software Operations (Week 1)</h2>
-<!-- out T Jan 14, quiz W jan 15, due T Jan 21 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 1</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="specification-lab-cli-vs-script-vs-notebook" class="anchored"><em>Specification Lab: CLI vs Script vs Notebook</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>20 Points<br>
-Due Date: Tu Jan 21 at 2:30pm<br>
-<a href="https://forms.gle/dKZEbkjUUHzWc1ns8">GitHub Classroom Link</a> <a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/cli-vs-script-starter/blob/main/README.md">Starter Repo</a></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>If you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: <a href="https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/">https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/</a></p>
-</blockquote>
-</details>
-</section>
-<section id="python-foundations-week-2" class="level2">
-<h2 class="anchored" data-anchor-id="python-foundations-week-2">Python Foundations (Week 2)</h2>
-<!-- out T Jan 21, quiz W jan 22, due T Jan 28 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-1" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 2</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="engineering-lab-integer-squaring" class="anchored"><em>Engineering Lab: Integer Squaring</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>40 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="numerical-programs-week-3" class="level2">
-<h2 class="anchored" data-anchor-id="numerical-programs-week-3">Numerical Programs (Week 3)</h2>
-<!-- out T Jan 28, quiz W jan 29, due T Feb 4 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-2" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 3</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="specification-lab-number-comparison" class="anchored"><em>Specification Lab: Number Comparison</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>20 Points<br>
-Due Date: <a href="">Link</a></p>
-</blockquote>
-</details>
-</section>
-<section id="function-scope-week-4" class="level2">
-<h2 class="anchored" data-anchor-id="function-scope-week-4">Function Scope (Week 4)</h2>
-<!-- out T Feb 4, quiz W Feb 5, due T Feb 11 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-3" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 4</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="specification-lab-square-roots" class="anchored"><em>Specification Lab: Square Roots</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>20 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="structured-types-week-5" class="level2">
-<h2 class="anchored" data-anchor-id="structured-types-week-5">Structured Types (Week 5)</h2>
-<!-- out T Feb 11, quiz W Feb 12, due T Feb 18 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-4" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 5</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="engineering-lab-prime-testing" class="anchored"><em>Engineering Lab: Prime Testing</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>40 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="mutability-and-aliasing-week-6" class="level2">
-<h2 class="anchored" data-anchor-id="mutability-and-aliasing-week-6">Mutability and Aliasing (Week 6)</h2>
-<!-- out T Feb 18, quiz W Feb 19, due T Feb 25 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-5" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 5 continued</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="specification-lab-structured-types" class="anchored"><em>Specification Lab: Structured Types</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>20 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="recursion-week-7" class="level2">
-<h2 class="anchored" data-anchor-id="recursion-week-7">Recursion (Week 7)</h2>
-<!-- out T Feb 25, quiz W Feb 26, due T Feb Mar 4 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-6" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 6</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="engineering-lab-intersection-algorithms" class="anchored"><em>Engineering Lab: Intersection Algorithms</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>40 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="spring-break-week-8" class="level2">
-<h2 class="anchored" data-anchor-id="spring-break-week-8">Spring Break (Week 8)</h2>
-<!-- SPRING BREAK out F Feb 28, NO QUIZ, due T Mar 11 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="engineering-lab-palindromes" class="anchored"><em>Engineering Lab: Palindromes</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>40 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="modules-and-files-week-9" class="level2">
-<h2 class="anchored" data-anchor-id="modules-and-files-week-9">Modules and Files (Week 9)</h2>
-<!-- out T Mar 11, quiz W Mar 12, due T Mar 18 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-7" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 7</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="specification-lab-alias-vs-clone" class="anchored"><em>Specification Lab: Alias vs Clone</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>20 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="testing-and-handling-exceptions-week-10" class="level2">
-<h2 class="anchored" data-anchor-id="testing-and-handling-exceptions-week-10">Testing and Handling Exceptions (Week 10)</h2>
-<!-- out T Mar 18, quiz W Mar 19, due T Mar 25 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-8" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 8<br>
-Guttag Chapter 9</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="engineering-lab-fibonacci-algorithms" class="anchored"><em>Engineering Lab: Fibonacci Algorithms</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>40 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="object-oriented-programming-week-11" class="level2">
-<h2 class="anchored" data-anchor-id="object-oriented-programming-week-11">Object-Oriented Programming (Week 11)</h2>
-<!-- out T Mar 25, quiz W Mar 26, due T Apr 1 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-9" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 10</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="specification-lab-debugging" class="anchored"><em>Specification Lab: Debugging</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>20 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="algorithmic-complexity-week-12" class="level2">
-<h2 class="anchored" data-anchor-id="algorithmic-complexity-week-12">Algorithmic Complexity (Week 12)</h2>
-<!-- out T Apr 1, quiz W Apr 2, due T Apr 8 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-10" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 11</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="engineering-lab-object-processing" class="anchored"><em>Engineering Lab: Object Processing</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>40 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="data-structures-week-13" class="level2">
-<h2 class="anchored" data-anchor-id="data-structures-week-13">Data Structures (Week 13)</h2>
-<!-- out T Apr 8, quiz W Apr 9, due T Apr 15 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-11" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 12</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="engineering-lab-containment-checking" class="anchored"><em>Engineering Lab: Containment Checking</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>40 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="data-structures-continued-week-14" class="level2">
-<h2 class="anchored" data-anchor-id="data-structures-continued-week-14">Data Structures Continued (Week 14)</h2>
-<!-- out T Apr 15, quiz W Apr 16, due T Apr 22 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-12" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 12 continuted</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="engineering-lab-sorting-algorithms" class="anchored"><em>Engineering Lab: Sorting Algorithms</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>40 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="optimization-problems-week-15" class="level2">
-<h2 class="anchored" data-anchor-id="optimization-problems-week-15">Optimization Problems (Week 15)</h2>
-<!-- out T Apr 22, quiz W Apr 23, due T Apr 29 -->
-<details>
-<blockquote class="blockquote">
-<h3 id="reading-13" class="anchored"><em>Reading</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>Guttag Chapter 14</p>
-</blockquote>
-<blockquote class="blockquote">
-<h3 id="specification-lab-matrix-processing" class="anchored"><em>Specification Lab: Matrix Processing</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>20 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-</section>
-<section id="review-week-16" class="level2">
-<h2 class="anchored" data-anchor-id="review-week-16">Review (Week 16)</h2>
-<!-- GIVEN AS FINAL Th May 1, 9am -->
-<details>
-<blockquote class="blockquote">
-<h3 id="final-knapsack-solvers" class="anchored"><em>Final: Knapsack Solvers</em></h3>
-</blockquote>
-<blockquote class="blockquote">
-<p>20 Points<br>
-Due Date:</p>
-</blockquote>
-</details>
-
-
-</section>
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../code";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

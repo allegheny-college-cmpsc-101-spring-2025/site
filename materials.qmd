@@ -1,164 +1,360 @@
 ---
 title: "Materials"
-format:
-  live-html:
-    toc: true
-    toc-depth: 3
+format: html
 ---
 
-## Quick Links
-
-- [Course Website](https://allegheny-college-cmpsc-101-spring-2025.github.io/site/)
-- [Course GitHub Organization](https://github.com/allegheny-college-cmpsc-101-spring-2025)
-- [Course GitHub Website Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/site)
-- [Python Notebooks Directory](https://github.com/allegheny-college-cmpsc-101-spring-2025/site/tree/main/code)
-
-## Week One: Software Operations
-
 <details>
+  <summary>Software Operations (Week 1)</summary>
 
-[assignments](assignments.qmd#software-operations-week-1)
+## Software Operations
+<!-- out T Jan 14, quiz W jan 15, due T Jan 21 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 1](https://mitpress.ublish.com/ebook/itcapup3-preview/12609/1)
+- _Specification Lab: CLI vs Script vs Notebook_
+  - 20 Points
+  - Due Date: Tu Jan 28 at 2:30pm
+  - [GitHub Classroom Link](https://classroom.github.com/a/zOUX3b76)  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/cli-vs-script-starter/blob/main/README.md)
+
+::: {.callout-tip}
+## FINDING YOU REPOSITORIES
+If you have already accepted the GitHub Classroom assignment, find your
+repos by navigating to the repositories tab from the course GitHub organization page:
+[https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/](https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/)
+:::
+
+### Files
+
+- Slides: Welcome [Reveal](slides/01-welcome.qmd), [PDF](slides/01-welcome.pdf) (M Jan 13)
+- Slides: Software installation instructions [PDF](slides/01-software-installation.pdf) (Tu Jan 14)
+- Slides: Workflow for 101 labs [PDF](slides/02-workflow.pdf) (W Jan 15)
 
 ```{.markdown code-preview="slides/01-welcome.qmd" width="500"}
 ```
 
-[Slides: Welcome](slides/01-welcome.pdf)
+</details>
 
-[Slides: Software installation instructions](slides/01-software-installation.pdf)
 
-[Slides: Workflow for 101 labs](slides/02-workflow.pdf)
+<details>
+  <summary>Python Foundations (Week 2)</summary>
 
-<!-- slides about poetry and what to expect, format of python code that defines a CLI, typer -->
+## Python Foundations
+<!-- out T Jan 21, quiz W jan 22, due T Jan 28 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 2](https://mitpress.ublish.com/ebook/itcapup3-preview/12609/11)
+- _Engineering Lab: Integer Squaring_
+  - 40 Points
+  - Due Date: Tu Jan 28 at 2:30pm
+  - [GitHub Classroom Link](https://classroom.github.com/a/ooW4JapU)  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/integer-squaring-starter/blob/main/README.md)
+
+### Files
+
+- Slides: Linting [Reveal](slides/03-linting.qmd) (Tu Jan 21)
+
+```{.markdown code-preview="slides/03-linting.qmd" width="500"}
+```
 
 </details>
 
-## Week Two: January 20: Python Foundations
+
 
 <details>
+  <summary>Numerical Programs (Week 3)</summary>
 
+## Numerical Programs
+<!-- out T Jan 28, quiz W jan 29, due T Feb 4 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 3]
+- _Specification Lab: Number Comparison_
+  - 20 Points
+  <!-- - Due Date: Tu Feb 4 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/number-comparison-starter/blob/main/README.md) -->
+
+### Files
+
+-
+
+</details>
+
+
+
+<details>
+  <summary>Function Scope (Week 4)</summary>
+
+## Function Scope
+<!-- out T Feb 4, quiz W Feb 5, due T Feb 11 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 4]
+- _Specification Lab: Square Roots_
+  - 20 Points
+  <!-- - Due Date: Tu Feb 11 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/squareroots-starter/blob/main/README.md) -->
+
+### Files
+
+-
+
+</details>
+
+
+
+<details>
+  <summary>Structured Types (Week 5)</summary>
+
+## Structured Types
+<!-- out T Feb 11, quiz W Feb 12, due T Feb 18 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 5]
+- _Engineering Lab: Prime Testing_
+  - 40 Points
+  <!-- - Due Date: Tu Feb 18 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/prime-testing-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+<details>
+  <summary>Mutability and Aliasing (Week 6)</summary>
+
+## Mutability and Aliasing
+<!-- out T Feb 18, quiz W Feb 19, due T Feb 25 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 5 Cont.]
+- _Specification Lab: Structured Types_
+  - 20 Points
+  <!-- - Due Date: Tu Feb 25 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/structured-types-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+<details>
+  <summary>Recursion (Week 7)</summary>
+
+## Recursion
+<!-- out T Feb 25, quiz W Feb 26, due T Feb Mar 4 -->
+<!-- SPRING BREAK out F Feb 28, NO QUIZ, due T Mar 11 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 6]
+- _Engineering Lab: Intersection Algorithms_
+  - 40 Points
+  <!-- - Due Date: Tu Mar 4 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/intersection-algorithms-starter/blob/main/README.md) -->
+- _Engineering Lab: Palindromes_
+  - 40 Points
+  <!-- - Due Date: Tu Mar 11 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/palindrome-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+
+<details>
+  <summary>Modules and Files (Week 9)</summary>
+
+## Modules and Files
+<!-- out T Mar 11, quiz W Mar 12, due T Mar 18 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 7]
+- _Specification Lab: Alias vs Clone_
+  - 20 Points
+  <!-- - Due Date: Tu Mar 18 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/alias-vs-cloning-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+
+<details>
+  <summary>Testing and Handling Exceptions (Week 10)</summary>
+
+## Testing and Handling Exceptions
+<!-- out T Mar 18, quiz W Mar 19, due T Mar 25 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 8 & 9]
+- _Engineering Lab: Fibonacci Algorithms_
+  - 40 Points
+  <!-- - Due Date: Tu Mar 25 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/fibonacci-algorithms-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+<details>
+  <summary>Object-Oriented Programming (Week 11)</summary>
+
+## Object-Oriented Programming
+<!-- out T Mar 25, quiz W Mar 26, due T Apr 1 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 10]
+- _Specification Lab: Debugging_
+  - 20 Points
+  <!-- - Due Date: Tu Apr 1 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+<details>
+  <summary>Algorithmic Complexity (Week 12)</summary>
+
+## Algorithmic Complexity
+<!-- out T Apr 1, quiz W Apr 2, due T Apr 8 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 11]
+- _Engineering Lab: Object Processing_
+  - 40 Points
+  <!-- - Due Date: Tu Apr 8 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+<details>
+  <summary>Data Structures (Week 13)</summary>
+
+## Data Structures
+<!-- out T Apr 8, quiz W Apr 9, due T Apr 15 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 12]
+- _Engineering Lab: Containment Checking_
+  - 40 Points
+  <!-- - Due Date: Tu Apr 15 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+<details>
+  <summary>Data Structures Continued (Week 14)</summary>
+
+## Data Structures Continued
+<!-- out T Apr 15, quiz W Apr 16, due T Apr 22 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 12 Cont.]
+- _Engineering Lab: Sorting Algorithms_
+  - 40 Points
+  <!-- - Due Date: Tu Apr 22 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+<details>
+  <summary>Optimization Problems (Week 15)</summary>
+
+## Optimization Problems
+<!-- out T Apr 22, quiz W Apr 23, due T Apr 29 -->
+
+### Assignments
+
+- [Required Reading: Guttag Chapter 12 Cont.]
+- _Specification Lab: Matrix Processing_
+  - 20 Points
+  <!-- - Due Date: Tu Apr 29 at 2:30pm
+  - [GitHub Classroom Link]()  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/matrix-processing-starter/blob/main/README.md) -->
+
+### Files
+
+- 
+
+</details>
+
+
+<details>
+  <summary>Review (Week 16)</summary>
+
+## Review
+
+
+</details>
+
+## Final
+<!-- GIVEN AS FINAL Th May 1, 9am -->
+
+- Thursday, May 1, 2025 at 9:00 AM
+
+<!-- _Final: Knapsack Solvers_ -->
+
+<!-- ## Notes
 
 ```{pyodide}
 
 ```
 
-<!-- [notebook in repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb) -->
-
-[assignments](assignments.qmd#python-foundations-week-2)
-
-</details>
-
-## Week Three: Jan 27: Numerical Programs
-
-<details>
-
-[assignments](assignments.qmd#numerical-programs-week-3)
-
-</details>
-
-## Week Four: Feb 3: Function Scope
-
-<details>
-
-[assignments](assignments.qmd#function-scope-week-4)
-
-</details>
-
-## Week Five: Feb 10: Structured Types
-
-<details>
-
-[assignments](assignments.qmd#structured-types-week-5)
-
-</details>
-
-
-## Week Six: Feb 17: Mutability and Aliasing
-
-<details>
-
-[assignments](assignments.qmd#mutability-and-aliasing-week-6)
-
-</details>
-
-## Week Seven: Feb 24: Recursion
-
-<details>
-
-[assignments](assignments.qmd#recursion-week-7)
-
-</details>
-
-
-## Week Nine: March 10: Modules and Files
-
-<details>
-
-[assignments](assignments.qmd#modules-and-files-week-9)
-
-</details>
-
-## Week Ten: March 17: Testing and Handling Exceptions
-
-<details>
-
-[assignments](assignments.qmd#testing-and-handling-exceptions-week-10)
-
-</details>
-
-
-## Week Eleven: March 24: Object-Oriented Programming
-
-<details>
-
-[assignments](assignments.qmd#object-oriented-programming-week-11)
-
-</details>
-
-
-## Week Twelve: March 31: Algorithmic Complexity
-
-<details>
-
-[assignments](assignments.qmd#algorithmic-complexity-week-12)
-
-</details>
-
-
-## Week Thirteen: April 7: Data Structures
-
-<details>
-
-[assignments](assignments.qmd#data-structures-week-13)
-
-</details>
-
-
-## Week Fourteen: April 14: Data Structures Continued
-
-<details>
-
-[assignments](assignments.qmd#data-structures-continued-week-14)
-
-</details>
-
-
-## Week Fifteen: April 21: Optimization Problems
-
-<details>
-
-[assignments](assignments.qmd#optimization-problems-week-15)
-
-</details>
-
-
-## Week Sixteen: April 28: Review
-
-<details>
-
-[assignments](assignments.qmd#review-week-16)
-
-</details>
-
-## Final
-
-- Thursday, May 1, 2025 at 9:00 AM
+[notebook in repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb) -->

@@ -14,39 +14,60 @@
     "text": "Announcements\n\n\n\nMade with https://docs.widgetbot.io/"
   },
   {
-    "objectID": "slides/data-display.html#goals",
-    "href": "slides/data-display.html#goals",
-    "title": "Week 2: Data Display",
+    "objectID": "slides/03-linting.html#goals",
+    "href": "slides/03-linting.html#goals",
+    "title": "Linting",
     "section": "Goals",
-    "text": "Goals\n\n\nreview graph types\nreview chart types\nreview anatomy of a chart"
+    "text": "Goals\n\nDefine linting\nReview linting errors\nReview linting solutions"
   },
   {
-    "objectID": "slides/data-display.html#critical-thinking-in-groups",
-    "href": "slides/data-display.html#critical-thinking-in-groups",
-    "title": "Week 2: Data Display",
-    "section": "Critical Thinking in Groups",
-    "text": "Critical Thinking in Groups\n\n\nForm pairs\nDiscuss a data visualization that you recently admired\nDiscuss what it made clear that was unclear before\nIn Discord, send in a link to your partner’s vis and their name\nPresent your partner’s visualization in 30 seconds"
+    "objectID": "slides/03-linting.html#linting-definition",
+    "href": "slides/03-linting.html#linting-definition",
+    "title": "Linting",
+    "section": "Linting Definition",
+    "text": "Linting Definition\n\nLinting highlights semantic and stylistic problems in your Python source code, which often helps you identify and correct subtle programming errors or coding practices that can lead to errors. For example, linting can detect the use of an undefined variable, calls to undefined functions, missing parentheses, and even more subtle issues such as attempting to redefine built-in types or functions.\n\n\nhttps://code.visualstudio.com/docs/python/linting"
   },
   {
-    "objectID": "slides/data-display.html#summary",
-    "href": "slides/data-display.html#summary",
-    "title": "Week 2: Data Display",
-    "section": "Summary",
-    "text": "Summary\n\n\nWhat are important parts of a chart?"
+    "objectID": "slides/03-linting.html#stylistic-errors-in-english",
+    "href": "slides/03-linting.html#stylistic-errors-in-english",
+    "title": "Linting",
+    "section": "Stylistic Errors in English",
+    "text": "Stylistic Errors in English\n“hI , mY nAME is Emily . .”\n\n\n1:1 The first letter of the first word should be capitalized\n1:2 Inner letters should not be capitalized\n1:3 Found white space before a comma, expected none\n1:7 Inner letters should not be capitalized\n1:10 Inner letters should not be capitalized\n1:13 Found white space before a word, expected one white space\n1:25 Found white space before a period, expected none\n1:29 Found two periods, expected one"
   },
   {
-    "objectID": "slides/data-display.html#notebook-excerpt",
-    "href": "slides/data-display.html#notebook-excerpt",
-    "title": "Week 2: Data Display",
-    "section": "notebook excerpt",
-    "text": "notebook excerpt\n\n\nprint(\"hello\")\nprint(\"line 2\")\nprint(\"line 3\")\nprint(\"line 4\")\n\n\n\nhello\nline 2\nline 3\nline 4"
+    "objectID": "slides/03-linting.html#stylistic-errors-in-code",
+    "href": "slides/03-linting.html#stylistic-errors-in-code",
+    "title": "Linting",
+    "section": "Stylistic Errors in Code",
+    "text": "Stylistic Errors in Code\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruff\ncli/main.py:1:1: D400 First line should end with a period\ncli/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:10:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:11:5: D400 First line should end with a period\ncli/main.py:11:5: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:17:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:18:5: D400 First line should end with a period\ncli/main.py:18:5: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:22:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:29:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:33:5: D202 [*] No blank lines allowed after function docstring (found 1)\ncli/main.py:49:15: F541 [*] f-string without any placeholders\ncli/main.py:54:9: E303 [*] Too many blank lines (2)\ncli/main.py:59:9: E303 [*] Too many blank lines (2)\ncli/main.py:64:9: E303 [*] Too many blank lines (2)\ncli/main.py:69:9: E303 [*] Too many blank lines (2)\ncli/main.py:74:9: E303 [*] Too many blank lines (2)\ncli/main.py:82:1: W391 [*] Too many newlines at end of file\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:5:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:12:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:17:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:42:15: F541 [*] f-string without any placeholders\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:51:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:56:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:61:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:66:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:74:1: W391 [*] Too many newlines at end of file\nFound 33 errors.\n[*] 21 fixable with the `--fix` option (12 hidden fixes can be enabled with the `--unsafe-fixes` option)."
   },
   {
-    "objectID": "slides/data-display.html#pyodide-test-grabbing-markdown-w-live-html",
-    "href": "slides/data-display.html#pyodide-test-grabbing-markdown-w-live-html",
-    "title": "Week 2: Data Display",
-    "section": "pyodide test grabbing markdown w live-html",
-    "text": "pyodide test grabbing markdown w live-html\n\nn.b. live-html format in the ipynb allows live execution, but cell must be raw…"
+    "objectID": "slides/03-linting.html#read-slowly",
+    "href": "slides/03-linting.html#read-slowly",
+    "title": "Linting",
+    "section": "Read Slowly",
+    "text": "Read Slowly\ncli/main.py:1:1: D400 First line should end with a period\n\n\ncli/main.py is the file\n1:1 is the line number : character number\nD400 ignore this for now\nFirst line should end with a period message explaining the issue\nSolution:\n\nGo the location indicated\nread your code at and around the area\ntry to fix the issue"
+  },
+  {
+    "objectID": "slides/03-linting.html#fixing",
+    "href": "slides/03-linting.html#fixing",
+    "title": "Linting",
+    "section": "Fixing",
+    "text": "Fixing\nOriginal:\n\"\"\"a variety of numerical operations based on the value of an option to the CLI\"\"\"\nCorrected:\n\"\"\"Do a variety of numerical operations based on the value of an option to the CLI.\"\"\""
+  },
+  {
+    "objectID": "slides/03-linting.html#linting-commands",
+    "href": "slides/03-linting.html#linting-commands",
+    "title": "Linting",
+    "section": "Linting Commands",
+    "text": "Linting Commands\n\npoetry run task ruff\n\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruff\ncli/main.py:1:1: D400 First line should end with a period\n\npoetry run task ruffdetails\n\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruffdetails\ncli/main.py:1:1: D400 First line should end with a period\n  |\n1 | \"\"\"a variety of numerical operations based on the value of an option to the CLI\"\"\"\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ D400\n2 | \n3 | # TODO: add at least ten single-line comments to this file to describe individual line of code.\n  |\n  = help: Add period"
+  },
+  {
+    "objectID": "slides/03-linting.html#automatic-fixes",
+    "href": "slides/03-linting.html#automatic-fixes",
+    "title": "Linting",
+    "section": "Automatic fixes",
+    "text": "Automatic fixes\n\npoetry run task fix\nor\npoetry run ruff --fix"
   },
   {
     "objectID": "index.html",
@@ -74,7 +95,7 @@
     "href": "index.html#materials",
     "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
     "section": "Materials",
-    "text": "Materials\n\nTextbook\nIntroduction to Computation and Programming Using Python by John V. Guttag\n\n\n\nOnline Resources and Course Materials\n\nCourse Website\nCourse GitHub Organization\nGuttag Textbook Publisher Preview\nGuttag Textbook Google Previews\nAdditional Guttag Textbook Availability\nGuttag Lectures\nPython Docs\nProactive Programmers\n\n\n\nRequired Software and Accounts\n\nSublime Text 4\nPython 3.12\npipx\nPoetry\nGatorgrade\nGit\nFree GitHub Account\nFree Discord Account\nGoogle Account"
+    "text": "Materials\n\nTextbook\nIntroduction to Computation and Programming Using Python by John V. Guttag\n\n\n\nOnline Resources and Course Materials\n\nCourse Website\nCourse GitHub Organization\nJupyter Notebooks Directory\nGuttag Textbook Publisher Preview\nGuttag Textbook Google Previews\nAdditional Guttag Textbook Availability\nGuttag Lectures\nPython Docs\nProactive Programmers\n\n\n\nRequired Software and Accounts\n\nSublime Text 4\nPython 3.12\npipx\nPoetry\nGatorgrade\nGit\nFree GitHub Account\nFree Discord Account\nGoogle Account"
   },
   {
     "objectID": "index.html#course-components",
@@ -140,125 +161,6 @@
     "text": "Open In Colab\n\n\nThis is a test notebook file\nprint(\"trying to get live code block inside the python notebook\")\n\n\nCode\nprint(\"hello\")\nprint(\"line 2\")\nprint(\"line 3\")\nprint(\"line 4\")\n\n\nhello\nline 2\nline 3\nline 4\n\n\n\n\nCode\nprint(\"this is another print message\")\n\n\nthis is another print message"
   },
   {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "Guttag Chapter 1\n\n\n\n\n\n20 Points\nDue Date: Tu Jan 21 at 2:30pm\nGitHub Classroom Link Starter Repo\n\n\nIf you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/"
-  },
-  {
-    "objectID": "assignments.html#software-operations-week-1",
-    "href": "assignments.html#software-operations-week-1",
-    "title": "Assignments",
-    "section": "",
-    "text": "Guttag Chapter 1\n\n\n\n\n\n20 Points\nDue Date: Tu Jan 21 at 2:30pm\nGitHub Classroom Link Starter Repo\n\n\nIf you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/"
-  },
-  {
-    "objectID": "assignments.html#python-foundations-week-2",
-    "href": "assignments.html#python-foundations-week-2",
-    "title": "Assignments",
-    "section": "Python Foundations (Week 2)",
-    "text": "Python Foundations (Week 2)\n\n\n\nReading\n\n\nGuttag Chapter 2\n\n\nEngineering Lab: Integer Squaring\n\n\n40 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#numerical-programs-week-3",
-    "href": "assignments.html#numerical-programs-week-3",
-    "title": "Assignments",
-    "section": "Numerical Programs (Week 3)",
-    "text": "Numerical Programs (Week 3)\n\n\n\nReading\n\n\nGuttag Chapter 3\n\n\nSpecification Lab: Number Comparison\n\n\n20 Points\nDue Date: Link"
-  },
-  {
-    "objectID": "assignments.html#function-scope-week-4",
-    "href": "assignments.html#function-scope-week-4",
-    "title": "Assignments",
-    "section": "Function Scope (Week 4)",
-    "text": "Function Scope (Week 4)\n\n\n\nReading\n\n\nGuttag Chapter 4\n\n\nSpecification Lab: Square Roots\n\n\n20 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#structured-types-week-5",
-    "href": "assignments.html#structured-types-week-5",
-    "title": "Assignments",
-    "section": "Structured Types (Week 5)",
-    "text": "Structured Types (Week 5)\n\n\n\nReading\n\n\nGuttag Chapter 5\n\n\nEngineering Lab: Prime Testing\n\n\n40 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#mutability-and-aliasing-week-6",
-    "href": "assignments.html#mutability-and-aliasing-week-6",
-    "title": "Assignments",
-    "section": "Mutability and Aliasing (Week 6)",
-    "text": "Mutability and Aliasing (Week 6)\n\n\n\nReading\n\n\nGuttag Chapter 5 continued\n\n\nSpecification Lab: Structured Types\n\n\n20 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#recursion-week-7",
-    "href": "assignments.html#recursion-week-7",
-    "title": "Assignments",
-    "section": "Recursion (Week 7)",
-    "text": "Recursion (Week 7)\n\n\n\nReading\n\n\nGuttag Chapter 6\n\n\nEngineering Lab: Intersection Algorithms\n\n\n40 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#spring-break-week-8",
-    "href": "assignments.html#spring-break-week-8",
-    "title": "Assignments",
-    "section": "Spring Break (Week 8)",
-    "text": "Spring Break (Week 8)\n\n\n\nEngineering Lab: Palindromes\n\n\n40 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#modules-and-files-week-9",
-    "href": "assignments.html#modules-and-files-week-9",
-    "title": "Assignments",
-    "section": "Modules and Files (Week 9)",
-    "text": "Modules and Files (Week 9)\n\n\n\nReading\n\n\nGuttag Chapter 7\n\n\nSpecification Lab: Alias vs Clone\n\n\n20 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#testing-and-handling-exceptions-week-10",
-    "href": "assignments.html#testing-and-handling-exceptions-week-10",
-    "title": "Assignments",
-    "section": "Testing and Handling Exceptions (Week 10)",
-    "text": "Testing and Handling Exceptions (Week 10)\n\n\n\nReading\n\n\nGuttag Chapter 8\nGuttag Chapter 9\n\n\nEngineering Lab: Fibonacci Algorithms\n\n\n40 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#object-oriented-programming-week-11",
-    "href": "assignments.html#object-oriented-programming-week-11",
-    "title": "Assignments",
-    "section": "Object-Oriented Programming (Week 11)",
-    "text": "Object-Oriented Programming (Week 11)\n\n\n\nReading\n\n\nGuttag Chapter 10\n\n\nSpecification Lab: Debugging\n\n\n20 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#algorithmic-complexity-week-12",
-    "href": "assignments.html#algorithmic-complexity-week-12",
-    "title": "Assignments",
-    "section": "Algorithmic Complexity (Week 12)",
-    "text": "Algorithmic Complexity (Week 12)\n\n\n\nReading\n\n\nGuttag Chapter 11\n\n\nEngineering Lab: Object Processing\n\n\n40 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#data-structures-week-13",
-    "href": "assignments.html#data-structures-week-13",
-    "title": "Assignments",
-    "section": "Data Structures (Week 13)",
-    "text": "Data Structures (Week 13)\n\n\n\nReading\n\n\nGuttag Chapter 12\n\n\nEngineering Lab: Containment Checking\n\n\n40 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#data-structures-continued-week-14",
-    "href": "assignments.html#data-structures-continued-week-14",
-    "title": "Assignments",
-    "section": "Data Structures Continued (Week 14)",
-    "text": "Data Structures Continued (Week 14)\n\n\n\nReading\n\n\nGuttag Chapter 12 continuted\n\n\nEngineering Lab: Sorting Algorithms\n\n\n40 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#optimization-problems-week-15",
-    "href": "assignments.html#optimization-problems-week-15",
-    "title": "Assignments",
-    "section": "Optimization Problems (Week 15)",
-    "text": "Optimization Problems (Week 15)\n\n\n\nReading\n\n\nGuttag Chapter 14\n\n\nSpecification Lab: Matrix Processing\n\n\n20 Points\nDue Date:"
-  },
-  {
-    "objectID": "assignments.html#review-week-16",
-    "href": "assignments.html#review-week-16",
-    "title": "Assignments",
-    "section": "Review (Week 16)",
-    "text": "Review (Week 16)\n\n\n\nFinal: Knapsack Solvers\n\n\n20 Points\nDue Date:"
-  },
-  {
     "objectID": "syll/syllabus.html",
     "href": "syll/syllabus.html",
     "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
@@ -284,7 +186,7 @@
     "href": "syll/syllabus.html#materials",
     "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
     "section": "Materials",
-    "text": "Materials\n\nTextbook\nIntroduction to Computation and Programming Using Python by John V. Guttag\n\n\n\nOnline Resources and Course Materials\n\nCourse Website\nCourse GitHub Organization\nGuttag Textbook Publisher Preview\nGuttag Textbook Google Previews\nAdditional Guttag Textbook Availability\nGuttag Lectures\nPython Docs\nProactive Programmers\n\n\n\nRequired Software and Accounts\n\nSublime Text 4\nPython 3.12\npipx\nPoetry\nGatorgrade\nGit\nFree GitHub Account\nFree Discord Account\nGoogle Account"
+    "text": "Materials\n\nTextbook\nIntroduction to Computation and Programming Using Python by John V. Guttag\n\n\n\nOnline Resources and Course Materials\n\nCourse Website\nCourse GitHub Organization\nJupyter Notebooks Directory\nGuttag Textbook Publisher Preview\nGuttag Textbook Google Previews\nAdditional Guttag Textbook Availability\nGuttag Lectures\nPython Docs\nProactive Programmers\n\n\n\nRequired Software and Accounts\n\nSublime Text 4\nPython 3.12\npipx\nPoetry\nGatorgrade\nGit\nFree GitHub Account\nFree Discord Account\nGoogle Account"
   },
   {
     "objectID": "syll/syllabus.html#course-components",
@@ -438,125 +340,118 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Course Website\nCourse GitHub Organization\nCourse GitHub Website Repo\nPython Notebooks Directory"
+    "text": "Software Operations (Week 1)\n\n\n\n\n\n\n\nRequired Reading: Guttag Chapter 1\nSpecification Lab: CLI vs Script vs Notebook\n\n20 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\n\n\n\nFINDING YOU REPOSITORIES\n\n\n\nIf you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/\n\n\n\n\n\n\nSlides: Welcome Reveal, PDF (M Jan 13)\nSlides: Software installation instructions PDF (Tu Jan 14)\nSlides: Workflow for 101 labs PDF (W Jan 15)"
   },
   {
-    "objectID": "materials.html#quick-links",
-    "href": "materials.html#quick-links",
+    "objectID": "materials.html#software-operations",
+    "href": "materials.html#software-operations",
     "title": "Materials",
     "section": "",
-    "text": "Course Website\nCourse GitHub Organization\nCourse GitHub Website Repo\nPython Notebooks Directory"
+    "text": "Required Reading: Guttag Chapter 1\nSpecification Lab: CLI vs Script vs Notebook\n\n20 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\n\n\n\nFINDING YOU REPOSITORIES\n\n\n\nIf you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/\n\n\n\n\n\n\nSlides: Welcome Reveal, PDF (M Jan 13)\nSlides: Software installation instructions PDF (Tu Jan 14)\nSlides: Workflow for 101 labs PDF (W Jan 15)"
   },
   {
-    "objectID": "materials.html#week-one-software-operations",
-    "href": "materials.html#week-one-software-operations",
+    "objectID": "materials.html#python-foundations",
+    "href": "materials.html#python-foundations",
     "title": "Materials",
-    "section": "Week One: Software Operations",
-    "text": "Week One: Software Operations\n\nassignments\n\nSlides: Welcome\nSlides: Software installation instructions\nSlides: Workflow for 101 labs"
+    "section": "Python Foundations",
+    "text": "Python Foundations\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 2\nEngineering Lab: Integer Squaring\n\n40 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\nFiles\n\nSlides: Linting Reveal (Tu Jan 21)"
   },
   {
-    "objectID": "materials.html#week-two-january-20-python-foundations",
-    "href": "materials.html#week-two-january-20-python-foundations",
+    "objectID": "materials.html#numerical-programs",
+    "href": "materials.html#numerical-programs",
     "title": "Materials",
-    "section": "Week Two: January 20: Python Foundations",
-    "text": "Week Two: January 20: Python Foundations\n\n\n\n\n\n\n\n\nassignments"
+    "section": "Numerical Programs",
+    "text": "Numerical Programs\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 3]\nSpecification Lab: Number Comparison\n\n20 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-three-jan-27-numerical-programs",
-    "href": "materials.html#week-three-jan-27-numerical-programs",
+    "objectID": "materials.html#function-scope",
+    "href": "materials.html#function-scope",
     "title": "Materials",
-    "section": "Week Three: Jan 27: Numerical Programs",
-    "text": "Week Three: Jan 27: Numerical Programs\n\nassignments"
+    "section": "Function Scope",
+    "text": "Function Scope\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 4]\nSpecification Lab: Square Roots\n\n20 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-four-feb-3-function-scope",
-    "href": "materials.html#week-four-feb-3-function-scope",
+    "objectID": "materials.html#structured-types",
+    "href": "materials.html#structured-types",
     "title": "Materials",
-    "section": "Week Four: Feb 3: Function Scope",
-    "text": "Week Four: Feb 3: Function Scope\n\nassignments"
+    "section": "Structured Types",
+    "text": "Structured Types\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 5]\nEngineering Lab: Prime Testing\n\n40 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-five-feb-10-structured-types",
-    "href": "materials.html#week-five-feb-10-structured-types",
+    "objectID": "materials.html#mutability-and-aliasing",
+    "href": "materials.html#mutability-and-aliasing",
     "title": "Materials",
-    "section": "Week Five: Feb 10: Structured Types",
-    "text": "Week Five: Feb 10: Structured Types\n\nassignments"
+    "section": "Mutability and Aliasing",
+    "text": "Mutability and Aliasing\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 5 Cont.]\nSpecification Lab: Structured Types\n\n20 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-six-feb-17-mutability-and-aliasing",
-    "href": "materials.html#week-six-feb-17-mutability-and-aliasing",
+    "objectID": "materials.html#recursion",
+    "href": "materials.html#recursion",
     "title": "Materials",
-    "section": "Week Six: Feb 17: Mutability and Aliasing",
-    "text": "Week Six: Feb 17: Mutability and Aliasing\n\nassignments"
+    "section": "Recursion",
+    "text": "Recursion\n\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 6]\nEngineering Lab: Intersection Algorithms\n\n40 Points \n\nEngineering Lab: Palindromes\n\n40 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-seven-feb-24-recursion",
-    "href": "materials.html#week-seven-feb-24-recursion",
+    "objectID": "materials.html#modules-and-files",
+    "href": "materials.html#modules-and-files",
     "title": "Materials",
-    "section": "Week Seven: Feb 24: Recursion",
-    "text": "Week Seven: Feb 24: Recursion\n\nassignments"
+    "section": "Modules and Files",
+    "text": "Modules and Files\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 7]\nSpecification Lab: Alias vs Clone\n\n20 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-nine-march-10-modules-and-files",
-    "href": "materials.html#week-nine-march-10-modules-and-files",
+    "objectID": "materials.html#testing-and-handling-exceptions",
+    "href": "materials.html#testing-and-handling-exceptions",
     "title": "Materials",
-    "section": "Week Nine: March 10: Modules and Files",
-    "text": "Week Nine: March 10: Modules and Files\n\nassignments"
+    "section": "Testing and Handling Exceptions",
+    "text": "Testing and Handling Exceptions\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 8 & 9]\nEngineering Lab: Fibonacci Algorithms\n\n40 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-ten-march-17-testing-and-handling-exceptions",
-    "href": "materials.html#week-ten-march-17-testing-and-handling-exceptions",
+    "objectID": "materials.html#object-oriented-programming",
+    "href": "materials.html#object-oriented-programming",
     "title": "Materials",
-    "section": "Week Ten: March 17: Testing and Handling Exceptions",
-    "text": "Week Ten: March 17: Testing and Handling Exceptions\n\nassignments"
+    "section": "Object-Oriented Programming",
+    "text": "Object-Oriented Programming\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 10]\nSpecification Lab: Debugging\n\n20 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-eleven-march-24-object-oriented-programming",
-    "href": "materials.html#week-eleven-march-24-object-oriented-programming",
+    "objectID": "materials.html#algorithmic-complexity",
+    "href": "materials.html#algorithmic-complexity",
     "title": "Materials",
-    "section": "Week Eleven: March 24: Object-Oriented Programming",
-    "text": "Week Eleven: March 24: Object-Oriented Programming\n\nassignments"
+    "section": "Algorithmic Complexity",
+    "text": "Algorithmic Complexity\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 11]\nEngineering Lab: Object Processing\n\n40 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-twelve-march-31-algorithmic-complexity",
-    "href": "materials.html#week-twelve-march-31-algorithmic-complexity",
+    "objectID": "materials.html#data-structures",
+    "href": "materials.html#data-structures",
     "title": "Materials",
-    "section": "Week Twelve: March 31: Algorithmic Complexity",
-    "text": "Week Twelve: March 31: Algorithmic Complexity\n\nassignments"
+    "section": "Data Structures",
+    "text": "Data Structures\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 12]\nEngineering Lab: Containment Checking\n\n40 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-thirteen-april-7-data-structures",
-    "href": "materials.html#week-thirteen-april-7-data-structures",
+    "objectID": "materials.html#data-structures-continued",
+    "href": "materials.html#data-structures-continued",
     "title": "Materials",
-    "section": "Week Thirteen: April 7: Data Structures",
-    "text": "Week Thirteen: April 7: Data Structures\n\nassignments"
+    "section": "Data Structures Continued",
+    "text": "Data Structures Continued\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 12 Cont.]\nEngineering Lab: Sorting Algorithms\n\n40 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-fourteen-april-14-data-structures-continued",
-    "href": "materials.html#week-fourteen-april-14-data-structures-continued",
+    "objectID": "materials.html#optimization-problems",
+    "href": "materials.html#optimization-problems",
     "title": "Materials",
-    "section": "Week Fourteen: April 14: Data Structures Continued",
-    "text": "Week Fourteen: April 14: Data Structures Continued\n\nassignments"
+    "section": "Optimization Problems",
+    "text": "Optimization Problems\n\n\nAssignments\n\n[Required Reading: Guttag Chapter 12 Cont.]\nSpecification Lab: Matrix Processing\n\n20 Points \n\n\n\n\nFiles"
   },
   {
-    "objectID": "materials.html#week-fifteen-april-21-optimization-problems",
-    "href": "materials.html#week-fifteen-april-21-optimization-problems",
+    "objectID": "materials.html#review",
+    "href": "materials.html#review",
     "title": "Materials",
-    "section": "Week Fifteen: April 21: Optimization Problems",
-    "text": "Week Fifteen: April 21: Optimization Problems\n\nassignments"
-  },
-  {
-    "objectID": "materials.html#week-sixteen-april-28-review",
-    "href": "materials.html#week-sixteen-april-28-review",
-    "title": "Materials",
-    "section": "Week Sixteen: April 28: Review",
-    "text": "Week Sixteen: April 28: Review\n\nassignments"
+    "section": "Review",
+    "text": "Review"
   },
   {
     "objectID": "materials.html#final",
     "href": "materials.html#final",
     "title": "Materials",
     "section": "Final",
-    "text": "Final\n\nThursday, May 1, 2025 at 9:00 AM"
+    "text": "Final\n\n\nThursday, May 1, 2025 at 9:00 AM"
   }
 ]
