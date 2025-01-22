@@ -1,6 +1,6 @@
 ---
 title: "Materials"
-format: html
+format: live-html
 ---
 
 <details>
@@ -62,6 +62,12 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ```{.markdown code-preview="slides/04-python-foundations.qmd" width="500"}
 ```
+
+
+```{pyodide}
+
+```
+
 
 </details>
 

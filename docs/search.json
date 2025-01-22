@@ -158,14 +158,7 @@
     "href": "slides/04-python-foundations.html#abstracting-to-a-function-2",
     "title": "Python Foundations",
     "section": "Abstracting to a Function",
-    "text": "Abstracting to a Function\n\n# choose a value to square\ndef square_by_addition_while(value: int) -&gt; int:\n    \"\"\"Square a number by addition in a while loop.\"\"\"\n    # initialize the number of iterations and the answer\n    i = 0\n    answer = 0\n    # repeatedly increase the answer until getting to the value\n    while i &lt; value:\n        answer += value\n        i += 1    \n    # return the computed integer squared using a while loop\n    return answer\n\nmy_value = 12\nmy_answer = square_by_addition_while(my_value)\nprint(f\"{my_value} squared is {my_answer}\")\n\n\n\n12 squared is 144\n\n\n\nTODO: What happens if you try to print print(f\"{value} squared is {answer}\")? Copy the code and then move to the next slide."
-  },
-  {
-    "objectID": "slides/04-python-foundations.html#abstracting-to-a-function-3",
-    "href": "slides/04-python-foundations.html#abstracting-to-a-function-3",
-    "title": "Python Foundations",
-    "section": "Abstracting to a Function",
-    "text": "Abstracting to a Function\nTODO: What happens if you try to print print(f\"{value} squared is {answer}\")? Paste the code and try it."
+    "text": "Abstracting to a Function\n\n# choose a value to square\ndef square_by_addition_while(value: int) -&gt; int:\n    \"\"\"Square a number by addition in a while loop.\"\"\"\n    # initialize the number of iterations and the answer\n    i = 0\n    answer = 0\n    # repeatedly increase the answer until getting to the value\n    while i &lt; value:\n        answer += value\n        i += 1    \n    # return the computed integer squared using a while loop\n    return answer\n\nmy_value = 12\nmy_answer = square_by_addition_while(my_value)\nprint(f\"{my_value} squared is {my_answer}\")\n\n\n\n12 squared is 144\n\n\n\nTODO: What happens if you try to print print(f\"{value} squared is {answer}\")? Copy the code and paste it below."
   },
   {
     "objectID": "slides/04-python-foundations.html#formatted-strings",
