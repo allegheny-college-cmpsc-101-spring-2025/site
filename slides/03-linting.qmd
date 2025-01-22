@@ -23,7 +23,7 @@ https://code.visualstudio.com/docs/python/linting
 
 ## Stylistic Errors in English {.smaller}
 
-"hI , mY nAME    is Emily .   ."
+`hI , mY nAME    is Emily .   .`
 
 ::: incremental
 - 1:1 The first letter of the first word should be capitalized

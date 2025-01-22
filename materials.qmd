@@ -55,8 +55,12 @@ repos by navigating to the repositories tab from the course GitHub organization 
 ### Files
 
 - Slides: Linting [Reveal](slides/03-linting.qmd) (Tu Jan 21)
+- Slides: Python Foundations [Reveal](slides/04-python-foundations.qmd), [PDF](slides/04-python-foundations.pdf) (W Jan 22)
 
 ```{.markdown code-preview="slides/03-linting.qmd" width="500"}
+```
+
+```{.markdown code-preview="slides/04-python-foundations.qmd" width="500"}
 ```
 
 </details>
@@ -71,7 +75,8 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 3]
+- [Required Reading: Guttag Chapter 3](https://books.google.com/books?id=f57uDwAAQBAJ&pg=PA45&source=gbs_toc_r&cad=1#v=onepage&q&f=false)
+- [Missing Pages](/images/pages.pdf)
 - _Specification Lab: Number Comparison_
   - 20 Points
   <!-- - Due Date: Tu Feb 4 at 2:30pm
@@ -94,7 +99,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 4]
+- [Required Reading: Guttag Chapter 4](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Square Roots_
   - 20 Points
   <!-- - Due Date: Tu Feb 11 at 2:30pm
@@ -117,7 +122,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 5]
+- [Required Reading: Guttag Chapter 5](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Prime Testing_
   - 40 Points
   <!-- - Due Date: Tu Feb 18 at 2:30pm
@@ -139,7 +144,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 5 Cont.]
+- [Required Reading: Guttag Chapter 5 Cont.](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Structured Types_
   - 20 Points
   <!-- - Due Date: Tu Feb 25 at 2:30pm
@@ -162,7 +167,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 6]
+- [Required Reading: Guttag Chapter 6](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Intersection Algorithms_
   - 40 Points
   <!-- - Due Date: Tu Mar 4 at 2:30pm
@@ -190,7 +195,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 7]
+- [Required Reading: Guttag Chapter 7](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Alias vs Clone_
   - 20 Points
   <!-- - Due Date: Tu Mar 18 at 2:30pm
@@ -213,7 +218,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 8 & 9]
+- [Required Reading: Guttag Chapter 8 & 9](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Fibonacci Algorithms_
   - 40 Points
   <!-- - Due Date: Tu Mar 25 at 2:30pm
@@ -235,7 +240,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 10]
+- [Required Reading: Guttag Chapter 10](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Debugging_
   - 20 Points
   <!-- - Due Date: Tu Apr 1 at 2:30pm
@@ -257,7 +262,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 11]
+- [Required Reading: Guttag Chapter 11](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Object Processing_
   - 40 Points
   <!-- - Due Date: Tu Apr 8 at 2:30pm
@@ -279,7 +284,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 12]
+- [Required Reading: Guttag Chapter 12](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Containment Checking_
   - 40 Points
   <!-- - Due Date: Tu Apr 15 at 2:30pm
@@ -301,7 +306,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 12 Cont.]
+- [Required Reading: Guttag Chapter 12 Cont.](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Sorting Algorithms_
   - 40 Points
   <!-- - Due Date: Tu Apr 22 at 2:30pm
@@ -322,7 +327,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Assignments
 
-- [Required Reading: Guttag Chapter 12 Cont.]
+- [Required Reading: Guttag Chapter 14](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Matrix Processing_
   - 20 Points
   <!-- - Due Date: Tu Apr 29 at 2:30pm
