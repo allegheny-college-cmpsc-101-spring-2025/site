@@ -1,6 +1,8 @@
 ---
 title: "Materials"
 format: live-html
+toc: true
+toc-depth: 3
 ---
 
 <details>
@@ -33,6 +35,8 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ```{.markdown code-preview="slides/01-welcome.qmd" width="500"}
 ```
+
+<!-- need to separate and focus on running a script with python interpreter, not in 100 -->
 
 </details>
 
@@ -85,13 +89,20 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - [Missing Pages](/images/pages.pdf)
 - _Specification Lab: Number Comparison_
   - 20 Points
-  <!-- - Due Date: Tu Feb 4 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/number-comparison-starter/blob/main/README.md) -->
+  - Due Date: Tu Feb 4 at 2:30pm
+  - [GitHub Classroom Link](https://classroom.github.com/a/mICABI0R)
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/number-comparison-starter/blob/main/README.md)
 
 ### Files
 
 -
+
+
+```{pyodide}
+
+```
+
+
 
 </details>
 
@@ -116,6 +127,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 -
 
+
+```{pyodide}
+
+```
+
+
+
 </details>
 
 
@@ -139,6 +157,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - 
 
+
+```{pyodide}
+
+```
+
+
+
 </details>
 
 
@@ -160,6 +185,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 ### Files
 
 - 
+
+
+```{pyodide}
+
+```
+
+
 
 </details>
 
@@ -189,6 +221,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - 
 
+
+```{pyodide}
+
+```
+
+
+
 </details>
 
 
@@ -211,6 +250,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 ### Files
 
 - 
+
+
+```{pyodide}
+
+```
+
+
 
 </details>
 
@@ -235,6 +281,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - 
 
+
+```{pyodide}
+
+```
+
+
+
 </details>
 
 
@@ -256,6 +309,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 ### Files
 
 - 
+
+
+```{pyodide}
+
+```
+
+
 
 </details>
 
@@ -279,6 +339,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - 
 
+
+```{pyodide}
+
+```
+
+
+
 </details>
 
 
@@ -300,6 +367,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 ### Files
 
 - 
+
+
+```{pyodide}
+
+```
+
+
 
 </details>
 
@@ -323,6 +397,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - 
 
+
+```{pyodide}
+
+```
+
+
+
 </details>
 
 <details>
@@ -343,6 +424,13 @@ repos by navigating to the repositories tab from the course GitHub organization 
 ### Files
 
 - 
+
+
+```{pyodide}
+
+```
+
+
 
 </details>
 

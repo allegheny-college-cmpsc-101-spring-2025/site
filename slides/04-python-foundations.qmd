@@ -334,7 +334,7 @@ Notice:
 - docstring `"""Square..."""`
 - return statement `return`
 
-TODO: Why didn't anything print?
+TODO: Copy and run it! Why didn't anything print?
 
 ## Abstracting to a Function {.smaller}
 
@@ -362,7 +362,7 @@ print(f"{my_value} squared is {my_answer}")
 
 . . .
 
-TODO: What happens if you try to print `print(f"{value} squared is {answer}")`? Copy the code and paste it below.
+TODO: What happens if you try to print `print(f"{value} squared is {answer}")`? Clear, then copy the code below, and run it.
 
 # Python Strings and Slicing
 
@@ -394,6 +394,3 @@ print(formatted_string[4:14:1])
 The indices are the starting point, the end point (non-inclusive), the hop
 
 ## Find Further Review in Chapter 2
-
-```{.markdown code-preview="code/pyodide.qmd" width="780" height="500"}
-```

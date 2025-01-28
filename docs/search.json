@@ -151,14 +151,14 @@
     "href": "slides/04-python-foundations.html#abstracting-to-a-function-1",
     "title": "Python Foundations",
     "section": "Abstracting to a Function",
-    "text": "Abstracting to a Function\n\n# choose a value to square\ndef square_by_addition_while(value: int) -&gt; int:\n    \"\"\"Square a number by addition in a while loop.\"\"\"\n    # initialize the number of iterations and the answer\n    i = 0\n    answer = 0\n    # repeatedly increase the answer until getting to the value\n    while i &lt; value:\n        answer += value\n        i += 1    \n    # return the computed integer squared using a while loop\n    return answer\n\n\n\n\nNotice:\n\nkeyword def\nindentation\ntype annotations for input and output : int and -&gt; int\ndocstring \"\"\"Square...\"\"\"\nreturn statement return\n\nTODO: Why didn’t anything print?"
+    "text": "Abstracting to a Function\n\n# choose a value to square\ndef square_by_addition_while(value: int) -&gt; int:\n    \"\"\"Square a number by addition in a while loop.\"\"\"\n    # initialize the number of iterations and the answer\n    i = 0\n    answer = 0\n    # repeatedly increase the answer until getting to the value\n    while i &lt; value:\n        answer += value\n        i += 1    \n    # return the computed integer squared using a while loop\n    return answer\n\n\n\n\nNotice:\n\nkeyword def\nindentation\ntype annotations for input and output : int and -&gt; int\ndocstring \"\"\"Square...\"\"\"\nreturn statement return\n\nTODO: Copy and run it! Why didn’t anything print?"
   },
   {
     "objectID": "slides/04-python-foundations.html#abstracting-to-a-function-2",
     "href": "slides/04-python-foundations.html#abstracting-to-a-function-2",
     "title": "Python Foundations",
     "section": "Abstracting to a Function",
-    "text": "Abstracting to a Function\n\n# choose a value to square\ndef square_by_addition_while(value: int) -&gt; int:\n    \"\"\"Square a number by addition in a while loop.\"\"\"\n    # initialize the number of iterations and the answer\n    i = 0\n    answer = 0\n    # repeatedly increase the answer until getting to the value\n    while i &lt; value:\n        answer += value\n        i += 1    \n    # return the computed integer squared using a while loop\n    return answer\n\nmy_value = 12\nmy_answer = square_by_addition_while(my_value)\nprint(f\"{my_value} squared is {my_answer}\")\n\n\n\n12 squared is 144\n\n\n\nTODO: What happens if you try to print print(f\"{value} squared is {answer}\")? Copy the code and paste it below."
+    "text": "Abstracting to a Function\n\n# choose a value to square\ndef square_by_addition_while(value: int) -&gt; int:\n    \"\"\"Square a number by addition in a while loop.\"\"\"\n    # initialize the number of iterations and the answer\n    i = 0\n    answer = 0\n    # repeatedly increase the answer until getting to the value\n    while i &lt; value:\n        answer += value\n        i += 1    \n    # return the computed integer squared using a while loop\n    return answer\n\nmy_value = 12\nmy_answer = square_by_addition_while(my_value)\nprint(f\"{my_value} squared is {my_answer}\")\n\n\n\n12 squared is 144\n\n\n\nTODO: What happens if you try to print print(f\"{value} squared is {answer}\")? Clear, then copy the code below, and run it."
   },
   {
     "objectID": "slides/04-python-foundations.html#formatted-strings",
@@ -529,7 +529,7 @@
     "href": "materials.html#numerical-programs",
     "title": "Materials",
     "section": "Numerical Programs",
-    "text": "Numerical Programs\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 3\nMissing Pages\nSpecification Lab: Number Comparison\n\n20 Points \n\n\n\n\nFiles"
+    "text": "Numerical Programs\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 3\nMissing Pages\nSpecification Lab: Number Comparison\n\n20 Points\nDue Date: Tu Feb 4 at 2:30pm\nGitHub Classroom Link\nStarter Repo\n\n\n\n\nFiles"
   },
   {
     "objectID": "materials.html#function-scope",
