@@ -183,7 +183,7 @@ of 93% on a given spec lab will result in a grade of 93% for that lab.
 
 ## Quiz Policies
 
-Quizzes on previously-covered or assigned materials are givin in class, typically on the day following lab.
+Quizzes on previously-covered or assigned materials are given in class, typically on the day following lab.
 
 In case you are **absent** on a day when there is a quiz, you can make it up in any [instructor office hours](https://allegheny-college-cmpsc-101-spring-2025.github.io/site) slot within one week. Reach out if the office hours time slots do not work for you.  
 
