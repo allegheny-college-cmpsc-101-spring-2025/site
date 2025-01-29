@@ -1,0 +1,439 @@
+---
+title: "Numerical Computation"
+subtitle: "Guttag Chapter 3"
+author: "Prof. Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+---
+
+## Goals
+
+::: incremental
+- Understand and run multiple algorithms for finding a square root
+  - Random Guessing
+  - Exhaustive Enumeration
+  - Bisection Search
+:::
+
+## Square Root Definition
+
+::: incremental
+- The square root of a given number can be multiplied by itself to get the number.
+- $\sqrt{49} = 7$
+- $7 * 7 = 49$
+- How can a computer find the $\sqrt{}$ ?
+:::
+
+# Random Guessing Algorithms
+
+## Guess and Check {.smaller}
+
+Logical Steps:
+
+::: incremental
+- choose the number you want to $\sqrt{}$
+- guess a random number as the solution
+- confirm or deny by squaring it
+- repeat until solution is found
+:::
+
+. . . 
+
+Pseudo Code:
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7"
+# choose a number to take the sqrt of
+# loop while solution has not been found
+    # create random guess
+    # square random guess
+    # if random guess squared IS the original number
+        # return random guess!
+    # Otherwise start process again
+```
+
+
+## Guess and Check
+
+. . .
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7|8"
+import random
+
+def squareroot_gc(number: int) -> int:
+  """Guess integer roots and check."""
+  while True:
+    guess = random.randint(0, number)
+    if guess**2 == number:
+      return guess
+```
+
+. . .
+
+Any concerns with this code?
+
+. . .
+
+- might never end
+- only works with integer guesses for perfect squares!
+- copy and try it below for a perfect square
+- copy and try it below for a non-perfect square
+
+## Guess and Check (with a limit)
+
+. . .
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "5|6|7|11"
+import random
+
+def squareroot_gcl(number: int) -> int:
+  """Guess integer roots and check."""
+  num_guesses_allowed = 100
+  num_guesses_sofar = 0
+  while num_guesses_sofar < num_guesses_allowed:
+    guess = random.randint(0, number)
+    if guess**2 == number:
+      return guess
+    num_guesses_sofar += 1
+  return -1
+```
+
+. . .
+
+- copy and try it below!
+
+## Random Guessing Summary
+
+::: incremental
+- Simple algorithm
+- Might never find the right answer
+:::
+
+# Exhaustive Enumeration Algorithms
+
+## Exhaustive Enumeration {.smaller}
+
+. . .
+
+Logical Steps:
+
+::: incremental
+- choose the number you want to $\sqrt{}$
+- don't do random guessing and checking, do it in an organized way
+- check every number in a range, in order, exhaustively
+- confirm or deny by squaring it
+- repeat until solution is found
+:::
+
+. . .
+
+Pseudo Code:
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7"
+# choose a number to take the sqrt of
+# loop through a range
+    # Consider index in the range
+    # square the index
+    # if index squared IS the original number
+        # return it!
+    # Otherwise move on to next item in the range
+```
+
+
+## Exhaustive Enumeration (for loop)
+
+. . .
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7|8"
+# Exhaustive Enumeration for perfect squares
+
+def squareroot_eep(number: int) -> int:
+  """Exaustively check integer roots."""
+  for possible_answer in range(number):
+    if possible_answer**2 == number:
+      return possible_answer
+  return -1
+```
+
+. . .
+
+Any concerns with this code?
+
+. . .
+
+- try it with 12345 * 12345
+- try it with 144.1 * 144.1
+- the code only works when there is an integer solution
+
+## Exhaustive Enumeration (while loop) {.scrollable}
+
+. . .
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7|8|9|10"
+# Exhaustive Enumeration for perfect squares
+
+def squareroot_eep_while(number: int) -> int:
+  """Exaustively check integer roots."""
+  possible_answer = 0
+  while possible_answer**2 <= number:
+    if possible_answer**2 == number:
+        return possible_answer
+    possible_answer += 1
+  return -1 # no answer found
+```
+
+. . .
+
+Try it!
+
+## Exhaustive Enumeration
+
+Exhaustive enumeration is like moving along a number line.
+
+![](https://i.pinimg.com/736x/04/bd/23/04bd23e59b4cd523b6768d5f13672f47.jpg){height="10%"}
+
+. . .
+
+But number lines with integers are only useful for finding the square roots of perfect squares.
+
+## Exhaustive Enumeration (non-integer)
+
+::: incremental
+- Let's use a much **finer** number line to find non-integer solutions. 
+- We will also use the concept of an allowed **margin of error, $\epsilon$** for solutions that are "good enough".
+- For example, what is the sqrt of 26?
+- 5.1 * 5.1 = 26.01, so depending on $\epsilon$, we might accept or reject the solution of 5.1
+:::
+
+## Exhaustive Enumeration (non-integer)
+
+. . .
+
+Pseudo Code:
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7"
+# choose a number to take the sqrt of
+# define an epsilon (allowed margin of error)
+# define a tiny step size
+# initialize the possible answer
+# while loop so long as possible_answer**2 is too small, allowing for the margin of error 
+    # increase possible answer by the tiny step size
+```
+
+## Exhaustive Enumeration (non-integer)
+
+. . .
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7|8|9|10|11|12|14"
+# Exhaustive Enumeration for non-perfect squares
+
+def squareroot_ee(number: int) -> float:
+  """Exhaustively check all possible non-integer roots."""
+  epsilon = 0.01 # margin of error
+  step_size = epsilon**2
+  possible_answer = 0
+  while possible_answer**2 < number + epsilon:
+    if possible_answer**2 > number - epsilon:
+        return possible_answer # good!
+    possible_answer += step_size
+  return possible_answer # not so good!
+
+print(squareroot_ee(26))
+```
+
+. . .
+
+Why is line 12 marked as "not so good" after the while loop?
+
+## Exhaustive Enumeration Summary
+
+::: incremental
+- Possible solutions are checked in order
+- Step sizes can be integer or non-integer
+- Many steps could be required!
+:::
+
+# Bisection Search Algorithms
+
+## Bisection Search
+
+. . .
+
+![](https://www.politico.eu/cdn-cgi/image/width=1160,height=793,fit=crop,quality=80,onerror=redirect,format=auto/wp-content/uploads/2017/06/GettyImages-630263206.jpg){width="55%"}
+
+. . .
+
+How do you use this?
+
+## Bisection Search {.smaller}
+
+::: incremental
+- Bisection search is like searching through a Merriam Webster paper dictionary for a specific word.
+- You zero in on the word by going **forward or backward** multiple times
+- For square roots, you zero in on the solution by going **forward or backward** multiple times
+- There is no number line in bisection search for square roots
+- There is no step size because the search does not proceed linearly
+:::
+
+## Bisection Search
+
+. . .
+
+Logical Steps:
+
+::: incremental
+- choose the number you want to $\sqrt{}$
+- define a search range with an upper and lower bound
+- check middle number in a range
+- confirm or deny by squaring it
+- eliminate half of the search range intelligently 
+- repeat until a "good enough" solution is found
+:::
+
+## Bisection Search
+
+. . .
+
+Pseudo Code:
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7|8|9|10|11"
+# choose a number to take the sqrt of
+# define an epsilon (allowed margin of error)
+# initialize the search space starting and ending value
+# initialize the possible answer to the middle of the search space
+# while loop so long as possible_answer**2 is not _within_ the margin of error (±)
+    # if the possible_answer ** 2 was too large
+        # adjust the search space to be the lower half of the space
+    # Or, if the possible_answer ** 2 was too small
+        # adjust the search space to be the upper half of the space
+    # compute the middle of the new search space and assign that to possible answer
+# assume possible_answer is within the margin of error!
+```
+
+. . .
+
+Note how the start, middle, and end of the search space are used repeatedly
+
+## Bisection Search
+
+![](https://miro.medium.com/v2/resize:fit:898/1*0OJ3eF9eO3FlPl5A_RtCSw.png)
+
+## Bisection Search (number > 1)
+
+. . .
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15"
+# Bisection Search for non-perfect squares
+
+def squareroot_bs(number: int) -> float:
+  """Perform bisection search to find root."""
+  epsilon = 0.01 # margin of error, could be a parameter
+  lower_bound = 0
+  upper_bound = number
+  midpoint = (lower_bound+upper_bound)/2
+  while abs(number - midpoint**2) > epsilon:
+    if midpoint**2 > number:
+      upper_bound = midpoint
+    else:
+      lower_bound = midpoint
+    midpoint = (lower_bound+upper_bound)/2
+  return midpoint
+
+print(squareroot_bs(144.3))
+```
+
+. . .
+
+- this algorithm does not work for numbers less than 1, try it!
+
+
+## Bisection Search (number < 1)
+
+. . .
+
+```{python}
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4|5|6|7|8|9|10|11|12|13|14|15"
+# Bisection Search for non-perfect squares
+
+def squareroot_bs(number: int) -> float:
+  """Perform bisection search to find root."""
+  epsilon = 0.01 # margin of error, could be a parameter
+  lower_bound = 0
+  if number < 1:
+    upper_bound = 1
+  else:
+    upper_bound = number
+  midpoint = (lower_bound+upper_bound)/2
+  while abs(number - midpoint**2) > epsilon:
+    if midpoint**2 > number:
+      upper_bound = midpoint
+    else:
+      lower_bound = midpoint
+    midpoint = (lower_bound+upper_bound)/2
+  return midpoint
+
+print(squareroot_bs(0.5))
+```
+
+. . .
+
+What changed?
+
+## Bisection Search Summary
+
+::: incremental
+- Possible solutions are checked in the middle of a search space
+- The search space quickly gets smaller by eliminating half of the space on every iteration
+- There is no guiding step size
+:::
+
+# Closing Thoughts
+
+## Understanding the Computer
+
+::: incremental
+- simple algorithms like random guessing are usually less efficient
+- computer can never get the exact answer for non perfect squares
+- numerical strategies often require approximation (like using a margin of error)
+:::
+
+## Challenge
+
+- Try to add code that can count how many times the loops repeat for the various methods of computing a square root.
+- Which algorithm runs with the fewest iterations of the loop?
+
+
+

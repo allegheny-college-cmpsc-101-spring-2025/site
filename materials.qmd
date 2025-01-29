@@ -95,7 +95,10 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ### Files
 
--
+- Slides: Numerical Computation [Reveal](slides/05-numerical-computation.qmd), [PDF](slides/05-numerical-computation.pdf) (W Jan 29)
+
+```{.markdown code-preview="slides/05-numerical-computation.qmd" width="500"}
+```
 
 
 ```{pyodide}
