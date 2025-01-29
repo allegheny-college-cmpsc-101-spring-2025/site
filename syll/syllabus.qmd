@@ -7,7 +7,7 @@ Class Sessions: MWF 9:00 AM-9:50 AM, Alden 101
 Laboratory Session: Tu, 2:30 PM-4 PM, Alden 101  
 Instructor: Professor Emily Graber, [egraber@allegheny.edu]()  
 Office Location: Alden Hall 106  
-Office Hours: Visit
+Instructor Office Hours: Visit
 [Google Calendar](https://calendar.app.google/MYV4AVsQG2fUM9Ja7)
 to reserve an appointment as needed.  
 
@@ -181,6 +181,14 @@ of 93% on a given spec lab will result in a grade of 93% for that lab.
 
 ---
 
+## Quiz Policies
+
+Quizzes on previously-covered or assigned materials are givin in class, typically on the day following lab.
+
+In case you are **absent** on a day when there is a quiz, you can make it up in any [instructor office hours](#course-description) slot within one week. Reach out if the office hours time slots do not work for you.  
+
+---
+
 ## Additional Policies
 
 ### _Attendance_
@@ -314,7 +322,7 @@ acceptable.
 ### _Plagiarism and Artificial Intelligence_
 
 Students may not pass off or represent the work of another student, or their own prior work, as their own
-current work in any case. Plagiarism and AI-generatated code, text, or images are not permitted in any assignment
+current work in any case. Plagiarism and AI-generated code, text, or images are not permitted in any assignment
 type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other
 coursework, students are expected to adhere to the given instructions for the particular exam or item of
 coursework. It is the responsibility of the student to review the authorization specifications on every item
