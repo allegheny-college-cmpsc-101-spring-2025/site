@@ -122,14 +122,16 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - [Required Reading: Guttag Chapter 4](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Square Roots_
   - 20 Points
-  <!-- - Due Date: Tu Feb 11 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/squareroots-starter/blob/main/README.md) -->
+  - Due Date: Tu Feb 11 at 2:30pm
+  - [GitHub Classroom Link](https://classroom.github.com/a/QWIz3_-k)  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/square-roots-starter/blob/main/README.md)
 
 ### Files
 
--
+- Slides: Function Scope [Reveal](slides/07-function-scope.qmd), [PDF](slides/07-function-scope.pdf) (M Feb 3)
 
+```{.markdown code-preview="slides/07-function-scope.qmd" width="500"}
+```
 
 ```{pyodide}
 

@@ -158,7 +158,7 @@ grades. Adjustments to grades will be applied on top of base grades according to
 All graded components of the course are expected to be turned in on time.
 
 Due dates will be stated in the
-[Assignment Deadline Schedule](assignments.qmd)
+[Materials](materials.qmd)
 and [Discord](discord.qmd). Electronic versions of the Engineering and Specification Labs
 must be submitted to through a student's GitHub repository created by GitHub
 Classroom. No credit will be awarded for any course work that you submit to the

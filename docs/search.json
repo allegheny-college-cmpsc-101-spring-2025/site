@@ -182,342 +182,6 @@
     "text": "Find Further Review in Chapter 2"
   },
   {
-    "objectID": "slides/03-linting.html#goals",
-    "href": "slides/03-linting.html#goals",
-    "title": "Linting",
-    "section": "Goals",
-    "text": "Goals\n\nDefine linting\nReview linting errors\nReview linting solutions"
-  },
-  {
-    "objectID": "slides/03-linting.html#linting-definition",
-    "href": "slides/03-linting.html#linting-definition",
-    "title": "Linting",
-    "section": "Linting Definition",
-    "text": "Linting Definition\n\nLinting highlights semantic and stylistic problems in your Python source code, which often helps you identify and correct subtle programming errors or coding practices that can lead to errors. For example, linting can detect the use of an undefined variable, calls to undefined functions, missing parentheses, and even more subtle issues such as attempting to redefine built-in types or functions.\n\n\nhttps://code.visualstudio.com/docs/python/linting"
-  },
-  {
-    "objectID": "slides/03-linting.html#stylistic-errors-in-english",
-    "href": "slides/03-linting.html#stylistic-errors-in-english",
-    "title": "Linting",
-    "section": "Stylistic Errors in English",
-    "text": "Stylistic Errors in English\nhI , mY nAME    is Emily .   .\n\n\n1:1 The first letter of the first word should be capitalized\n1:2 Inner letters should not be capitalized\n1:3 Found white space before a comma, expected none\n1:7 Inner letters should not be capitalized\n1:10 Inner letters should not be capitalized\n1:13 Found white space before a word, expected one white space\n1:25 Found white space before a period, expected none\n1:29 Found two periods, expected one"
-  },
-  {
-    "objectID": "slides/03-linting.html#stylistic-errors-in-code",
-    "href": "slides/03-linting.html#stylistic-errors-in-code",
-    "title": "Linting",
-    "section": "Stylistic Errors in Code",
-    "text": "Stylistic Errors in Code\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruff\ncli/main.py:1:1: D400 First line should end with a period\ncli/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:10:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:11:5: D400 First line should end with a period\ncli/main.py:11:5: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:17:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:18:5: D400 First line should end with a period\ncli/main.py:18:5: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:22:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:29:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:33:5: D202 [*] No blank lines allowed after function docstring (found 1)\ncli/main.py:49:15: F541 [*] f-string without any placeholders\ncli/main.py:54:9: E303 [*] Too many blank lines (2)\ncli/main.py:59:9: E303 [*] Too many blank lines (2)\ncli/main.py:64:9: E303 [*] Too many blank lines (2)\ncli/main.py:69:9: E303 [*] Too many blank lines (2)\ncli/main.py:74:9: E303 [*] Too many blank lines (2)\ncli/main.py:82:1: W391 [*] Too many newlines at end of file\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:5:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:12:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:17:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:42:15: F541 [*] f-string without any placeholders\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:51:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:56:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:61:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:66:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:74:1: W391 [*] Too many newlines at end of file\nFound 33 errors.\n[*] 21 fixable with the `--fix` option (12 hidden fixes can be enabled with the `--unsafe-fixes` option)."
-  },
-  {
-    "objectID": "slides/03-linting.html#read-slowly",
-    "href": "slides/03-linting.html#read-slowly",
-    "title": "Linting",
-    "section": "Read Slowly",
-    "text": "Read Slowly\ncli/main.py:1:1: D400 First line should end with a period\n\n\ncli/main.py is the file\n1:1 is the line number : character number\nD400 ignore this for now\nFirst line should end with a period message explaining the issue\nSolution:\n\nGo the location indicated\nread your code at and around the area\ntry to fix the issue"
-  },
-  {
-    "objectID": "slides/03-linting.html#fixing",
-    "href": "slides/03-linting.html#fixing",
-    "title": "Linting",
-    "section": "Fixing",
-    "text": "Fixing\nOriginal:\n\"\"\"a variety of numerical operations based on the value of an option to the CLI\"\"\"\nCorrected:\n\"\"\"Do a variety of numerical operations based on the value of an option to the CLI.\"\"\""
-  },
-  {
-    "objectID": "slides/03-linting.html#linting-commands",
-    "href": "slides/03-linting.html#linting-commands",
-    "title": "Linting",
-    "section": "Linting Commands",
-    "text": "Linting Commands\n\npoetry run task ruff\n\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruff\ncli/main.py:1:1: D400 First line should end with a period\n\npoetry run task ruffdetails\n\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruffdetails\ncli/main.py:1:1: D400 First line should end with a period\n  |\n1 | \"\"\"a variety of numerical operations based on the value of an option to the CLI\"\"\"\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ D400\n2 | \n3 | # TODO: add at least ten single-line comments to this file to describe individual line of code.\n  |\n  = help: Add period"
-  },
-  {
-    "objectID": "slides/03-linting.html#automatic-fixes",
-    "href": "slides/03-linting.html#automatic-fixes",
-    "title": "Linting",
-    "section": "Automatic fixes",
-    "text": "Automatic fixes\n\npoetry run task fix\nor\npoetry run ruff --fix"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "",
-    "text": "Class Sessions: MWF 9:00 AM-9:50 AM, Alden 101\nLaboratory Session: Tu, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nInstructor Office Hours: Visit Google Calendar to reserve an appointment as needed."
-  },
-  {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Course Description",
-    "text": "Course Description\nA continuation of CMPSC 100 with an emphasis on implementing, using, and evaluating the computational structures needed to efficiently store and retrieve digital data. Participating in hands-on activities that often require teamwork, students create data structures and algorithms whose correctness and performance they study through proofs and experimentation. Students continue to refine their ability to organize and document a program’s source code so that it effectively communicates with the intended users and maintainers. During a weekly laboratory session, students use state-of-the-art technology to complete projects, reporting on their results through both written documents and oral presentations.\nQuantitative Reasoning (QR): Quantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nScientific Process and Knowledge (SP): Courses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\n\nPrerequisite: CMPSC 100 or permission of the instructor.\nDistribution Requirements: QR, SP."
-  },
-  {
-    "objectID": "index.html#course-learning-objectives",
-    "href": "index.html#course-learning-objectives",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Course Learning Objectives",
-    "text": "Course Learning Objectives\n\nWhen solving a problem with a Python program, accurately describe data structures and algorithms and their inherent trade-offs.\nUse data structures and algorithms to correctly and efficiently solve a problem through the use of a Python program.\nUse empirical methods to characterize the performance of a Python program that uses data structures and algorithms.\nUse industry-standard practices, such as testing and debugging, and professional-grade integrated development environments (IDEs), command-line tools, and version control systems to implement Python programs.\nImplement Python programs and documentation that conforms to industry-standard formats and styles.\n\nLearning Outcome QR: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations.\nLearning Outcome SP: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry."
-  },
-  {
-    "objectID": "index.html#materials",
-    "href": "index.html#materials",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Materials",
-    "text": "Materials\n\nTextbook\nIntroduction to Computation and Programming Using Python by John V. Guttag\n\n\n\nOnline Resources and Course Materials\n\nCourse Website\nCourse GitHub Organization\nJupyter Notebooks Directory\nGuttag Textbook Publisher Preview\nGuttag Textbook Google Previews\nAdditional Guttag Textbook Availability\nGuttag Lectures\nPython Docs\nProactive Programmers\n\n\n\nRequired Software and Accounts\n\nSublime Text 4\nPython 3.12\npipx\nPoetry\nGatorgrade\nGit\nFree GitHub Account\nFree Discord Account\nGoogle Account"
-  },
-  {
-    "objectID": "index.html#course-components",
-    "href": "index.html#course-components",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Course Components",
-    "text": "Course Components\nThere are five main components that contribute to the grade in this course.\n\nSpecifications Labs: Generally shorter labs to be started in lab session and completed outside of class. Graded pass/fail and falling in the remember, understand, and apply categories of Bloom’s Taxonomy.\nEngineering Labs: Generally longer labs to be started in lab session and completed outside of class. Graded by percentage with rubric and falling in the analyze, evaluate, and create categories of Bloom’s Taxonomy.\nQuizzes: Questions to be answered in person or through forms online or on paper about recently materials, including labs.\nParticipation: Demonstration of effective and collaborative communication in Discord by asking or answering questions weekly. Completion of reading and reading reports.\nAttendance. See section below.\n\n\n\n\nBlooms Taxonomy\n\n\n\nGrading\nThe components described above will be weighted as shown in the table below. Please note that attendance is also required, and attendance policies affect grades. Adjustments to grades will be applied on top of base grades according to policy.\n\n\n\nCategory\nPercentage\n\n\n\n\nQuizzes (14)\n20\n\n\nParticipation\n20\n\n\nSpec Labs (8)\n20\n\n\nEngineering Labs (8)\n40"
-  },
-  {
-    "objectID": "index.html#schedule-at-a-glance",
-    "href": "index.html#schedule-at-a-glance",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Schedule At-A-Glance",
-    "text": "Schedule At-A-Glance\n\nWeek One: Jan 13: Software Operations (Guttag Chapter 1)\nWeek Two: Jan 22: Python Foundations (Guttage Chapter 2)\nWeek Three: Jan 27: Numerical Programs (Guttag Chapter 3)\nWeek Four: Feb 3: Function Scope (Guttag Chapter 4)\nWeek Five: Feb 10: Structured Types (Guttag Chapter 5)\nWeek Six: Feb 17: Mutability and Aliasing (Guttag Chapter 5)\nWeek Seven: Feb 24: Recursion (Guttag Chapter 6)\nSpring Break\nWeek Nine: March 10: Modules and Files (Guttag Chapter 7)\nWeek Ten: March 17: Testing and Handling Exceptions (Guttag Chapter 8 and 9)\nWeek Eleven: March 24: Object-Oriented Programming (Guttag Chapter 10)\nWeek Twelve: March 31: Algorithmic Complexity (Guttag Chapter 11)\nWeek Thirteen: April 7: Data Structures (Guttag Chapter 12)\nWeek Fourteen: April 14: Data Structures Continued (Guttag Chapter 12)\nWeek Fifteen: April 21: Optimization Problems (Guttag Chapter 14)\nWeek Sixteen: April 28: Review\n\n\nFinal\n\nThursday, May 1, 2025 at 9:00 AM (Complete Final Exam Schedule)"
-  },
-  {
-    "objectID": "index.html#assignment-policies",
-    "href": "index.html#assignment-policies",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Assignment Policies",
-    "text": "Assignment Policies\n\nAssignment Submission\nAll graded components of the course are expected to be turned in on time.\nDue dates will be stated in the Assignment Deadline Schedule and Discord. Electronic versions of the Engineering and Specification Labs must be submitted to through a student’s GitHub repository created by GitHub Classroom. No credit will be awarded for any course work that you submit to the incorrect GitHub repository.\n\n\nAssignment Evaluation\nYou will privately receive a grade for each assignment in Canvas. Your grade will be a function of whether or not you completed the work that correctly fulfills the assignment’s specification and submitted it by the deadline.\nEngineering Labs are graded based on gatorgrade scores and other criteria.\n\nFifty percent of the grade of each Engineering Lab is determined by the percentage of gatorgrade checks passed.\nOne quarter of the grade is determined by code correctness following a rubric.\nOne quarter of the grade is determined by professional skills and presentation following a rubric. Professional presentation is impacted by linting, formatting, testing, profiling, duplication avoidance, commenting, markdown styling and communication in reflections.\n\nSpec Labs are graded based only on the gatorgrade score. A gatorgrade score of 93% on a given spec lab will result in a grade of 93% for that lab."
-  },
-  {
-    "objectID": "index.html#quiz-policies",
-    "href": "index.html#quiz-policies",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Quiz Policies",
-    "text": "Quiz Policies\nQuizzes on previously-covered or assigned materials are given in class, typically on the day following lab.\nIn case you are absent on a day when there is a quiz, you can make it up in any instructor office hours slot within one week. Reach out if the office hours time slots do not work for you."
-  },
-  {
-    "objectID": "index.html#additional-policies",
-    "href": "index.html#additional-policies",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Additional Policies",
-    "text": "Additional Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nExcluding the first week of the semester, students can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 101 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
-  },
-  {
-    "objectID": "index.html#communications",
-    "href": "index.html#communications",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Communications",
-    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Structures Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
-  },
-  {
-    "objectID": "index.html#honor-code",
-    "href": "index.html#honor-code",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Honor Code",
-    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
-  },
-  {
-    "objectID": "index.html#educational-accommodations",
-    "href": "index.html#educational-accommodations",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Educational Accommodations",
-    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
-  },
-  {
-    "objectID": "index.html#syllabus-changes",
-    "href": "index.html#syllabus-changes",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Syllabus Changes",
-    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
-  },
-  {
-    "objectID": "syll/syllabus.html",
-    "href": "syll/syllabus.html",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "",
-    "text": "Class Sessions: MWF 9:00 AM-9:50 AM, Alden 101\nLaboratory Session: Tu, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nInstructor Office Hours: Visit Google Calendar to reserve an appointment as needed."
-  },
-  {
-    "objectID": "syll/syllabus.html#course-description",
-    "href": "syll/syllabus.html#course-description",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Course Description",
-    "text": "Course Description\nA continuation of CMPSC 100 with an emphasis on implementing, using, and evaluating the computational structures needed to efficiently store and retrieve digital data. Participating in hands-on activities that often require teamwork, students create data structures and algorithms whose correctness and performance they study through proofs and experimentation. Students continue to refine their ability to organize and document a program’s source code so that it effectively communicates with the intended users and maintainers. During a weekly laboratory session, students use state-of-the-art technology to complete projects, reporting on their results through both written documents and oral presentations.\nQuantitative Reasoning (QR): Quantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nScientific Process and Knowledge (SP): Courses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\n\nPrerequisite: CMPSC 100 or permission of the instructor.\nDistribution Requirements: QR, SP."
-  },
-  {
-    "objectID": "syll/syllabus.html#course-learning-objectives",
-    "href": "syll/syllabus.html#course-learning-objectives",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Course Learning Objectives",
-    "text": "Course Learning Objectives\n\nWhen solving a problem with a Python program, accurately describe data structures and algorithms and their inherent trade-offs.\nUse data structures and algorithms to correctly and efficiently solve a problem through the use of a Python program.\nUse empirical methods to characterize the performance of a Python program that uses data structures and algorithms.\nUse industry-standard practices, such as testing and debugging, and professional-grade integrated development environments (IDEs), command-line tools, and version control systems to implement Python programs.\nImplement Python programs and documentation that conforms to industry-standard formats and styles.\n\nLearning Outcome QR: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations.\nLearning Outcome SP: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry."
-  },
-  {
-    "objectID": "syll/syllabus.html#materials",
-    "href": "syll/syllabus.html#materials",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Materials",
-    "text": "Materials\n\nTextbook\nIntroduction to Computation and Programming Using Python by John V. Guttag\n\n\n\nOnline Resources and Course Materials\n\nCourse Website\nCourse GitHub Organization\nJupyter Notebooks Directory\nGuttag Textbook Publisher Preview\nGuttag Textbook Google Previews\nAdditional Guttag Textbook Availability\nGuttag Lectures\nPython Docs\nProactive Programmers\n\n\n\nRequired Software and Accounts\n\nSublime Text 4\nPython 3.12\npipx\nPoetry\nGatorgrade\nGit\nFree GitHub Account\nFree Discord Account\nGoogle Account"
-  },
-  {
-    "objectID": "syll/syllabus.html#course-components",
-    "href": "syll/syllabus.html#course-components",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Course Components",
-    "text": "Course Components\nThere are five main components that contribute to the grade in this course.\n\nSpecifications Labs: Generally shorter labs to be started in lab session and completed outside of class. Graded pass/fail and falling in the remember, understand, and apply categories of Bloom’s Taxonomy.\nEngineering Labs: Generally longer labs to be started in lab session and completed outside of class. Graded by percentage with rubric and falling in the analyze, evaluate, and create categories of Bloom’s Taxonomy.\nQuizzes: Questions to be answered in person or through forms online or on paper about recently materials, including labs.\nParticipation: Demonstration of effective and collaborative communication in Discord by asking or answering questions weekly. Completion of reading and reading reports.\nAttendance. See section below.\n\n\n\n\nBlooms Taxonomy\n\n\n\nGrading\nThe components described above will be weighted as shown in the table below. Please note that attendance is also required, and attendance policies affect grades. Adjustments to grades will be applied on top of base grades according to policy.\n\n\n\nCategory\nPercentage\n\n\n\n\nQuizzes (14)\n20\n\n\nParticipation\n20\n\n\nSpec Labs (8)\n20\n\n\nEngineering Labs (8)\n40"
-  },
-  {
-    "objectID": "syll/syllabus.html#schedule-at-a-glance",
-    "href": "syll/syllabus.html#schedule-at-a-glance",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Schedule At-A-Glance",
-    "text": "Schedule At-A-Glance\n\nWeek One: Jan 13: Software Operations (Guttag Chapter 1)\nWeek Two: Jan 22: Python Foundations (Guttage Chapter 2)\nWeek Three: Jan 27: Numerical Programs (Guttag Chapter 3)\nWeek Four: Feb 3: Function Scope (Guttag Chapter 4)\nWeek Five: Feb 10: Structured Types (Guttag Chapter 5)\nWeek Six: Feb 17: Mutability and Aliasing (Guttag Chapter 5)\nWeek Seven: Feb 24: Recursion (Guttag Chapter 6)\nSpring Break\nWeek Nine: March 10: Modules and Files (Guttag Chapter 7)\nWeek Ten: March 17: Testing and Handling Exceptions (Guttag Chapter 8 and 9)\nWeek Eleven: March 24: Object-Oriented Programming (Guttag Chapter 10)\nWeek Twelve: March 31: Algorithmic Complexity (Guttag Chapter 11)\nWeek Thirteen: April 7: Data Structures (Guttag Chapter 12)\nWeek Fourteen: April 14: Data Structures Continued (Guttag Chapter 12)\nWeek Fifteen: April 21: Optimization Problems (Guttag Chapter 14)\nWeek Sixteen: April 28: Review\n\n\nFinal\n\nThursday, May 1, 2025 at 9:00 AM (Complete Final Exam Schedule)"
-  },
-  {
-    "objectID": "syll/syllabus.html#assignment-policies",
-    "href": "syll/syllabus.html#assignment-policies",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Assignment Policies",
-    "text": "Assignment Policies\n\nAssignment Submission\nAll graded components of the course are expected to be turned in on time.\nDue dates will be stated in the Assignment Deadline Schedule and Discord. Electronic versions of the Engineering and Specification Labs must be submitted to through a student’s GitHub repository created by GitHub Classroom. No credit will be awarded for any course work that you submit to the incorrect GitHub repository.\n\n\nAssignment Evaluation\nYou will privately receive a grade for each assignment in Canvas. Your grade will be a function of whether or not you completed the work that correctly fulfills the assignment’s specification and submitted it by the deadline.\nEngineering Labs are graded based on gatorgrade scores and other criteria.\n\nFifty percent of the grade of each Engineering Lab is determined by the percentage of gatorgrade checks passed.\nOne quarter of the grade is determined by code correctness following a rubric.\nOne quarter of the grade is determined by professional skills and presentation following a rubric. Professional presentation is impacted by linting, formatting, testing, profiling, duplication avoidance, commenting, markdown styling and communication in reflections.\n\nSpec Labs are graded based only on the gatorgrade score. A gatorgrade score of 93% on a given spec lab will result in a grade of 93% for that lab."
-  },
-  {
-    "objectID": "syll/syllabus.html#quiz-policies",
-    "href": "syll/syllabus.html#quiz-policies",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Quiz Policies",
-    "text": "Quiz Policies\nQuizzes on previously-covered or assigned materials are given in class, typically on the day following lab.\nIn case you are absent on a day when there is a quiz, you can make it up in any instructor office hours slot within one week. Reach out if the office hours time slots do not work for you."
-  },
-  {
-    "objectID": "syll/syllabus.html#additional-policies",
-    "href": "syll/syllabus.html#additional-policies",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Additional Policies",
-    "text": "Additional Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nExcluding the first week of the semester, students can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 101 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
-  },
-  {
-    "objectID": "syll/syllabus.html#communications",
-    "href": "syll/syllabus.html#communications",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Communications",
-    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Structures Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
-  },
-  {
-    "objectID": "syll/syllabus.html#honor-code",
-    "href": "syll/syllabus.html#honor-code",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Honor Code",
-    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
-  },
-  {
-    "objectID": "syll/syllabus.html#educational-accommodations",
-    "href": "syll/syllabus.html#educational-accommodations",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Educational Accommodations",
-    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
-  },
-  {
-    "objectID": "syll/syllabus.html#syllabus-changes",
-    "href": "syll/syllabus.html#syllabus-changes",
-    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
-    "section": "Syllabus Changes",
-    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
-  },
-  {
-    "objectID": "code/temp.html",
-    "href": "code/temp.html",
-    "title": "Data Structures",
-    "section": "",
-    "text": "Open In Colab\n\n\nThis is a test notebook file\nprint(\"trying to get live code block inside the python notebook\")\n\n\nCode\nprint(\"hello\")\nprint(\"line 2\")\nprint(\"line 3\")\nprint(\"line 4\")\n\n\nhello\nline 2\nline 3\nline 4\n\n\n\n\nCode\nprint(\"this is another print message\")\n\n\nthis is another print message"
-  },
-  {
-    "objectID": "grades.html",
-    "href": "grades.html",
-    "title": "Grades",
-    "section": "",
-    "text": "Please check Canvas for your grades here.\nFor detailed discussion of grades, please attend office hours"
-  },
-  {
-    "objectID": "slides/01-welcome.html#cmpsc-101---data-structures",
-    "href": "slides/01-welcome.html#cmpsc-101---data-structures",
-    "title": "Welcome to CMPSC 101",
-    "section": "CMPSC 101 - Data Structures",
-    "text": "CMPSC 101 - Data Structures\nSpring 2025\nM/W/F 9-9:50am\nTu 2:30-4pm\nAlden 101"
-  },
-  {
-    "objectID": "slides/01-welcome.html#where-are-we",
-    "href": "slides/01-welcome.html#where-are-we",
-    "title": "Welcome to CMPSC 101",
-    "section": "Where are we?",
-    "text": "Where are we?\n\n\nDepartment of Computer and Information Science\nFour Majors/Minors\n\nComputer Science\nData Science\nInformatics\nSoftware Engineering\n\nCommon Doubles\n\nArt, Science, and Innovation\nEconomics"
-  },
-  {
-    "objectID": "slides/01-welcome.html#what-is-this-course-about",
-    "href": "slides/01-welcome.html#what-is-this-course-about",
-    "title": "Welcome to CMPSC 101",
-    "section": "What is this course about?",
-    "text": "What is this course about?\n\n\nbreaking apart complex problems\norganizing all subproblems\ncalculating solutions to subproblems with algorithm\nstoring and structuring the calculations"
-  },
-  {
-    "objectID": "slides/01-welcome.html#learning-outcomes",
-    "href": "slides/01-welcome.html#learning-outcomes",
-    "title": "Welcome to CMPSC 101",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nDescribe data structures and algorithms and their inherent trade-offs.\nSolve problems using data structures and algorithms.\nCharacterize the performance of data structures and algorithms with empirical methods.\nUse IDEs, version control, test suites, and other industry standard tools.\nDocument code in markdown."
-  },
-  {
-    "objectID": "slides/01-welcome.html#other-syllabus-highlights",
-    "href": "slides/01-welcome.html#other-syllabus-highlights",
-    "title": "Welcome to CMPSC 101",
-    "section": "Other Syllabus Highlights",
-    "text": "Other Syllabus Highlights\n\nDiscord usage is a major part of participation (20% of overall grade)\nQuizzes on the day following lab, including this week\nLabs are due before lab!\nFour tokens grant automatic extensions for one week\nAfter the first week, five absences will be excused before overall grade is impacted\n\nthree lates are equivalent to an absence"
-  },
-  {
-    "objectID": "slides/01-welcome.html#materials",
-    "href": "slides/01-welcome.html#materials",
-    "title": "Welcome to CMPSC 101",
-    "section": "Materials",
-    "text": "Materials\n\n\nCourse Website\n\nsyllabus\nassignment schedule for reading and assignment due dates\nlinks to all course materials"
-  },
-  {
-    "objectID": "slides/01-welcome.html#materials-continued",
-    "href": "slides/01-welcome.html#materials-continued",
-    "title": "Welcome to CMPSC 101",
-    "section": "Materials Continued",
-    "text": "Materials Continued\n\n\nGitHub for accessing and submitting assignments\nPython Notebooks/Google Colab for coding examples\nGoogle Forms for participation and group activities\nDiscord for announcements and participation\nCanvas for grades"
-  },
-  {
-    "objectID": "slides/01-welcome.html#tell-us-about-yourself",
-    "href": "slides/01-welcome.html#tell-us-about-yourself",
-    "title": "Welcome to CMPSC 101",
-    "section": "Tell us about yourself!",
-    "text": "Tell us about yourself!\n\nName, where you are from, first favorite band, and some of your current favorite foods?"
-  },
-  {
-    "objectID": "slides/01-welcome.html#cis-shared-values",
-    "href": "slides/01-welcome.html#cis-shared-values",
-    "title": "Welcome to CMPSC 101",
-    "section": "CIS Shared Values",
-    "text": "CIS Shared Values"
-  },
-  {
-    "objectID": "slides/01-welcome.html#what-if",
-    "href": "slides/01-welcome.html#what-if",
-    "title": "Welcome to CMPSC 101",
-    "section": "What if?",
-    "text": "What if?\n\n\n\n\na student knows they are going to be late to a one-on-one office hours appointment?\na student wants to submit their work late but not use a token?\n40% of students in a course listed the same 8 foods as their favorite foods on an exam\na student has a question but has not reviewed notes or read the textbook?\na student writes about a topic that is not in the textbook or notes on an exam?"
-  },
-  {
-    "objectID": "slides/01-welcome.html#setting-up",
-    "href": "slides/01-welcome.html#setting-up",
-    "title": "Welcome to CMPSC 101",
-    "section": "Setting up",
-    "text": "Setting up\n\nbookmark the website\nbookmark access to your repos\nbookmark the 101 Discord Channel, or access from the course website\nbookmark notes that you take in Google Colab or elsewhere\nbookmark Canvas\netc."
-  },
-  {
-    "objectID": "slides/01-welcome.html#software-installation",
-    "href": "slides/01-welcome.html#software-installation",
-    "title": "Welcome to CMPSC 101",
-    "section": "Software Installation!",
-    "text": "Software Installation!\nSwitch over to the next document"
-  },
-  {
     "objectID": "slides/05-numerical-computation.html#goals",
     "href": "slides/05-numerical-computation.html#goals",
     "title": "Numerical Computation",
@@ -693,6 +357,580 @@
     "text": "End"
   },
   {
+    "objectID": "slides/03-linting.html#goals",
+    "href": "slides/03-linting.html#goals",
+    "title": "Linting",
+    "section": "Goals",
+    "text": "Goals\n\nDefine linting\nReview linting errors\nReview linting solutions"
+  },
+  {
+    "objectID": "slides/03-linting.html#linting-definition",
+    "href": "slides/03-linting.html#linting-definition",
+    "title": "Linting",
+    "section": "Linting Definition",
+    "text": "Linting Definition\n\nLinting highlights semantic and stylistic problems in your Python source code, which often helps you identify and correct subtle programming errors or coding practices that can lead to errors. For example, linting can detect the use of an undefined variable, calls to undefined functions, missing parentheses, and even more subtle issues such as attempting to redefine built-in types or functions.\n\n\nhttps://code.visualstudio.com/docs/python/linting"
+  },
+  {
+    "objectID": "slides/03-linting.html#stylistic-errors-in-english",
+    "href": "slides/03-linting.html#stylistic-errors-in-english",
+    "title": "Linting",
+    "section": "Stylistic Errors in English",
+    "text": "Stylistic Errors in English\nhI , mY nAME    is Emily .   .\n\n\n1:1 The first letter of the first word should be capitalized\n1:2 Inner letters should not be capitalized\n1:3 Found white space before a comma, expected none\n1:7 Inner letters should not be capitalized\n1:10 Inner letters should not be capitalized\n1:13 Found white space before a word, expected one white space\n1:25 Found white space before a period, expected none\n1:29 Found two periods, expected one"
+  },
+  {
+    "objectID": "slides/03-linting.html#stylistic-errors-in-code",
+    "href": "slides/03-linting.html#stylistic-errors-in-code",
+    "title": "Linting",
+    "section": "Stylistic Errors in Code",
+    "text": "Stylistic Errors in Code\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruff\ncli/main.py:1:1: D400 First line should end with a period\ncli/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:10:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:11:5: D400 First line should end with a period\ncli/main.py:11:5: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:17:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:18:5: D400 First line should end with a period\ncli/main.py:18:5: D415 First line should end with a period, question mark, or exclamation point\ncli/main.py:22:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:29:1: E302 [*] Expected 2 blank lines, found 1\ncli/main.py:33:5: D202 [*] No blank lines allowed after function docstring (found 1)\ncli/main.py:49:15: F541 [*] f-string without any placeholders\ncli/main.py:54:9: E303 [*] Too many blank lines (2)\ncli/main.py:59:9: E303 [*] Too many blank lines (2)\ncli/main.py:64:9: E303 [*] Too many blank lines (2)\ncli/main.py:69:9: E303 [*] Too many blank lines (2)\ncli/main.py:74:9: E303 [*] Too many blank lines (2)\ncli/main.py:82:1: W391 [*] Too many newlines at end of file\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:1:1: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:5:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:6:5: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:12:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D400 First line should end with a period\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:13:5: D415 First line should end with a period, question mark, or exclamation point\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:17:1: E302 [*] Expected 2 blank lines, found 1\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:42:15: F541 [*] f-string without any placeholders\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:51:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:56:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:61:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:66:9: E303 [*] Too many blank lines (2)\n/Users/egraber/Documents/Teaching/generic-labs-101/cli-vs-script-starter/script/main.py:74:1: W391 [*] Too many newlines at end of file\nFound 33 errors.\n[*] 21 fixable with the `--fix` option (12 hidden fixes can be enabled with the `--unsafe-fixes` option)."
+  },
+  {
+    "objectID": "slides/03-linting.html#read-slowly",
+    "href": "slides/03-linting.html#read-slowly",
+    "title": "Linting",
+    "section": "Read Slowly",
+    "text": "Read Slowly\ncli/main.py:1:1: D400 First line should end with a period\n\n\ncli/main.py is the file\n1:1 is the line number : character number\nD400 ignore this for now\nFirst line should end with a period message explaining the issue\nSolution:\n\nGo the location indicated\nread your code at and around the area\ntry to fix the issue"
+  },
+  {
+    "objectID": "slides/03-linting.html#fixing",
+    "href": "slides/03-linting.html#fixing",
+    "title": "Linting",
+    "section": "Fixing",
+    "text": "Fixing\nOriginal:\n\"\"\"a variety of numerical operations based on the value of an option to the CLI\"\"\"\nCorrected:\n\"\"\"Do a variety of numerical operations based on the value of an option to the CLI.\"\"\""
+  },
+  {
+    "objectID": "slides/03-linting.html#linting-commands",
+    "href": "slides/03-linting.html#linting-commands",
+    "title": "Linting",
+    "section": "Linting Commands",
+    "text": "Linting Commands\n\npoetry run task ruff\n\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruff\ncli/main.py:1:1: D400 First line should end with a period\n\npoetry run task ruffdetails\n\negraber ~/Documents/Teaching/generic-labs-101/cli-vs-script-starter/cli % 🦚🦚🦚 poetry run task ruffdetails\ncli/main.py:1:1: D400 First line should end with a period\n  |\n1 | \"\"\"a variety of numerical operations based on the value of an option to the CLI\"\"\"\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ D400\n2 | \n3 | # TODO: add at least ten single-line comments to this file to describe individual line of code.\n  |\n  = help: Add period"
+  },
+  {
+    "objectID": "slides/03-linting.html#automatic-fixes",
+    "href": "slides/03-linting.html#automatic-fixes",
+    "title": "Linting",
+    "section": "Automatic fixes",
+    "text": "Automatic fixes\n\npoetry run task fix\nor\npoetry run ruff --fix"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "",
+    "text": "Class Sessions: MWF 9:00 AM-9:50 AM, Alden 101\nLaboratory Session: Tu, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nInstructor Office Hours: Visit Google Calendar to reserve an appointment as needed."
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Course Description",
+    "text": "Course Description\nA continuation of CMPSC 100 with an emphasis on implementing, using, and evaluating the computational structures needed to efficiently store and retrieve digital data. Participating in hands-on activities that often require teamwork, students create data structures and algorithms whose correctness and performance they study through proofs and experimentation. Students continue to refine their ability to organize and document a program’s source code so that it effectively communicates with the intended users and maintainers. During a weekly laboratory session, students use state-of-the-art technology to complete projects, reporting on their results through both written documents and oral presentations.\nQuantitative Reasoning (QR): Quantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nScientific Process and Knowledge (SP): Courses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\n\nPrerequisite: CMPSC 100 or permission of the instructor.\nDistribution Requirements: QR, SP."
+  },
+  {
+    "objectID": "index.html#course-learning-objectives",
+    "href": "index.html#course-learning-objectives",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Course Learning Objectives",
+    "text": "Course Learning Objectives\n\nWhen solving a problem with a Python program, accurately describe data structures and algorithms and their inherent trade-offs.\nUse data structures and algorithms to correctly and efficiently solve a problem through the use of a Python program.\nUse empirical methods to characterize the performance of a Python program that uses data structures and algorithms.\nUse industry-standard practices, such as testing and debugging, and professional-grade integrated development environments (IDEs), command-line tools, and version control systems to implement Python programs.\nImplement Python programs and documentation that conforms to industry-standard formats and styles.\n\nLearning Outcome QR: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations.\nLearning Outcome SP: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry."
+  },
+  {
+    "objectID": "index.html#materials",
+    "href": "index.html#materials",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Materials",
+    "text": "Materials\n\nTextbook\nIntroduction to Computation and Programming Using Python by John V. Guttag\n\n\n\nOnline Resources and Course Materials\n\nCourse Website\nCourse GitHub Organization\nJupyter Notebooks Directory\nGuttag Textbook Publisher Preview\nGuttag Textbook Google Previews\nAdditional Guttag Textbook Availability\nGuttag Lectures\nPython Docs\nProactive Programmers\n\n\n\nRequired Software and Accounts\n\nSublime Text 4\nPython 3.12\npipx\nPoetry\nGatorgrade\nGit\nFree GitHub Account\nFree Discord Account\nGoogle Account"
+  },
+  {
+    "objectID": "index.html#course-components",
+    "href": "index.html#course-components",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Course Components",
+    "text": "Course Components\nThere are five main components that contribute to the grade in this course.\n\nSpecifications Labs: Generally shorter labs to be started in lab session and completed outside of class. Graded pass/fail and falling in the remember, understand, and apply categories of Bloom’s Taxonomy.\nEngineering Labs: Generally longer labs to be started in lab session and completed outside of class. Graded by percentage with rubric and falling in the analyze, evaluate, and create categories of Bloom’s Taxonomy.\nQuizzes: Questions to be answered in person or through forms online or on paper about recently materials, including labs.\nParticipation: Demonstration of effective and collaborative communication in Discord by asking or answering questions weekly. Completion of reading and reading reports.\nAttendance. See section below.\n\n\n\n\nBlooms Taxonomy\n\n\n\nGrading\nThe components described above will be weighted as shown in the table below. Please note that attendance is also required, and attendance policies affect grades. Adjustments to grades will be applied on top of base grades according to policy.\n\n\n\nCategory\nPercentage\n\n\n\n\nQuizzes (14)\n20\n\n\nParticipation\n20\n\n\nSpec Labs (8)\n20\n\n\nEngineering Labs (8)\n40"
+  },
+  {
+    "objectID": "index.html#schedule-at-a-glance",
+    "href": "index.html#schedule-at-a-glance",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Schedule At-A-Glance",
+    "text": "Schedule At-A-Glance\n\nWeek One: Jan 13: Software Operations (Guttag Chapter 1)\nWeek Two: Jan 22: Python Foundations (Guttage Chapter 2)\nWeek Three: Jan 27: Numerical Programs (Guttag Chapter 3)\nWeek Four: Feb 3: Function Scope (Guttag Chapter 4)\nWeek Five: Feb 10: Structured Types (Guttag Chapter 5)\nWeek Six: Feb 17: Mutability and Aliasing (Guttag Chapter 5)\nWeek Seven: Feb 24: Recursion (Guttag Chapter 6)\nSpring Break\nWeek Nine: March 10: Modules and Files (Guttag Chapter 7)\nWeek Ten: March 17: Testing and Handling Exceptions (Guttag Chapter 8 and 9)\nWeek Eleven: March 24: Object-Oriented Programming (Guttag Chapter 10)\nWeek Twelve: March 31: Algorithmic Complexity (Guttag Chapter 11)\nWeek Thirteen: April 7: Data Structures (Guttag Chapter 12)\nWeek Fourteen: April 14: Data Structures Continued (Guttag Chapter 12)\nWeek Fifteen: April 21: Optimization Problems (Guttag Chapter 14)\nWeek Sixteen: April 28: Review\n\n\nFinal\n\nThursday, May 1, 2025 at 9:00 AM (Complete Final Exam Schedule)"
+  },
+  {
+    "objectID": "index.html#assignment-policies",
+    "href": "index.html#assignment-policies",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Assignment Policies",
+    "text": "Assignment Policies\n\nAssignment Submission\nAll graded components of the course are expected to be turned in on time.\nDue dates will be stated in the Materials and Discord. Electronic versions of the Engineering and Specification Labs must be submitted to through a student’s GitHub repository created by GitHub Classroom. No credit will be awarded for any course work that you submit to the incorrect GitHub repository.\n\n\nAssignment Evaluation\nYou will privately receive a grade for each assignment in Canvas. Your grade will be a function of whether or not you completed the work that correctly fulfills the assignment’s specification and submitted it by the deadline.\nEngineering Labs are graded based on gatorgrade scores and other criteria.\n\nFifty percent of the grade of each Engineering Lab is determined by the percentage of gatorgrade checks passed.\nOne quarter of the grade is determined by code correctness following a rubric.\nOne quarter of the grade is determined by professional skills and presentation following a rubric. Professional presentation is impacted by linting, formatting, testing, profiling, duplication avoidance, commenting, markdown styling and communication in reflections.\n\nSpec Labs are graded based only on the gatorgrade score. A gatorgrade score of 93% on a given spec lab will result in a grade of 93% for that lab."
+  },
+  {
+    "objectID": "index.html#quiz-policies",
+    "href": "index.html#quiz-policies",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Quiz Policies",
+    "text": "Quiz Policies\nQuizzes on previously-covered or assigned materials are given in class, typically on the day following lab.\nIn case you are absent on a day when there is a quiz, you can make it up in any instructor office hours slot within one week. Reach out if the office hours time slots do not work for you."
+  },
+  {
+    "objectID": "index.html#additional-policies",
+    "href": "index.html#additional-policies",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Additional Policies",
+    "text": "Additional Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nExcluding the first week of the semester, students can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 101 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
+  },
+  {
+    "objectID": "index.html#communications",
+    "href": "index.html#communications",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Communications",
+    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Structures Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
+  },
+  {
+    "objectID": "index.html#honor-code",
+    "href": "index.html#honor-code",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Honor Code",
+    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
+  },
+  {
+    "objectID": "index.html#educational-accommodations",
+    "href": "index.html#educational-accommodations",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Educational Accommodations",
+    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
+  },
+  {
+    "objectID": "index.html#syllabus-changes",
+    "href": "index.html#syllabus-changes",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Syllabus Changes",
+    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
+  },
+  {
+    "objectID": "syll/syllabus.html",
+    "href": "syll/syllabus.html",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "",
+    "text": "Class Sessions: MWF 9:00 AM-9:50 AM, Alden 101\nLaboratory Session: Tu, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nInstructor Office Hours: Visit Google Calendar to reserve an appointment as needed."
+  },
+  {
+    "objectID": "syll/syllabus.html#course-description",
+    "href": "syll/syllabus.html#course-description",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Course Description",
+    "text": "Course Description\nA continuation of CMPSC 100 with an emphasis on implementing, using, and evaluating the computational structures needed to efficiently store and retrieve digital data. Participating in hands-on activities that often require teamwork, students create data structures and algorithms whose correctness and performance they study through proofs and experimentation. Students continue to refine their ability to organize and document a program’s source code so that it effectively communicates with the intended users and maintainers. During a weekly laboratory session, students use state-of-the-art technology to complete projects, reporting on their results through both written documents and oral presentations.\nQuantitative Reasoning (QR): Quantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nScientific Process and Knowledge (SP): Courses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\n\nPrerequisite: CMPSC 100 or permission of the instructor.\nDistribution Requirements: QR, SP."
+  },
+  {
+    "objectID": "syll/syllabus.html#course-learning-objectives",
+    "href": "syll/syllabus.html#course-learning-objectives",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Course Learning Objectives",
+    "text": "Course Learning Objectives\n\nWhen solving a problem with a Python program, accurately describe data structures and algorithms and their inherent trade-offs.\nUse data structures and algorithms to correctly and efficiently solve a problem through the use of a Python program.\nUse empirical methods to characterize the performance of a Python program that uses data structures and algorithms.\nUse industry-standard practices, such as testing and debugging, and professional-grade integrated development environments (IDEs), command-line tools, and version control systems to implement Python programs.\nImplement Python programs and documentation that conforms to industry-standard formats and styles.\n\nLearning Outcome QR: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations.\nLearning Outcome SP: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry."
+  },
+  {
+    "objectID": "syll/syllabus.html#materials",
+    "href": "syll/syllabus.html#materials",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Materials",
+    "text": "Materials\n\nTextbook\nIntroduction to Computation and Programming Using Python by John V. Guttag\n\n\n\nOnline Resources and Course Materials\n\nCourse Website\nCourse GitHub Organization\nJupyter Notebooks Directory\nGuttag Textbook Publisher Preview\nGuttag Textbook Google Previews\nAdditional Guttag Textbook Availability\nGuttag Lectures\nPython Docs\nProactive Programmers\n\n\n\nRequired Software and Accounts\n\nSublime Text 4\nPython 3.12\npipx\nPoetry\nGatorgrade\nGit\nFree GitHub Account\nFree Discord Account\nGoogle Account"
+  },
+  {
+    "objectID": "syll/syllabus.html#course-components",
+    "href": "syll/syllabus.html#course-components",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Course Components",
+    "text": "Course Components\nThere are five main components that contribute to the grade in this course.\n\nSpecifications Labs: Generally shorter labs to be started in lab session and completed outside of class. Graded pass/fail and falling in the remember, understand, and apply categories of Bloom’s Taxonomy.\nEngineering Labs: Generally longer labs to be started in lab session and completed outside of class. Graded by percentage with rubric and falling in the analyze, evaluate, and create categories of Bloom’s Taxonomy.\nQuizzes: Questions to be answered in person or through forms online or on paper about recently materials, including labs.\nParticipation: Demonstration of effective and collaborative communication in Discord by asking or answering questions weekly. Completion of reading and reading reports.\nAttendance. See section below.\n\n\n\n\nBlooms Taxonomy\n\n\n\nGrading\nThe components described above will be weighted as shown in the table below. Please note that attendance is also required, and attendance policies affect grades. Adjustments to grades will be applied on top of base grades according to policy.\n\n\n\nCategory\nPercentage\n\n\n\n\nQuizzes (14)\n20\n\n\nParticipation\n20\n\n\nSpec Labs (8)\n20\n\n\nEngineering Labs (8)\n40"
+  },
+  {
+    "objectID": "syll/syllabus.html#schedule-at-a-glance",
+    "href": "syll/syllabus.html#schedule-at-a-glance",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Schedule At-A-Glance",
+    "text": "Schedule At-A-Glance\n\nWeek One: Jan 13: Software Operations (Guttag Chapter 1)\nWeek Two: Jan 22: Python Foundations (Guttage Chapter 2)\nWeek Three: Jan 27: Numerical Programs (Guttag Chapter 3)\nWeek Four: Feb 3: Function Scope (Guttag Chapter 4)\nWeek Five: Feb 10: Structured Types (Guttag Chapter 5)\nWeek Six: Feb 17: Mutability and Aliasing (Guttag Chapter 5)\nWeek Seven: Feb 24: Recursion (Guttag Chapter 6)\nSpring Break\nWeek Nine: March 10: Modules and Files (Guttag Chapter 7)\nWeek Ten: March 17: Testing and Handling Exceptions (Guttag Chapter 8 and 9)\nWeek Eleven: March 24: Object-Oriented Programming (Guttag Chapter 10)\nWeek Twelve: March 31: Algorithmic Complexity (Guttag Chapter 11)\nWeek Thirteen: April 7: Data Structures (Guttag Chapter 12)\nWeek Fourteen: April 14: Data Structures Continued (Guttag Chapter 12)\nWeek Fifteen: April 21: Optimization Problems (Guttag Chapter 14)\nWeek Sixteen: April 28: Review\n\n\nFinal\n\nThursday, May 1, 2025 at 9:00 AM (Complete Final Exam Schedule)"
+  },
+  {
+    "objectID": "syll/syllabus.html#assignment-policies",
+    "href": "syll/syllabus.html#assignment-policies",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Assignment Policies",
+    "text": "Assignment Policies\n\nAssignment Submission\nAll graded components of the course are expected to be turned in on time.\nDue dates will be stated in the Materials and Discord. Electronic versions of the Engineering and Specification Labs must be submitted to through a student’s GitHub repository created by GitHub Classroom. No credit will be awarded for any course work that you submit to the incorrect GitHub repository.\n\n\nAssignment Evaluation\nYou will privately receive a grade for each assignment in Canvas. Your grade will be a function of whether or not you completed the work that correctly fulfills the assignment’s specification and submitted it by the deadline.\nEngineering Labs are graded based on gatorgrade scores and other criteria.\n\nFifty percent of the grade of each Engineering Lab is determined by the percentage of gatorgrade checks passed.\nOne quarter of the grade is determined by code correctness following a rubric.\nOne quarter of the grade is determined by professional skills and presentation following a rubric. Professional presentation is impacted by linting, formatting, testing, profiling, duplication avoidance, commenting, markdown styling and communication in reflections.\n\nSpec Labs are graded based only on the gatorgrade score. A gatorgrade score of 93% on a given spec lab will result in a grade of 93% for that lab."
+  },
+  {
+    "objectID": "syll/syllabus.html#quiz-policies",
+    "href": "syll/syllabus.html#quiz-policies",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Quiz Policies",
+    "text": "Quiz Policies\nQuizzes on previously-covered or assigned materials are given in class, typically on the day following lab.\nIn case you are absent on a day when there is a quiz, you can make it up in any instructor office hours slot within one week. Reach out if the office hours time slots do not work for you."
+  },
+  {
+    "objectID": "syll/syllabus.html#additional-policies",
+    "href": "syll/syllabus.html#additional-policies",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Additional Policies",
+    "text": "Additional Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nExcluding the first week of the semester, students can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 101 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
+  },
+  {
+    "objectID": "syll/syllabus.html#communications",
+    "href": "syll/syllabus.html#communications",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Communications",
+    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Structures Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
+  },
+  {
+    "objectID": "syll/syllabus.html#honor-code",
+    "href": "syll/syllabus.html#honor-code",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Honor Code",
+    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
+  },
+  {
+    "objectID": "syll/syllabus.html#educational-accommodations",
+    "href": "syll/syllabus.html#educational-accommodations",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Educational Accommodations",
+    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
+  },
+  {
+    "objectID": "syll/syllabus.html#syllabus-changes",
+    "href": "syll/syllabus.html#syllabus-changes",
+    "title": "Syllabus: CMPSC 101.00 Data Structures, Spring 2025",
+    "section": "Syllabus Changes",
+    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
+  },
+  {
+    "objectID": "code/temp.html",
+    "href": "code/temp.html",
+    "title": "Data Structures",
+    "section": "",
+    "text": "Open In Colab\n\n\nThis is a test notebook file\nprint(\"trying to get live code block inside the python notebook\")\n\n\nCode\nprint(\"hello\")\nprint(\"line 2\")\nprint(\"line 3\")\nprint(\"line 4\")\n\n\nhello\nline 2\nline 3\nline 4\n\n\n\n\nCode\nprint(\"this is another print message\")\n\n\nthis is another print message"
+  },
+  {
+    "objectID": "grades.html",
+    "href": "grades.html",
+    "title": "Grades",
+    "section": "",
+    "text": "Please check Canvas for your grades here.\nFor detailed discussion of grades, please attend office hours"
+  },
+  {
+    "objectID": "slides/01-welcome.html#cmpsc-101---data-structures",
+    "href": "slides/01-welcome.html#cmpsc-101---data-structures",
+    "title": "Welcome to CMPSC 101",
+    "section": "CMPSC 101 - Data Structures",
+    "text": "CMPSC 101 - Data Structures\nSpring 2025\nM/W/F 9-9:50am\nTu 2:30-4pm\nAlden 101"
+  },
+  {
+    "objectID": "slides/01-welcome.html#where-are-we",
+    "href": "slides/01-welcome.html#where-are-we",
+    "title": "Welcome to CMPSC 101",
+    "section": "Where are we?",
+    "text": "Where are we?\n\n\nDepartment of Computer and Information Science\nFour Majors/Minors\n\nComputer Science\nData Science\nInformatics\nSoftware Engineering\n\nCommon Doubles\n\nArt, Science, and Innovation\nEconomics"
+  },
+  {
+    "objectID": "slides/01-welcome.html#what-is-this-course-about",
+    "href": "slides/01-welcome.html#what-is-this-course-about",
+    "title": "Welcome to CMPSC 101",
+    "section": "What is this course about?",
+    "text": "What is this course about?\n\n\nbreaking apart complex problems\norganizing all subproblems\ncalculating solutions to subproblems with algorithm\nstoring and structuring the calculations"
+  },
+  {
+    "objectID": "slides/01-welcome.html#learning-outcomes",
+    "href": "slides/01-welcome.html#learning-outcomes",
+    "title": "Welcome to CMPSC 101",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nDescribe data structures and algorithms and their inherent trade-offs.\nSolve problems using data structures and algorithms.\nCharacterize the performance of data structures and algorithms with empirical methods.\nUse IDEs, version control, test suites, and other industry standard tools.\nDocument code in markdown."
+  },
+  {
+    "objectID": "slides/01-welcome.html#other-syllabus-highlights",
+    "href": "slides/01-welcome.html#other-syllabus-highlights",
+    "title": "Welcome to CMPSC 101",
+    "section": "Other Syllabus Highlights",
+    "text": "Other Syllabus Highlights\n\nDiscord usage is a major part of participation (20% of overall grade)\nQuizzes on the day following lab, including this week\nLabs are due before lab!\nFour tokens grant automatic extensions for one week\nAfter the first week, five absences will be excused before overall grade is impacted\n\nthree lates are equivalent to an absence"
+  },
+  {
+    "objectID": "slides/01-welcome.html#materials",
+    "href": "slides/01-welcome.html#materials",
+    "title": "Welcome to CMPSC 101",
+    "section": "Materials",
+    "text": "Materials\n\n\nCourse Website\n\nsyllabus\nassignment schedule for reading and assignment due dates\nlinks to all course materials"
+  },
+  {
+    "objectID": "slides/01-welcome.html#materials-continued",
+    "href": "slides/01-welcome.html#materials-continued",
+    "title": "Welcome to CMPSC 101",
+    "section": "Materials Continued",
+    "text": "Materials Continued\n\n\nGitHub for accessing and submitting assignments\nPython Notebooks/Google Colab for coding examples\nGoogle Forms for participation and group activities\nDiscord for announcements and participation\nCanvas for grades"
+  },
+  {
+    "objectID": "slides/01-welcome.html#tell-us-about-yourself",
+    "href": "slides/01-welcome.html#tell-us-about-yourself",
+    "title": "Welcome to CMPSC 101",
+    "section": "Tell us about yourself!",
+    "text": "Tell us about yourself!\n\nName, where you are from, first favorite band, and some of your current favorite foods?"
+  },
+  {
+    "objectID": "slides/01-welcome.html#cis-shared-values",
+    "href": "slides/01-welcome.html#cis-shared-values",
+    "title": "Welcome to CMPSC 101",
+    "section": "CIS Shared Values",
+    "text": "CIS Shared Values"
+  },
+  {
+    "objectID": "slides/01-welcome.html#what-if",
+    "href": "slides/01-welcome.html#what-if",
+    "title": "Welcome to CMPSC 101",
+    "section": "What if?",
+    "text": "What if?\n\n\n\n\na student knows they are going to be late to a one-on-one office hours appointment?\na student wants to submit their work late but not use a token?\n40% of students in a course listed the same 8 foods as their favorite foods on an exam\na student has a question but has not reviewed notes or read the textbook?\na student writes about a topic that is not in the textbook or notes on an exam?"
+  },
+  {
+    "objectID": "slides/01-welcome.html#setting-up",
+    "href": "slides/01-welcome.html#setting-up",
+    "title": "Welcome to CMPSC 101",
+    "section": "Setting up",
+    "text": "Setting up\n\nbookmark the website\nbookmark access to your repos\nbookmark the 101 Discord Channel, or access from the course website\nbookmark notes that you take in Google Colab or elsewhere\nbookmark Canvas\netc."
+  },
+  {
+    "objectID": "slides/01-welcome.html#software-installation",
+    "href": "slides/01-welcome.html#software-installation",
+    "title": "Welcome to CMPSC 101",
+    "section": "Software Installation!",
+    "text": "Software Installation!\nSwitch over to the next document"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#goals",
+    "href": "slides/07-function-scope.html#goals",
+    "title": "Function Scope",
+    "section": "Goals",
+    "text": "Goals\n\n\nReview Function Definition and Calling\nDefine Formal vs Actual Parameters\nDefine Keyword Arguments, Positional Arguments, Default Values\nDefine Scope\nUnravel Point of Execution\nDefine Higher-Order Functions"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#what-is-a-function",
+    "href": "slides/07-function-scope.html#what-is-a-function",
+    "title": "Function Scope",
+    "section": "What is a Function",
+    "text": "What is a Function\n\n\nFunctions are like cooking recipes\nSet of instructions that have a name\n\nCake, Cookies\n\nFunctions contain steps for how to do something with certain ingredients, called parameters"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-definitions",
+    "href": "slides/07-function-scope.html#function-definitions",
+    "title": "Function Scope",
+    "section": "Function Definitions",
+    "text": "Function Definitions\n\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\n\n\n\n\n\nline 1 is the function signature\n\ndef python keyword that starts off the function\nprime_test_exhaustive name of the function\n(x: int) formal parameters for the function inside ()\nx name of the parameter, to be used inside!\n: int input type annotation for x\n-&gt; bool output type annotation\n: end of the function signature"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-definitions-1",
+    "href": "slides/07-function-scope.html#function-definitions-1",
+    "title": "Function Scope",
+    "section": "Function Definitions",
+    "text": "Function Definitions\n\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\n\n\n\n\n\nEverything after the function signature that is IN the function must be indented\nline 2 \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\" docstring\nlines 3-10 contain code that makes use of the formal parameter x\nreturn keyword that ends the function and makes any following values available outside of the function\n\nreturn True would make True available outside of the function"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-calling-with-literal",
+    "href": "slides/07-function-scope.html#function-calling-with-literal",
+    "title": "Function Scope",
+    "section": "Function Calling with Literal",
+    "text": "Function Calling with Literal\nresult = prime_test_exhaustive(97)\n\n\nread this expression from right to left\ninput parameter is 97 inside ( )\n\n97 gets assigned to the function’s formal parameter\n\nprime_test_exhaustive is the name of the function\n= assignment operator ready to assign anything that is returned out of the function\nresult is the variable whose value will become whatever is returned out of the function\nn.b. this code does not print anything"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-calling-with-variable",
+    "href": "slides/07-function-scope.html#function-calling-with-variable",
+    "title": "Function Scope",
+    "section": "Function Calling with Variable",
+    "text": "Function Calling with Variable\nnumber = 97\nresult = prime_test_exhaustive(number)\nprint(result)\n\n\nline 1 assigns 97 to the variable named number\nline 2 input parameter is number inside ( )\n\nnumber gets assigned to the function’s formal parameter\n\nprime_test_exhaustive is the name of the function\n= assignment operator ready to assign anything that is returned out of the function\nresult is the variable whose value will become whatever is returned out of the function\nresult is printed"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-calling-wrong",
+    "href": "slides/07-function-scope.html#function-calling-wrong",
+    "title": "Function Scope",
+    "section": "Function Calling Wrong",
+    "text": "Function Calling Wrong\nresult = prime_test_exhaustive\n\n\nfirst one refers only the memory location of the function!\n\n\n\nprime_test_exhaustive()\n\n\nsecond one calls the function using () but no parameter is supplied!\n\n\n\n\nprime_test_exhaustive(int)\n\n\nthird one supplies a type instead of a value"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#review-summary",
+    "href": "slides/07-function-scope.html#review-summary",
+    "title": "Function Scope",
+    "section": "Review Summary",
+    "text": "Review Summary\n\n\nFunctions are a set of instructions\nFunctions contains return statements\nThe function is executed when it is called\nThe function call supplies actual parameters with real values\nThe programmer must add logic to store the return value after the function is called.\nPrinting should occur after a function call"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#formal-parameters",
+    "href": "slides/07-function-scope.html#formal-parameters",
+    "title": "Function Scope",
+    "section": "Formal Parameters",
+    "text": "Formal Parameters\n\n\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\nnumber = 97\nresult = prime_test_exhaustive(number)\nprint(result)\n\n\n\nTrue\n\n\n\n\nthe formal parameter is what is supplied in the function signature inside ()\n\nx\n\nthe formal parameter is the variable used within the function instructions, representing an abstract value\nit helps… form ….the function…"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#actual-parameters",
+    "href": "slides/07-function-scope.html#actual-parameters",
+    "title": "Function Scope",
+    "section": "Actual Parameters",
+    "text": "Actual Parameters\n\n\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\nnumber = 97\nresult = prime_test_exhaustive(number)\nprint(result)\n\n\n\nTrue\n\n\n\n\nthe actual parameter is supplied in the function call\n\nnumber\n\nthe actual parameter has an actual value and is not abstract"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#formal-and-actual-parameters-are-different",
+    "href": "slides/07-function-scope.html#formal-and-actual-parameters-are-different",
+    "title": "Function Scope",
+    "section": "Formal and Actual Parameters are different",
+    "text": "Formal and Actual Parameters are different\n\n\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\nnumber = 97\nresult = prime_test_exhaustive(number)\nprint(result)\n\n\n\nTrue\n\n\n\n\nthe name of the actual parameter does NOT have to match the name of the formal parameter!\nthe value of the actual parameter gets assigned to the formal parameter when the function is called\ntry it, assigning 101 to number!"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#formal-and-actual-parameters-are-different-1",
+    "href": "slides/07-function-scope.html#formal-and-actual-parameters-are-different-1",
+    "title": "Function Scope",
+    "section": "Formal and Actual Parameters are different",
+    "text": "Formal and Actual Parameters are different\n\nThis code will crash\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\nresult = prime_test_exhaustive(x)\nprint(result)\n\n\nthe formal parameter only exists inside the function\ntrying to use the formal parameter outside of the function will not work because it does not exist outside of the function"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#formal-and-actual-parameters-are-different-2",
+    "href": "slides/07-function-scope.html#formal-and-actual-parameters-are-different-2",
+    "title": "Function Scope",
+    "section": "Formal and Actual Parameters are different",
+    "text": "Formal and Actual Parameters are different\n\n\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\nx = 97\nresult = prime_test_exhaustive(x)\nprint(result)\n\n\n\nTrue\n\n\n\n\nthe name of the actual parameter does NOT have to match the name of the formal parameter!\nbut it could…they are completely different variables\nthe value of the actual parameter gets assigned to the formal parameter when the function is called\ntry it, assigning 101 to the global x!"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#formal-vs-actual-parameters-summary",
+    "href": "slides/07-function-scope.html#formal-vs-actual-parameters-summary",
+    "title": "Function Scope",
+    "section": "Formal vs Actual Parameters Summary",
+    "text": "Formal vs Actual Parameters Summary\n\n\nthe formal parameter helps form the function, and is abstract\nthe actual parameter has an actual value\neven if they have the same name, they are different variables!\nthe actual parameter gets assigned to the formal parameter when the function is called"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-calling-with-positional-arguments",
+    "href": "slides/07-function-scope.html#function-calling-with-positional-arguments",
+    "title": "Function Scope",
+    "section": "Function Calling with Positional Arguments",
+    "text": "Function Calling with Positional Arguments\n\n\nfrom typing import Union\n\ndef divide(denominator: int, numerator: int, decimal_flag: bool) -&gt; Union[float, str]:\n    if decimal_flag:\n        return numerator/denominator\n    return f\"{numerator//denominator} R {numerator % denominator}\"\n\nresult_decimal = divide(15, 31, True)\nprint(result_decimal)\n\nresult_non_decimal = divide(15, 31, False)\nprint(result_non_decimal)\n\nresult_misleading = divide(True, 15, 31)\nprint(result_misleading)\n\n\n\n2.066666666666667\n2 R 1\n15.0\n\n\n\n\nOrder of parameters matters!\nThe python interpreter assumes that what you supply first should be assigned to the first formal parameter, etc."
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-calling-with-keyword",
+    "href": "slides/07-function-scope.html#function-calling-with-keyword",
+    "title": "Function Scope",
+    "section": "Function Calling with Keyword",
+    "text": "Function Calling with Keyword\n\n\nOrder of parameters does not matter when keywords are used\nkeywords help label what is what\n\n“…which one was the denominator again….?”"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-calling-with-keyword-1",
+    "href": "slides/07-function-scope.html#function-calling-with-keyword-1",
+    "title": "Function Scope",
+    "section": "Function Calling with Keyword",
+    "text": "Function Calling with Keyword\n\nfrom typing import Union\n\ndef divide(denominator: int, numerator: int, decimal_flag: bool) -&gt; Union[float, str]:\n    if decimal_flag:\n        return numerator/denominator\n    return f\"{numerator//denominator} R {numerator % denominator}\"\n\nresult_decimal = divide(decimal_flag=True, denominator=15, numerator=31)\nprint(result_decimal)\n\nresult_misleading = divide(True, 15, 31)\nprint(result_misleading)\n\n\n\n2.066666666666667\n15.0\n\n\n\n\nline 8 passes Keyword arguments decimal_flag=True, numerator=16, denominator=30 inside ( )\n\ndecimal_flag is a formal parameter that was used in the function definition\nnumerator is a formal parameter that was used in the function definition\ndenominator is a formal parameter that was used in the function definition\nTrue gets assigned to decimal_flag\n16 gets assigned to numerator\n30 gest assigned to denominator"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#functions-with-default-values",
+    "href": "slides/07-function-scope.html#functions-with-default-values",
+    "title": "Function Scope",
+    "section": "Functions with Default Values",
+    "text": "Functions with Default Values\n\nfrom typing import Union\n\ndef divide(denominator: int, numerator: int, decimal_flag: bool = False) -&gt; Union[float, str]:\n    if decimal_flag:\n        return numerator/denominator\n    return f\"{numerator//denominator} R {numerator % denominator}\"\n\nresult_keyword = divide(numerator=31, denominator=15)\nprint(result_keyword)\n\nresult_positional = divide(15, 31)\nprint(result_positional)\n\n\n\n2 R 1\n2 R 1\n\n\n\n\nline 8 and 11 do not specify the decimal_flag\n\ndecimal_flag has a default value of False in the function signature\nUnless otherwise specified, the default will be used"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#keyword-arguments-positional-arguments-default-values-summary",
+    "href": "slides/07-function-scope.html#keyword-arguments-positional-arguments-default-values-summary",
+    "title": "Function Scope",
+    "section": "Keyword Arguments, Positional Arguments, Default Values Summary",
+    "text": "Keyword Arguments, Positional Arguments, Default Values Summary\n\n\nPositional Arguments must be supplied matching the order of the formal parameters in the function signature\nKeyword Arguments can be out of order\nParameters with Default Values do not need to be supplied"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#global-scope",
+    "href": "slides/07-function-scope.html#global-scope",
+    "title": "Function Scope",
+    "section": "Global Scope",
+    "text": "Global Scope\n\n\nvariables that are not inside of functions are global\nthis means they can be accessed anywhere in the code, even inside of functions\n\n\n\n\nthis_is_global = \"hello\""
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-scope",
+    "href": "slides/07-function-scope.html#function-scope",
+    "title": "Function Scope",
+    "section": "Function Scope",
+    "text": "Function Scope\n\n\nvariables that are created inside of functions are local to the function, NOT global\nthis means they cannot be accessed outside of the function\n\n\n\n\nthis_is_global = \"hello\"\n\ndef my_function() -&gt; str:\n    this_is_local_to_function = \"hello\"\n    if this_is_local_to_function == this_is_global:\n        return \"the global variable was accessible in the function!\"\n\nfunction_result = my_function()\nprint(f\"function_result is {function_result}\")\n\n\n\nfunction_result is the global variable was accessible in the function!"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-scope-1",
+    "href": "slides/07-function-scope.html#function-scope-1",
+    "title": "Function Scope",
+    "section": "Function Scope",
+    "text": "Function Scope\n\nThis code crashes\n\n\nthis_is_global = \"hello\"\n\ndef my_function() -&gt; str:\n    this_is_local_to_function = \"hello\"\n    if this_is_local_to_function == this_is_global:\n        return \"the global variable was accessible in the function!\"\n\nfunction_result = my_function()\nprint(f\"function_result is {function_result}\")\n\nprint(this_is_local_to_function)\n\n\n\ntry it!"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-scope-2",
+    "href": "slides/07-function-scope.html#function-scope-2",
+    "title": "Function Scope",
+    "section": "Function Scope",
+    "text": "Function Scope\n\n\nWhen a function is called, it is executed in a temporary isolated environment called a stack frame\nVariables that are defined inside a function are only known within the stack frame!\nAfter a function is done running, the stack frame is popped, i.e. it disappears\n\nit’s variables will not be known to the outside world!\n\nThe best way to make a function variable available to the outside world is to return it"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#function-scope-3",
+    "href": "slides/07-function-scope.html#function-scope-3",
+    "title": "Function Scope",
+    "section": "Function Scope",
+    "text": "Function Scope\nQuestion\n\n\nif the stack frame of an executing function forms a barrier with the outside world, how does it know what the actual parameter is?\n\n\nAnswer\n\n\nthe values of the actual parameters are assigned to the formal parameters by the python interpreter!\nyou can think of it like this: formal_param = actual_param\n\nthe binding is done by assignment with the ="
+  },
+  {
+    "objectID": "slides/07-function-scope.html#scope-summary",
+    "href": "slides/07-function-scope.html#scope-summary",
+    "title": "Function Scope",
+    "section": "Scope Summary",
+    "text": "Scope Summary\n\n\nVariables not inside a function are in the global scope\nVariables defined inside a function are in the function scope\nThe python interpreter knows what scope it is in as it executes code!\nFunctions are executed in their own stack frame"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#tracing-execution",
+    "href": "slides/07-function-scope.html#tracing-execution",
+    "title": "Function Scope",
+    "section": "Tracing Execution",
+    "text": "Tracing Execution\n\n\nTracing the path that the interpreter takes though code is informative for understanding why scope matters.\nThe interpreter goes line by line to things that it can execute!\nIt will jump around when it encounters loops and conditional branching\nFunctions are NOT executed until the function is called"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#tracing-execution-1",
+    "href": "slides/07-function-scope.html#tracing-execution-1",
+    "title": "Function Scope",
+    "section": "Tracing Execution",
+    "text": "Tracing Execution\n\n\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\nx = 4\nresult = prime_test_exhaustive(x)\nprint(result)\n\n\n\nFalse\n\n\n\n\n\n\nTODO: Trace the code below\n\n\n\n\n\nstep\nline #\nscope\nvar names\nvalues\n\n\n\n\n1\n?\n?\n?\n?\n\n\n2\n?\n?\n?\n?\n\n\netc\n?\n?\n?\n?"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#tracing-execution-2",
+    "href": "slides/07-function-scope.html#tracing-execution-2",
+    "title": "Function Scope",
+    "section": "Tracing Execution",
+    "text": "Tracing Execution\n\ndef prime_test_exhaustive(x: int) -&gt; bool:\n  \"\"\"Determine if positive input is prime, returning true for prime and false for not prime.\"\"\"\n  if x &lt;= 1:\n    return False\n  if x == 2:\n    return True\n  for guess in range(2, x, 1):\n    if x % guess == 0:\n      return False\n  return True\n\nx = 4\nresult = prime_test_exhaustive(x)\nprint(result)\n\n\n\nFalse\n\n\n\n\n\nstep\nline #\nscope\nvar names\nvalues\n\n\n\n\n1\n12\nG\nx\n4\n\n\n2\n13\nG\nx\n4\n\n\n3\n3\nL\nlocal x\n4\n\n\n4\n5\nL\nlocal x\n4\n\n\n5\n7\nL\nlocal x, local guess\n4, 2\n\n\n6\n8\nL\nlocal x, local guess\n4, 2\n\n\n7\n9\nL\nlocal x, local guess\n4, 2\n\n\n8\n13\nG\nx, result\n4, False\n\n\n9\n14\nG\nx, result\n4, False"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#tracing-execution-2-1",
+    "href": "slides/07-function-scope.html#tracing-execution-2-1",
+    "title": "Function Scope",
+    "section": "Tracing Execution 2",
+    "text": "Tracing Execution 2\n\n\nTODO: Trace the code below\n\n\n\n\ndef something_else(x: int) -&gt; bool:\n  \"\"\"Create a situation for scope analysis.\"\"\"\n  x += 1\n  return x + 1\n  \n\nx = 4\nresult = something_else(x + 1)\nprint(f\"result is {result}\")\nprint(f\"x is {x}\")\n\n\n\nresult is 7\nx is 4\n\n\n\n\n\nstep\nline #\nscope\nvar names\nvalues\n\n\n\n\n1\n?\n?\n?\n?\n\n\n2\n?\n?\n?\n?\n\n\netc\n?\n?\n?\n?"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#guttag-example",
+    "href": "slides/07-function-scope.html#guttag-example",
+    "title": "Function Scope",
+    "section": "Guttag Example",
+    "text": "Guttag Example\n# how many lines does this code print, and what is the last line printed?\n\ndef f(x):\n    def g():\n        x = 'abc'\n        print(f\"x = {x}\")\n        return\n    def h():\n         z = x\n         print(f\"z = {z}\")\n         return\n    x = x + 1\n    print(f\"x = {x}\")\n    h()\n    g()\n    print(f\"x = {x}\")\n    return g\n\nx = 3\nz = f(x)\nprint(f\"x = {x}\")\nprint(f\"z = {z}\")\nz()"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#execution-summary",
+    "href": "slides/07-function-scope.html#execution-summary",
+    "title": "Function Scope",
+    "section": "Execution Summary",
+    "text": "Execution Summary\n\nThe interpreter goes line by line to things that it can execute!\nFunctions are NOT executed until the function is called\nvariables with the same name in different scopes are different variables!\nRefer to Guttag Chapter 4"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#regular-function",
+    "href": "slides/07-function-scope.html#regular-function",
+    "title": "Function Scope",
+    "section": "Regular Function",
+    "text": "Regular Function\n\nprint(abs(-10)) # works\nprint(abs([15, -1,-3, 19, -25, -3.1])) # crashes\n\n\nabs is a built-in python function!\nit can only work on one number at a time\ntry it!"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#higher-order-function",
+    "href": "slides/07-function-scope.html#higher-order-function",
+    "title": "Function Scope",
+    "section": "Higher Order Function",
+    "text": "Higher Order Function\n\n\nfrom typing import List, Callable\n\ndef apply_to_each(input_list: List, function: Callable) -&gt; List:\n    output_list = []\n    for i in input_list:\n        new_i = function(i)\n        output_list.append(new_i)\n    return output_list\n\nmy_list = [15, -1,-3, 19, -25, -3.1]\nresult = apply_to_each(my_list, abs)\nprint(result)\n\n\n\n[15, 1, 3, 19, 25, 3.1]\n\n\n\n\nline 11, abs is passed in as a parameter to apply_to_each\nnote that ONLY THE FUNCTION NAME was the actual parameter\napply_to_each is a higher-order function because it takes a function as a parameter"
+  },
+  {
+    "objectID": "slides/07-function-scope.html#end",
+    "href": "slides/07-function-scope.html#end",
+    "title": "Function Scope",
+    "section": "End",
+    "text": "End"
+  },
+  {
     "objectID": "materials.html",
     "href": "materials.html",
     "title": "Materials",
@@ -725,7 +963,7 @@
     "href": "materials.html#function-scope",
     "title": "Materials",
     "section": "Function Scope",
-    "text": "Function Scope\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 4\nSpecification Lab: Square Roots\n\n20 Points \n\n\n\n\nFiles"
+    "text": "Function Scope\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 4\nSpecification Lab: Square Roots\n\n20 Points\nDue Date: Tu Feb 11 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\nFiles\n\nSlides: Function Scope Reveal, PDF (M Feb 3)"
   },
   {
     "objectID": "materials.html#structured-types",
