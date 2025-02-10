@@ -154,13 +154,16 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - [Required Reading: Guttag Chapter 5](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Prime Testing_
   - 40 Points
-  <!-- - Due Date: Tu Feb 18 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/prime-testing-starter/blob/main/README.md) -->
+  - Due Date: Tu Feb 18 at 2:30pm
+  - [GitHub Classroom Link]  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/prime-testing-starter/blob/main/README.md)
 
 ### Files
 
-- 
+- Slides: Structured Types [PDF](slides/08-structured-types.pdf) (M Feb 10)
+- Notebook: [Tuples](code/20250210_structured_types_tuples.ipynb)
+- Notebook: [Lists](code/20250210_structured_types_lists.ipynb)
+- Notebook: [Slicing](code/20250210_strings_and_slicing.ipynb)
 
 
 ```{pyodide}
