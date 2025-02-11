@@ -155,7 +155,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - _Engineering Lab: Prime Testing_
   - 40 Points
   - Due Date: Tu Feb 18 at 2:30pm
-  - [GitHub Classroom Link]  
+  - [GitHub Classroom Link](https://classroom.github.com/a/SarG04oP)  
   - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/prime-testing-starter/blob/main/README.md)
 
 ### Files
