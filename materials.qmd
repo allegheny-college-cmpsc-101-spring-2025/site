@@ -186,14 +186,14 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - [Required Reading: Guttag Chapter 5 Cont.](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Structured Types_
   - 20 Points
-  <!-- - Due Date: Tu Feb 25 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/structured-types-starter/blob/main/README.md) -->
+  - Due Date: Tu Feb 25 at 2:30pm
+  - [GitHub Classroom Link](https://classroom.github.com/a/QbhzLzHP)  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/structured-types-starter/blob/main/README.md)
 
 ### Files
 
-- 
-
+- Slides: Cloning and Aliasing [PDF](slides/09-cloning-aliasing-listcomp.pdf) (M Feb 17)
+- Notebook: [Cloning and Aliasing](code/20250217_cloning_aliasing_listcomp.ipynb)
 
 ```{pyodide}
 
