@@ -1,9 +1,0 @@
----
-format: live-html
-title-block-style: none
-title-block-categories: false
----
-
-```{pyodide}
-
-```

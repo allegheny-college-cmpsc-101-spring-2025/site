@@ -1,0 +1,129 @@
+---
+title: "Pyodide"
+format: live-html
+title-block-style: none
+title-block-categories: false
+---
+
+
+```{pyodide}
+
+```
+
+
+<details>
+<summary>Linting</summary>
+
+```{.markdown code-preview="slides/03-linting.qmd" width="500"}
+```
+
+
+```{pyodide}
+
+```
+
+
+</details>
+
+<details>
+<summary>Python Foundations</summary>
+
+```{.markdown code-preview="slides/04-python-foundations.qmd" width="500"}
+```
+
+
+
+```{pyodide}
+
+```
+
+</details>
+
+<details>
+<summary>Numerical Computation</summary>
+
+```{.markdown code-preview="slides/05-numerical-computation.qmd" width="500"}
+```
+
+
+
+```{pyodide}
+
+```
+
+
+
+</details>
+
+<details>
+<summary>Function Scope</summary>
+
+```{.markdown code-preview="slides/07-function-scope.qmd" width="500"}
+```
+
+```{pyodide}
+
+```
+
+
+
+</details>
+
+
+<details>
+<summary>Structured Types - Tuples</summary>
+{{< embed code/20250210_structured_types_tuples.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
+<details>
+<summary>Structured Types - Lists</summary>
+{{< embed code/20250210_structured_types_lists.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
+<details>
+<summary>Structured Types - Strings</summary>
+{{< embed code/20250210_strings_and_slicing.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
+
+<details>
+<summary>Mutability and Aliasing</summary>
+{{< embed code/20250217_cloning_aliasing_listcomp.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
+
+<details>
+<summary>Recursion</summary>
+{{< embed code/20250224_recursion.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>

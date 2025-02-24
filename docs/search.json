@@ -511,11 +511,46 @@
     "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
   },
   {
-    "objectID": "code/20250210_structured_types_lists.html",
-    "href": "code/20250210_structured_types_lists.html",
-    "title": "Defining Lists in Python Programs",
+    "objectID": "code/20250224_recursion.html",
+    "href": "code/20250224_recursion.html",
+    "title": "Guttag Chapter 6",
     "section": "",
-    "text": "Open In Colab\n\n\n\nDefining Lists in Python Programs\n\nlists are a data type\nlists are containers\nlists contain things that can be any data type\nlists are mutable\n\n\n# these are lists\nnew_pair = [3.2, 4]\nnew_quadlist = [\"Story number\", 3, \"is\", True]\n\n# what is the data type of `new_pair` and `new_quadlist`?\n# what is similar about the definition of `new_pair` and `new_quadlist`\n# What are the data types of the values in these lists?\n\n\n# Is it required to have all the same data type within a list?\n# Write your own example storing three mixed-type items in a list.\n\n\n# these are lists\nlist_empty = []\nlist_str = [\"Story\"]\nlist_int = [3]\nlist_float = [3.14159]\n\n\n# what is the data type of `list_empty` and `list_str`?\n# what is the data type of `list_int` and `list_float`?\n# What are the data types of the _values_ in these list?\n\n\n# Do lists always have to contain data?\n# What is the difference between a list and a number conceptually\n# What is the difference between a list and a number syntactically?\n\n\n# does a tuple == a list with the same elems?\n\ntu = (1,)\nli = [1]\nprint(\"does a tuple == a list with the same elems? \", tu == li)\nprint(\"are the elements the same? \", tu[0] == li[0])\n\n\n\ncreating new lists\n\npair = [3.2, 4]\nquadlist = [\"Story number\", 3, \"is\", True]\nnew_list = pair + quadlist\nprint(new_list)\n\n\n\npacking and unpacking lists\n\n# pack a list into a variable\npair = [3,4]\n# create a list named quintlist and pack in 5 elements\n\n\n# unpack the contents of a list\n\nx, y = pair\n\n# unpack the contents of `quintlist` into 5 new variables\n\n\n# describe your understanding of a list so far\n\n\n# what is happening here?\n\na = [1, 2, 3]\nprint(a[0])\n\n# is `a` a list?\n# what do the square brackets mean\n# is there any variable name assigned to the list?\n\n\n# what happens in this line of code\n\na = [1, 2, 3][0]\n\n# is `a` a list?\n# what do the parens mean\n# what do the square brackets mean\n# is there any variable name assigned to the list?\n\n\n# what happens in this line of code\n\na = [1, 2, 3]\na[0] = 10\n\n# is `a` a list?\n# what do the parens mean\n# what do the square brackets mean\n# is there any variable name assigned to the list?\n# does the code crash?\n\n\n# re-describe your understanding of a list so far\n\n\n\nappending to existing list\n\na = [1, 2, 3]\na.append(1)\nprint(a)\n\n\na = [1, 2, 3]\nlist.append(a, 1)\nprint(a)\n\n\n\nloops\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n\nfor item in a:\n  print(item)\n\nfor character in a[4]:\n  print(character)\n\n\n\nalgorithms with lists\n\n# define a function that can apply a provided\n# function to each element in the list to change\ndef apply_to_each(list_to_change, function):\n    for i in range(len(list_to_change)):\n        list_to_change[i] = function(list_to_change[i])\n\n\nvalues = [1, -2, 3.33]\nprint(\"values =\", values)\napply_to_each(values, abs)\nprint(\"values =\", values)"
+    "text": "Open In Colab"
+  },
+  {
+    "objectID": "code/20250224_recursion.html#factorial-algorithms",
+    "href": "code/20250224_recursion.html#factorial-algorithms",
+    "title": "Guttag Chapter 6",
+    "section": "Factorial Algorithms",
+    "text": "Factorial Algorithms\n\n# TODO: add comments explaining everything below\n\ndef factorial_iter(n: int) -&gt; int:\n  result = 1\n  for i in range(1,n+1,1):\n    result *= i\n  return result\n\n\n# TODO: add comments explaining everything below\n\ndef factorial(n: int) -&gt; int:\n  if n == 1:\n    return 1\n  return n * factorial(n - 1)\n\n\n# TODO: call the functions"
+  },
+  {
+    "objectID": "code/20250224_recursion.html#palindrome-algorithms",
+    "href": "code/20250224_recursion.html#palindrome-algorithms",
+    "title": "Guttag Chapter 6",
+    "section": "Palindrome Algorithms",
+    "text": "Palindrome Algorithms\n\n# TODO: add comments explaining everything below\n\ndef pal_rev(w: str) -&gt; bool:\n  w_rev = w[::-1]\n  if w_rev == w:\n    return True\n  return False\n\n\n# TODO: add comments explaining everything below\n\ndef pal_rec(w: str) -&gt; bool:\n  if len(w) &lt;= 1:\n    return True\n  elif w[0] == w[-1]:\n    return pal_rec(w[1:-1])\n  return False\n\n\n# TODO: call the function using upper and lower case letters"
+  },
+  {
+    "objectID": "code/20250224_recursion.html#fibonacci-number-algorithms",
+    "href": "code/20250224_recursion.html#fibonacci-number-algorithms",
+    "title": "Guttag Chapter 6",
+    "section": "Fibonacci Number Algorithms",
+    "text": "Fibonacci Number Algorithms\nFibonacci number \\({F_n}\\) is defined: - \\({F_{n}=F_{n-1}+F_{n-2}}\\) where - \\({F_0 = 0}\\) and \\({F_1 = 1}\\) - learn more: https://en.wikipedia.org/wiki/Fibonacci_sequence\n\n# TODO: add comments explaining everything below\n\ndef fib(nth: int) -&gt; int:\n  if nth &lt;= 1:\n    return nth\n  zeroth = 0\n  first = 1\n  for _ in range(2,nth + 1):\n    next = zeroth + first\n    zeroth = first\n    first = next\n  return next\n\n\nfib(15)\n\n\n# TODO: add comments explaining everything below\n\ndef fib_rec(nth: int) -&gt; int:\n  if nth &lt;= 1:\n    return nth\n  else:\n    return fib_rec(nth-1) + fib_rec(nth-2)\n\nfib_rec(15)"
+  },
+  {
+    "objectID": "code/20250224_recursion.html#fibonacci-sequence-algorithms",
+    "href": "code/20250224_recursion.html#fibonacci-sequence-algorithms",
+    "title": "Guttag Chapter 6",
+    "section": "Fibonacci Sequence Algorithms",
+    "text": "Fibonacci Sequence Algorithms\n\n# TODO: add comments explaining everything below\n\nfrom typing import List\n\ndef fib(nth: int) -&gt; List[int]:\n  if nth == 0:\n    return [0]\n  if nth == 1:\n    return [0,1]\n  seq = [0,1]\n  for _ in range(2,nth + 1):\n    next = seq[-1] + seq[-2]\n    seq.append(next)\n  return seq\n\nfib(15)\n\n\nfrom typing import Tuple\n\ndef fib(nth: int) -&gt; Tuple[int]:\n  if nth == 0:\n    # TODO: modify previous iterative algorithm to use tuples\n\n  if nth == 1:\n    # TODO: modify previous iterative algorithm to use tuples\n\n  # TODO: modify previous iterative algorithm to use tuples\n\n  for _ in range(2,nth + 1):\n\n    # TODO: modify previous iterative algorithm to use tuples\n\n    # TODO: modify previous iterative algorithm to use tuples\n\n  return seq\n\nfib(15)\n\n\n# TODO: add comments explaining everything below\n\nfrom typing import List\n\ndef fib_rec(nth: int) -&gt; List[int]:\n  if nth == 0:\n    return [0]\n  if nth == 1:\n    return [0,1]\n  seq = fib_rec(nth - 1)\n  seq.append(seq[-1] + seq[-2])\n  return seq\n\nfib_rec(15)\n\n\nfrom typing import Tuple\n\ndef fib_rec(nth: int) -&gt; Tuple[int]:\n  if nth == 0:\n    # TODO: modify previous recursive algorithm to use tuples\n\n  if nth == 1:\n    # TODO: modify previous recursive algorithm to use tuples\n\n  seq = fib_rec(nth - 1)\n\n  # TODO: modify previous recursive algorithm to use tuples\n\n\n  return seq\n\nfib_rec(15)"
+  },
+  {
+    "objectID": "code/20250224_recursion.html#questions",
+    "href": "code/20250224_recursion.html#questions",
+    "title": "Guttag Chapter 6",
+    "section": "Questions",
+    "text": "Questions\n\nHow can you tell if an algorithm is iterative?\nHow can you tell if an algorithm is recursive?\nWhat valid inputs cause problems with some algorithms shown above and why?"
   },
   {
     "objectID": "code/20250210_strings_and_slicing.html",
@@ -523,6 +558,41 @@
     "title": "strings",
     "section": "",
     "text": "Open In Colab\n\n\n\nstrings\n\n# strings contain charaters\na = 'this is a string'\ndigit_string = '1234567890'\nanother_string = '1, 2, 3, 4, 5, 6, 7, 8, 9, 0'\nempty_string = ''\n\n\n# strings are indexable, ordered\na = 'this is a string'\nprint(a[0])\nprint(a[1])\n\n\n# strings are immutable\na = 'this is a string'\na[0] = 'T'\n\n\n# adding creates an entirely new string\na = 'this is a string'\nanother_string = '1, 2, 3, 4, 5, 6, 7, 8, 9, 0'\nnew_string = a + another_string\nprint(new_string)\n\n\n# loops\nanother_string = '1, 2, 3, 4, 5, 6, 7, 8, 9, 0'\n\nfor char in another_string:\n  print(char)\n\n\n\nslicing\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n# retrieve elements 0 up to 3rd (not including 3rd)\nprint(a[0:3])\n\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n# retrieve elements 0 up to 8th (not including 8th), in step size of 2\nprint(a[0:8:2])\n\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n# retrieve elements 5 up to 8th (including 8th)\nprint(a[5:])\n\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n# retrieve elements 2 up to 2nd to last (not including 2nd to last)\nprint(a[2:-2])\n\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n# retrieve elements from end to 0 (not including 0) backward (step size -1)\nprint(a[:0:-1])\n\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n# retrieve elements from end to 0 (including 0) backward (step size -1)\nprint(a[::-1])\n\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n# retrieve a string and do further indexing\nprint(a[4][8:-8])\n\n\n\npretty print\n\nfrom typing import Iterable\n\ndef prettyprint(values: Iterable[int]) -&gt; str:\n  return str(values)[1:-1]\n\n\nmy_divisors = [1, 97]\nprint(f\"not pretty divisors are: {my_divisors}\")\nprint(f\"pretty divisors are: {prettyprint(my_divisors)}\")"
+  },
+  {
+    "objectID": "pyodide.html#factorial-algorithms",
+    "href": "pyodide.html#factorial-algorithms",
+    "title": "Pyodide",
+    "section": "Factorial Algorithms",
+    "text": "Factorial Algorithms\n\n# TODO: add comments explaining everything below\n\ndef factorial_iter(n: int) -&gt; int:\n  result = 1\n  for i in range(1,n+1,1):\n    result *= i\n  return result\n\n\n# TODO: add comments explaining everything below\n\ndef factorial(n: int) -&gt; int:\n  if n == 1:\n    return 1\n  return n * factorial(n - 1)\n\n\n# TODO: call the functions"
+  },
+  {
+    "objectID": "pyodide.html#palindrome-algorithms",
+    "href": "pyodide.html#palindrome-algorithms",
+    "title": "Pyodide",
+    "section": "Palindrome Algorithms",
+    "text": "Palindrome Algorithms\n\n# TODO: add comments explaining everything below\n\ndef pal_rev(w: str) -&gt; bool:\n  w_rev = w[::-1]\n  if w_rev == w:\n    return True\n  return False\n\n\n# TODO: add comments explaining everything below\n\ndef pal_rec(w: str) -&gt; bool:\n  if len(w) &lt;= 1:\n    return True\n  elif w[0] == w[-1]:\n    return pal_rec(w[1:-1])\n  return False\n\n\n# TODO: call the function using upper and lower case letters"
+  },
+  {
+    "objectID": "pyodide.html#fibonacci-number-algorithms",
+    "href": "pyodide.html#fibonacci-number-algorithms",
+    "title": "Pyodide",
+    "section": "Fibonacci Number Algorithms",
+    "text": "Fibonacci Number Algorithms\nFibonacci number \\({F_n}\\) is defined: - \\({F_{n}=F_{n-1}+F_{n-2}}\\) where - \\({F_0 = 0}\\) and \\({F_1 = 1}\\) - learn more: https://en.wikipedia.org/wiki/Fibonacci_sequence\n\n# TODO: add comments explaining everything below\n\ndef fib(nth: int) -&gt; int:\n  if nth &lt;= 1:\n    return nth\n  zeroth = 0\n  first = 1\n  for _ in range(2,nth + 1):\n    next = zeroth + first\n    zeroth = first\n    first = next\n  return next\n\n\nfib(15)\n\n\n# TODO: add comments explaining everything below\n\ndef fib_rec(nth: int) -&gt; int:\n  if nth &lt;= 1:\n    return nth\n  else:\n    return fib_rec(nth-1) + fib_rec(nth-2)\n\nfib_rec(15)"
+  },
+  {
+    "objectID": "pyodide.html#fibonacci-sequence-algorithms",
+    "href": "pyodide.html#fibonacci-sequence-algorithms",
+    "title": "Pyodide",
+    "section": "Fibonacci Sequence Algorithms",
+    "text": "Fibonacci Sequence Algorithms\n\n# TODO: add comments explaining everything below\n\nfrom typing import List\n\ndef fib(nth: int) -&gt; List[int]:\n  if nth == 0:\n    return [0]\n  if nth == 1:\n    return [0,1]\n  seq = [0,1]\n  for _ in range(2,nth + 1):\n    next = seq[-1] + seq[-2]\n    seq.append(next)\n  return seq\n\nfib(15)\n\n\nfrom typing import Tuple\n\ndef fib(nth: int) -&gt; Tuple[int]:\n  if nth == 0:\n    # TODO: modify previous iterative algorithm to use tuples\n\n  if nth == 1:\n    # TODO: modify previous iterative algorithm to use tuples\n\n  # TODO: modify previous iterative algorithm to use tuples\n\n  for _ in range(2,nth + 1):\n\n    # TODO: modify previous iterative algorithm to use tuples\n\n    # TODO: modify previous iterative algorithm to use tuples\n\n  return seq\n\nfib(15)\n\n\n# TODO: add comments explaining everything below\n\nfrom typing import List\n\ndef fib_rec(nth: int) -&gt; List[int]:\n  if nth == 0:\n    return [0]\n  if nth == 1:\n    return [0,1]\n  seq = fib_rec(nth - 1)\n  seq.append(seq[-1] + seq[-2])\n  return seq\n\nfib_rec(15)\n\n\nfrom typing import Tuple\n\ndef fib_rec(nth: int) -&gt; Tuple[int]:\n  if nth == 0:\n    # TODO: modify previous recursive algorithm to use tuples\n\n  if nth == 1:\n    # TODO: modify previous recursive algorithm to use tuples\n\n  seq = fib_rec(nth - 1)\n\n  # TODO: modify previous recursive algorithm to use tuples\n\n\n  return seq\n\nfib_rec(15)"
+  },
+  {
+    "objectID": "pyodide.html#questions",
+    "href": "pyodide.html#questions",
+    "title": "Pyodide",
+    "section": "Questions",
+    "text": "Questions\n\nHow can you tell if an algorithm is iterative?\nHow can you tell if an algorithm is recursive?\nWhat valid inputs cause problems with some algorithms shown above and why?"
   },
   {
     "objectID": "syll/syllabus.html",
@@ -628,6 +698,13 @@
     "title": "Cloning and Aliasing",
     "section": "",
     "text": "Open In Colab\n\n\n\nCloning and Aliasing\n\nelem1 = 'apple' # a is a string object \"apple\"\nelem2 = 'bear' # b is string object \"bear\"\n\na = [elem1,elem2] # a is name of the list that points to the objects that are already in memory\nb = a # b points to the SAME list in memory!\n\nprint(a)\nprint(b)\n\nprint(\"id(a)\", id(a))\nprint(\"id(b)\", id(b))\n\nprint(\"id(a[0])\", id(a[0]))\nprint(\"id(b[0])\", id(b[0]))\nprint(\"id(elem1)\", id(elem1))\n\n\nelem1 = 'apple' # a is a string object \"apple\"\nelem2 = 'bear' # b is a string object \"bear\"\n\na = [elem1,elem2] # a is name of the list that points to the objects that are already in memory\nb = a # b points to the SAME list in memory!\na.append('cat')\n\nprint(a)\nprint(b)\n\nprint(\"id(a)\", id(a))\nprint(\"id(b)\", id(b))\n\nprint(\"id(a[0])\", id(a[0]))\nprint(\"id(b[0])\", id(b[0]))\nprint(\"id(elem1)\", id(elem1))\n\n\nelem1 = 'apple' # a is a string object \"apple\"\nelem2 = 'bear' # b is a string object \"bear\"\n\na = [elem1,elem2] # a is name of the list that points to the objects that are already in memory\nb = a[:] # b is a shallow copy\na.append('cat')\n\nprint(a)\nprint(b)\n\nprint(\"id(a)\", id(a))\nprint(\"id(b)\", id(b))\n\nprint(\"id(a[0])\", id(a[0]))\nprint(\"id(b[0])\", id(b[0]))\nprint(\"id(elem1)\", id(elem1))\n\n\nelem1 = 'apple' # a is a string object \"apple\"\nelem2 = 'bear' # b is a string object \"bear\"\n\na = [elem1,elem2] # a is name of the list that points to the objects that are already in memory\nb = a.copy() # b is a shallow copy\na.append('cat')\n\nprint(a)\nprint(b)\n\nprint(\"id(a)\", id(a))\nprint(\"id(b)\", id(b))\n\nprint(\"id(a[0])\", id(a[0]))\nprint(\"id(b[0])\", id(b[0]))\nprint(\"id(elem1)\", id(elem1))\n\n\nelem1 = ['apple'] # a is a list object with a string inside [\"apple\"]\nelem2 = ['bear'] # b is a list object with a string inside [\"bear\"]\n\na = [elem1,elem2] # a is name of the list that points to the objects that are already in memory\nb = a[:] # b is a shallow copy\na.append(['cat'])\n\nprint(a)\nprint(b)\n\nprint(\"id(a)\", id(a))\nprint(\"id(b)\", id(b))\n\nprint(\"id(a[0])\", id(a[0]))\nprint(\"id(b[0])\", id(b[0]))\nprint(\"id(elem1)\", id(elem1))\n\n\nelem1 = ['apple'] # a is a list object with a string inside [\"apple\"]\nelem2 = ['bear'] # b is a list object with a string inside [\"bear\"]\n\na = [elem1,elem2] # a is name of the list that points to the objects that are already in memory\nb = a[:] # b is a shallow copy\na[0].append(['cat'])\n\nprint(a)\nprint(b)\n\nprint(\"id(a)\", id(a))\nprint(\"id(b)\", id(b))\n\nprint(\"id(a[0])\", id(a[0]))\nprint(\"id(b[0])\", id(b[0]))\nprint(\"id(elem1)\", id(elem1))\n\n\nimport copy\n\nelem1 = ['apple'] # a is a list object with a string inside [\"apple\"]\nelem2 = ['bear'] # b is a list object with a string inside [\"bear\"]\n\na = [elem1,elem2] # a is name of the list that points to the objects that are already in memory\nb = copy.deepcopy(a) # b is a deep copy\na.append(['cat'])\n\nprint(a)\nprint(b)\n\nprint(\"id(a)\", id(a))\nprint(\"id(b)\", id(b))\n\nprint(\"id(a[0])\", id(a[0]))\nprint(\"id(b[0])\", id(b[0]))\nprint(\"id(elem1)\", id(elem1))\n\n\nimport copy\n\nelem1 = ['apple'] # a is a list object with a string inside [\"apple\"]\nelem2 = ['bear'] # b is a list object with a string inside [\"bear\"]\n\na = [elem1,elem2] # a is name of the list that points to the objects that are already in memory\nb = copy.deepcopy(a) # b is a deep copy\na[0].append(['cat'])\n\nprint(a)\nprint(b)\n\nprint(\"id(a)\", id(a))\nprint(\"id(b)\", id(b))\n\nprint(\"id(a[0])\", id(a[0]))\nprint(\"id(b[0])\", id(b[0]))\nprint(\"id(elem1)\", id(elem1))\n\n\n# What is the difference between and shallow and deep copy?\n\n\n\nList Comprehensions\n\n[e**2 for e in range(6)]\n\n\n[e**2 for e in range(8) if e%2 == 0]\n\n\n# write a list comprehension that contains the elements 3 through 18 including 18\n\n\n# write a list comprehension that contains the only odd number 3 through 18\n\n\n# write a list comprehension that contains 12 random numbers, where the random numbers are between 4 and 40\n\nfrom random import randint\n\n\n# write a list comprehension that contains 12 random numbers, where the random numbers are between 4 and 40\n# then convert the result to a tuple\n\nfrom random import randint"
+  },
+  {
+    "objectID": "code/20250210_structured_types_lists.html",
+    "href": "code/20250210_structured_types_lists.html",
+    "title": "Defining Lists in Python Programs",
+    "section": "",
+    "text": "Open In Colab\n\n\n\nDefining Lists in Python Programs\n\nlists are a data type\nlists are containers\nlists contain things that can be any data type\nlists are mutable\n\n\n# these are lists\nnew_pair = [3.2, 4]\nnew_quadlist = [\"Story number\", 3, \"is\", True]\n\n# what is the data type of `new_pair` and `new_quadlist`?\n# what is similar about the definition of `new_pair` and `new_quadlist`\n# What are the data types of the values in these lists?\n\n\n# Is it required to have all the same data type within a list?\n# Write your own example storing three mixed-type items in a list.\n\n\n# these are lists\nlist_empty = []\nlist_str = [\"Story\"]\nlist_int = [3]\nlist_float = [3.14159]\n\n\n# what is the data type of `list_empty` and `list_str`?\n# what is the data type of `list_int` and `list_float`?\n# What are the data types of the _values_ in these list?\n\n\n# Do lists always have to contain data?\n# What is the difference between a list and a number conceptually\n# What is the difference between a list and a number syntactically?\n\n\n# does a tuple == a list with the same elems?\n\ntu = (1,)\nli = [1]\nprint(\"does a tuple == a list with the same elems? \", tu == li)\nprint(\"are the elements the same? \", tu[0] == li[0])\n\n\n\ncreating new lists\n\npair = [3.2, 4]\nquadlist = [\"Story number\", 3, \"is\", True]\nnew_list = pair + quadlist\nprint(new_list)\n\n\n\npacking and unpacking lists\n\n# pack a list into a variable\npair = [3,4]\n# create a list named quintlist and pack in 5 elements\n\n\n# unpack the contents of a list\n\nx, y = pair\n\n# unpack the contents of `quintlist` into 5 new variables\n\n\n# describe your understanding of a list so far\n\n\n# what is happening here?\n\na = [1, 2, 3]\nprint(a[0])\n\n# is `a` a list?\n# what do the square brackets mean\n# is there any variable name assigned to the list?\n\n\n# what happens in this line of code\n\na = [1, 2, 3][0]\n\n# is `a` a list?\n# what do the parens mean\n# what do the square brackets mean\n# is there any variable name assigned to the list?\n\n\n# what happens in this line of code\n\na = [1, 2, 3]\na[0] = 10\n\n# is `a` a list?\n# what do the parens mean\n# what do the square brackets mean\n# is there any variable name assigned to the list?\n# does the code crash?\n\n\n# re-describe your understanding of a list so far\n\n\n\nappending to existing list\n\na = [1, 2, 3]\na.append(1)\nprint(a)\n\n\na = [1, 2, 3]\nlist.append(a, 1)\nprint(a)\n\n\n\nloops\n\na = [0, 'elem1', 'elem2', 3, 'this is the fourth element', '5', '6.0000', 7, 8.0000]\n\nfor item in a:\n  print(item)\n\nfor character in a[4]:\n  print(character)\n\n\n\nalgorithms with lists\n\n# define a function that can apply a provided\n# function to each element in the list to change\ndef apply_to_each(list_to_change, function):\n    for i in range(len(list_to_change)):\n        list_to_change[i] = function(list_to_change[i])\n\n\nvalues = [1, -2, 3.33]\nprint(\"values =\", values)\napply_to_each(values, abs)\nprint(\"values =\", values)"
   },
   {
     "objectID": "code/20250210_structured_types_tuples.html",
@@ -970,112 +1047,112 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Software Operations (Week 1)\n\n\n\n\n\n\n\nRequired Reading: Guttag Chapter 1\nSpecification Lab: CLI vs Script vs Notebook\n\n20 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\n\n\n\nFINDING YOU REPOSITORIES\n\n\n\nIf you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/\n\n\n\n\n\n\nSlides: Welcome Reveal, PDF (M Jan 13)\nSlides: Software installation instructions PDF (Tu Jan 14)\nSlides: Workflow for 101 labs PDF (W Jan 15)"
+    "text": "FINDING YOU REPOSITORIES\n\n\n\nIf you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/"
   },
   {
     "objectID": "materials.html#software-operations",
     "href": "materials.html#software-operations",
     "title": "Materials",
-    "section": "",
-    "text": "Required Reading: Guttag Chapter 1\nSpecification Lab: CLI vs Script vs Notebook\n\n20 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\n\n\n\nFINDING YOU REPOSITORIES\n\n\n\nIf you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/\n\n\n\n\n\n\nSlides: Welcome Reveal, PDF (M Jan 13)\nSlides: Software installation instructions PDF (Tu Jan 14)\nSlides: Workflow for 101 labs PDF (W Jan 15)"
+    "section": "1. Software Operations",
+    "text": "1. Software Operations\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 1\nSpecification Lab: CLI vs Script vs Notebook\n\n20 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Welcome Reveal, PDF (M Jan 13)\nSlides: Software installation instructions PDF (Tu Jan 14)\nSlides: Workflow for 101 labs PDF (W Jan 15)"
   },
   {
     "objectID": "materials.html#python-foundations",
     "href": "materials.html#python-foundations",
     "title": "Materials",
-    "section": "Python Foundations",
-    "text": "Python Foundations\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 2\nEngineering Lab: Integer Squaring\n\n40 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\nFiles\n\nSlides: Linting Reveal (Tu Jan 21)\nSlides: Python Foundations Reveal, PDF (W Jan 22)"
+    "section": "2. Python Foundations",
+    "text": "2. Python Foundations\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 2\nEngineering Lab: Integer Squaring\n\n40 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Linting Reveal (Tu Jan 21)\nSlides: Python Foundations Reveal, PDF (W Jan 22)"
   },
   {
     "objectID": "materials.html#numerical-programs",
     "href": "materials.html#numerical-programs",
     "title": "Materials",
-    "section": "Numerical Programs",
-    "text": "Numerical Programs\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 3\nMissing Pages\nSpecification Lab: Number Comparison\n\n20 Points\nDue Date: Tu Feb 4 at 2:30pm\nGitHub Classroom Link\nStarter Repo\n\n\n\n\nFiles\n\nSlides: Numerical Computation Reveal, PDF (W Jan 29)"
+    "section": "3. Numerical Programs",
+    "text": "3. Numerical Programs\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 3\nMissing Pages\nSpecification Lab: Number Comparison\n\n20 Points\nDue Date: Tu Feb 4 at 2:30pm\nGitHub Classroom Link\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Numerical Computation Reveal, PDF (W Jan 29)"
   },
   {
     "objectID": "materials.html#function-scope",
     "href": "materials.html#function-scope",
     "title": "Materials",
-    "section": "Function Scope",
-    "text": "Function Scope\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 4\nSpecification Lab: Square Roots\n\n20 Points\nDue Date: Tu Feb 11 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\nFiles\n\nSlides: Function Scope Reveal, PDF (M Feb 3)"
+    "section": "4. Function Scope",
+    "text": "4. Function Scope\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 4\nSpecification Lab: Square Roots\n\n20 Points\nDue Date: Tu Feb 11 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Function Scope Reveal, PDF (M Feb 3)"
   },
   {
     "objectID": "materials.html#structured-types",
     "href": "materials.html#structured-types",
     "title": "Materials",
-    "section": "Structured Types",
-    "text": "Structured Types\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 5\nEngineering Lab: Prime Testing\n\n40 Points\nDue Date: Tu Feb 18 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\nFiles\n\nSlides: Structured Types PDF (M Feb 10)\nNotebook: Tuples\nNotebook: Lists\nNotebook: Slicing"
+    "section": "5. Structured Types",
+    "text": "5. Structured Types\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 5\nEngineering Lab: Prime Testing\n\n40 Points\nDue Date: Tu Feb 18 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Structured Types PDF (M Feb 10)\nNotebook: Tuples\nNotebook: Lists\nNotebook: Slicing"
   },
   {
     "objectID": "materials.html#mutability-and-aliasing",
     "href": "materials.html#mutability-and-aliasing",
     "title": "Materials",
-    "section": "Mutability and Aliasing",
-    "text": "Mutability and Aliasing\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 5 Cont.\nSpecification Lab: Structured Types\n\n20 Points\nDue Date: Tu Feb 25 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\nFiles\n\nSlides: Cloning and Aliasing PDF (M Feb 17)\nNotebook: Cloning and Aliasing"
+    "section": "6. Mutability and Aliasing",
+    "text": "6. Mutability and Aliasing\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 5 Cont.\nSpecification Lab: Structured Types\n\n20 Points\nDue Date: Tu Feb 25 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Cloning and Aliasing PDF (M Feb 17)\nNotebook: Cloning and Aliasing\nCopied Pages: Guttag p100-101"
   },
   {
     "objectID": "materials.html#recursion",
     "href": "materials.html#recursion",
     "title": "Materials",
-    "section": "Recursion",
-    "text": "Recursion\n\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 6\nEngineering Lab: Intersection Algorithms\n\n40 Points \n\nEngineering Lab: Palindromes\n\n40 Points \n\n\n\n\nFiles"
+    "section": "7. Recursion",
+    "text": "7. Recursion\n\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 6\nEngineering Lab: Intersection Algorithms\n\n40 Points\nDue Date: Tu Mar 4 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\nSpecification Lab: Cloning vs Aliasing\n\n20 Points\nDue Date: Tu Mar 11 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Recursion PDF (M Feb 24)\nNotebook: Recursion"
   },
   {
     "objectID": "materials.html#modules-and-files",
     "href": "materials.html#modules-and-files",
     "title": "Materials",
-    "section": "Modules and Files",
-    "text": "Modules and Files\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 7\nSpecification Lab: Alias vs Clone\n\n20 Points \n\n\n\n\nFiles"
+    "section": "9. Modules and Files",
+    "text": "9. Modules and Files\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 7\nEngineering Lab: Palindromes\n\n40 Points \n\n\n\n\n\nFiles"
   },
   {
     "objectID": "materials.html#testing-and-handling-exceptions",
     "href": "materials.html#testing-and-handling-exceptions",
     "title": "Materials",
-    "section": "Testing and Handling Exceptions",
-    "text": "Testing and Handling Exceptions\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 8 & 9\nEngineering Lab: Fibonacci Algorithms\n\n40 Points \n\n\n\n\nFiles"
+    "section": "10. Testing and Handling Exceptions",
+    "text": "10. Testing and Handling Exceptions\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 8 & 9\nEngineering Lab: Fibonacci Algorithms\n\n40 Points \n\n\n\n\n\nFiles"
   },
   {
     "objectID": "materials.html#object-oriented-programming",
     "href": "materials.html#object-oriented-programming",
     "title": "Materials",
-    "section": "Object-Oriented Programming",
-    "text": "Object-Oriented Programming\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 10\nSpecification Lab: Debugging\n\n20 Points \n\n\n\n\nFiles"
+    "section": "11. Object-Oriented Programming",
+    "text": "11. Object-Oriented Programming\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 10\nSpecification Lab: Debugging\n\n20 Points \n\n\n\n\n\nFiles"
   },
   {
     "objectID": "materials.html#algorithmic-complexity",
     "href": "materials.html#algorithmic-complexity",
     "title": "Materials",
-    "section": "Algorithmic Complexity",
-    "text": "Algorithmic Complexity\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 11\nEngineering Lab: Object Processing\n\n40 Points \n\n\n\n\nFiles"
+    "section": "12. Algorithmic Complexity",
+    "text": "12. Algorithmic Complexity\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 11\nEngineering Lab: Object Processing\n\n40 Points \n\n\n\n\n\nFiles"
   },
   {
     "objectID": "materials.html#data-structures",
     "href": "materials.html#data-structures",
     "title": "Materials",
-    "section": "Data Structures",
-    "text": "Data Structures\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 12\nEngineering Lab: Containment Checking\n\n40 Points \n\n\n\n\nFiles"
+    "section": "13. Data Structures",
+    "text": "13. Data Structures\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 12\nEngineering Lab: Containment Checking\n\n40 Points \n\n\n\n\n\nFiles"
   },
   {
     "objectID": "materials.html#data-structures-continued",
     "href": "materials.html#data-structures-continued",
     "title": "Materials",
-    "section": "Data Structures Continued",
-    "text": "Data Structures Continued\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 12 Cont.\nEngineering Lab: Sorting Algorithms\n\n40 Points \n\n\n\n\nFiles"
+    "section": "14. Data Structures Continued",
+    "text": "14. Data Structures Continued\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 12 Cont.\nEngineering Lab: Sorting Algorithms\n\n40 Points \n\n\n\n\n\nFiles"
   },
   {
     "objectID": "materials.html#optimization-problems",
     "href": "materials.html#optimization-problems",
     "title": "Materials",
-    "section": "Optimization Problems",
-    "text": "Optimization Problems\n\n\nAssignments\n\nRequired Reading: Guttag Chapter 14\nSpecification Lab: Matrix Processing\n\n20 Points \n\n\n\n\nFiles"
+    "section": "15. Optimization Problems",
+    "text": "15. Optimization Problems\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 14\nSpecification Lab: Matrix Processing\n\n20 Points \n\n\n\n\n\nFiles"
   },
   {
     "objectID": "materials.html#review",
     "href": "materials.html#review",
     "title": "Materials",
-    "section": "Review",
-    "text": "Review"
+    "section": "16. Review",
+    "text": "16. Review"
   },
   {
     "objectID": "materials.html#final",

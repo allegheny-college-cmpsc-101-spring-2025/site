@@ -12,6 +12,7 @@ website:
       - materials.qmd
       - discord.qmd
       - grades.qmd
+      - pyodide.qmd
 
 format:
   html:
