@@ -195,16 +195,17 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - [Required Reading: Guttag Chapter 7](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Palindromes_
   - 40 Points
-  <!-- - Due Date: Tu Mar 18 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/palindrome-starter/blob/main/README.md) -->
+  - Due Date: Tu Mar 18 at 2:30pm
+  - [GitHub Classroom Link](https://classroom.github.com/a/SV9QbIqo)  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/palindrome-checker-starter/blob/main/README.md)
 
 </details>
 
 <details>
 <summary>Files</summary>
 
-- 
+- Slides: Modules [PDF](slides/11-importing.pdf) (M Mar 10)
+- Notebook: [Modules](code/20250310_importing.ipynb)
 
 </details>
 

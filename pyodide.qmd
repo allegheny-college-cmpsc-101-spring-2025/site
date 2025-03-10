@@ -127,3 +127,16 @@ title-block-categories: false
 
 
 </details>
+
+
+<details>
+<summary>Modules</summary>
+{{< embed code/20250310_importing.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
