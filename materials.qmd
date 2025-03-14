@@ -206,7 +206,7 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - Slides: Modules [PDF](slides/11-importing.pdf) (M Mar 10)
 - Notebook: [Modules](code/20250310_importing.ipynb)
-- Slides: Testing [PDF](slides/12-testing%2Bdebugging.pdf)
+- Slides: Testing [PDF](slides/12-testing+debugging.pdf)
 - Notebook: [Testing](code/20250317_testing_debugging.ipynb)
 
 </details>
