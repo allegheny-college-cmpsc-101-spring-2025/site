@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Materials – Data Structures</title>
+<title>testing_debugging – Data Structures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/cube.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/cube.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Data Structures</span>
     </a>
   </div>
@@ -90,23 +124,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./materials.html" aria-current="page"> 
+    <a class="nav-link" href="../materials.html"> 
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./discord.html"> 
+    <a class="nav-link" href="../discord.html"> 
 <span class="menu-text">Discord Channel</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./grades.html"> 
+    <a class="nav-link" href="../grades.html"> 
 <span class="menu-text">Grades</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pyodide.html"> 
+    <a class="nav-link" href="../pyodide.html"> 
 <span class="menu-text">Pyodide</span></a>
   </li>  
 </ul>
@@ -125,470 +159,71 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#software-operations" id="toc-software-operations" class="nav-link active" data-scroll-target="#software-operations">1. Software Operations</a></li>
-  <li><a href="#python-foundations" id="toc-python-foundations" class="nav-link" data-scroll-target="#python-foundations">2. Python Foundations</a></li>
-  <li><a href="#numerical-programs" id="toc-numerical-programs" class="nav-link" data-scroll-target="#numerical-programs">3. Numerical Programs</a></li>
-  <li><a href="#function-scope" id="toc-function-scope" class="nav-link" data-scroll-target="#function-scope">4. Function Scope</a></li>
-  <li><a href="#structured-types" id="toc-structured-types" class="nav-link" data-scroll-target="#structured-types">5. Structured Types</a></li>
-  <li><a href="#mutability-and-aliasing" id="toc-mutability-and-aliasing" class="nav-link" data-scroll-target="#mutability-and-aliasing">6. Mutability and Aliasing</a></li>
-  <li><a href="#recursion" id="toc-recursion" class="nav-link" data-scroll-target="#recursion">7. Recursion</a></li>
-  <li><a href="#modules-and-files" id="toc-modules-and-files" class="nav-link" data-scroll-target="#modules-and-files">9. Modules and Files</a></li>
-  <li><a href="#testing-and-handling-exceptions" id="toc-testing-and-handling-exceptions" class="nav-link" data-scroll-target="#testing-and-handling-exceptions">10. Testing and Handling Exceptions</a></li>
-  <li><a href="#object-oriented-programming" id="toc-object-oriented-programming" class="nav-link" data-scroll-target="#object-oriented-programming">11. Object-Oriented Programming</a></li>
-  <li><a href="#algorithmic-complexity" id="toc-algorithmic-complexity" class="nav-link" data-scroll-target="#algorithmic-complexity">12. Algorithmic Complexity</a></li>
-  <li><a href="#data-structures" id="toc-data-structures" class="nav-link" data-scroll-target="#data-structures">13. Data Structures</a></li>
-  <li><a href="#data-structures-continued" id="toc-data-structures-continued" class="nav-link" data-scroll-target="#data-structures-continued">14. Data Structures Continued</a></li>
-  <li><a href="#optimization-problems" id="toc-optimization-problems" class="nav-link" data-scroll-target="#optimization-problems">15. Optimization Problems</a></li>
-  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">16. Review</a></li>
-  <li><a href="#final" id="toc-final" class="nav-link" data-scroll-target="#final">Final</a></li>
+  <li><a href="#guttag-chapter-8" id="toc-guttag-chapter-8" class="nav-link active" data-scroll-target="#guttag-chapter-8">Guttag Chapter 8</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Materials</h1>
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://githubtocolab.com/allegheny-college-cmpsc-101-spring-2025/site/blob/main/code/20250317_testing_debugging.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img" alt="Open In Colab"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="guttag-chapter-8" class="level1">
+<h1>Guttag Chapter 8</h1>
+<div id="cell-2" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example function within palindromechecker.palindrome</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: what is the module name?</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: what is the package name?</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: does the function def within the module rely on any imported objects?</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> pal_rev(word: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">bool</span>:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">"""Determine if a given word is a palindrome."""</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># </span><span class="al">TODO</span><span class="co">: reverse the word</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># </span><span class="al">TODO</span><span class="co">: return whether or not the reversed word is the same as the word</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="callout-title-container flex-fill">
-FINDING YOU REPOSITORIES
+<div id="cell-3" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example function within palindromechecker.palindrome</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: what is the module name?</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: what is the package name?</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: does the function def within the module rely on any imported objects?</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> pal_rev(word: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">bool</span>:</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">"""Determine if a given word is a palindrome."""</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> word <span class="op">==</span> word[::<span class="op">-</span><span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div id="cell-4" class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example function within tests.test_palindrome</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: what is the module name?</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: what is the package name?</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: does the function def within the module rely on any imported objects?</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_short_not_palindrome_word_reverse():</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Ensure that a short word of "taylor" does not work correctly with reverse."""</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span><span class="al">TODO</span><span class="co">: hard code the input</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span><span class="al">TODO</span><span class="co">: hard code the expected answer</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span><span class="al">TODO</span><span class="co">: call the function under test with the hard coded input</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span><span class="al">TODO</span><span class="co">: make sure the return value is saved!</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span><span class="al">TODO</span><span class="co">: use the assert syntax compare the hard coded expected answer with</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># the returned answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="callout-body-container callout-body">
-<p>If you have already accepted the GitHub Classroom assignment, find your repos by navigating to the repositories tab from the course GitHub organization page: <a href="https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/">https://github.com/orgs/allegheny-college-cmpsc-101-spring-2025/</a></p>
+<div id="cell-5" class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_short_not_palindrome_word_reverse():</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Ensure that a short word of "taylor" does not work correctly with reverse."""</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    test_word <span class="op">=</span> <span class="st">'taylor'</span> <span class="co"># hard coded</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    expected_result <span class="op">=</span> <span class="va">False</span> <span class="co"># hard coded</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> pal_rev(test_word)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> result <span class="op">==</span> expected_result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<section id="software-operations" class="level2">
-<h2 class="anchored" data-anchor-id="software-operations">1. Software Operations</h2>
-<!-- out T Jan 14, quiz W jan 15, due T Jan 21 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="https://mitpress.ublish.com/ebook/itcapup3-preview/12609/1">Required Reading: Guttag Chapter 1</a></li>
-<li><em>Specification Lab: CLI vs Script vs Notebook</em>
-<ul>
-<li>20 Points</li>
-<li>Due Date: Tu Jan 28 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/zOUX3b76">GitHub Classroom Link</a><br>
-</li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/cli-vs-script-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li>Slides: Welcome <a href="./slides/01-welcome.html">Reveal</a>, <a href="slides/01-welcome.pdf">PDF</a> (M Jan 13)</li>
-<li>Slides: Software installation instructions <a href="slides/01-software-installation.pdf">PDF</a> (Tu Jan 14)</li>
-<li>Slides: Workflow for 101 labs <a href="slides/02-workflow.pdf">PDF</a> (W Jan 15)</li>
-</ul>
-</details>
-<!-- need to separate and focus on running a script with python interpreter, not in 100 -->
-</section>
-<section id="python-foundations" class="level2">
-<h2 class="anchored" data-anchor-id="python-foundations">2. Python Foundations</h2>
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="https://mitpress.ublish.com/ebook/itcapup3-preview/12609/11">Required Reading: Guttag Chapter 2</a></li>
-<li><em>Engineering Lab: Integer Squaring</em>
-<ul>
-<li>40 Points</li>
-<li>Due Date: Tu Jan 28 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/ooW4JapU">GitHub Classroom Link</a><br>
-</li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/integer-squaring-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li>Slides: Linting <a href="./slides/03-linting.html">Reveal</a> (Tu Jan 21)</li>
-<li>Slides: Python Foundations <a href="./slides/04-python-foundations.html">Reveal</a>, <a href="slides/04-python-foundations.pdf">PDF</a> (W Jan 22)</li>
-</ul>
-</details>
-</section>
-<section id="numerical-programs" class="level2">
-<h2 class="anchored" data-anchor-id="numerical-programs">3. Numerical Programs</h2>
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="https://books.google.com/books?id=f57uDwAAQBAJ&amp;pg=PA45&amp;source=gbs_toc_r&amp;cad=1#v=onepage&amp;q&amp;f=false">Required Reading: Guttag Chapter 3</a></li>
-<li><a href="./images/pages.pdf">Missing Pages</a></li>
-<li><em>Specification Lab: Number Comparison</em>
-<ul>
-<li>20 Points</li>
-<li>Due Date: Tu Feb 4 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/mICABI0R">GitHub Classroom Link</a></li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/number-comparison-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li>Slides: Numerical Computation <a href="./slides/05-numerical-computation.html">Reveal</a>, <a href="slides/05-numerical-computation.pdf">PDF</a> (W Jan 29)</li>
-</ul>
-</details>
-</section>
-<section id="function-scope" class="level2">
-<h2 class="anchored" data-anchor-id="function-scope">4. Function Scope</h2>
-<!-- out T Feb 4, quiz W Feb 5, due T Feb 11 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 4</a></li>
-<li><em>Specification Lab: Square Roots</em>
-<ul>
-<li>20 Points</li>
-<li>Due Date: Tu Feb 11 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/QWIz3_-k">GitHub Classroom Link</a><br>
-</li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/square-roots-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li>Slides: Function Scope <a href="./slides/07-function-scope.html">Reveal</a>, <a href="slides/07-function-scope.pdf">PDF</a> (M Feb 3)</li>
-</ul>
-</details>
-</section>
-<section id="structured-types" class="level2">
-<h2 class="anchored" data-anchor-id="structured-types">5. Structured Types</h2>
-<!-- out T Feb 11, quiz W Feb 12, due T Feb 18 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 5</a></li>
-<li><em>Engineering Lab: Prime Testing</em>
-<ul>
-<li>40 Points</li>
-<li>Due Date: Tu Feb 18 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/SarG04oP">GitHub Classroom Link</a><br>
-</li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/prime-testing-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li>Slides: Structured Types <a href="slides/08-structured-types.pdf">PDF</a> (M Feb 10)</li>
-<li>Notebook: <a href="./code/20250210_structured_types_tuples.html">Tuples</a></li>
-<li>Notebook: <a href="./code/20250210_structured_types_lists.html">Lists</a></li>
-<li>Notebook: <a href="./code/20250210_strings_and_slicing.html">Slicing</a></li>
-</ul>
-</details>
-</section>
-<section id="mutability-and-aliasing" class="level2">
-<h2 class="anchored" data-anchor-id="mutability-and-aliasing">6. Mutability and Aliasing</h2>
-<!-- out T Feb 18, quiz W Feb 19, due T Feb 25 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 5 Cont.</a></li>
-<li><em>Specification Lab: Structured Types</em>
-<ul>
-<li>20 Points</li>
-<li>Due Date: Tu Feb 25 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/QbhzLzHP">GitHub Classroom Link</a><br>
-</li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/structured-types-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li>Slides: Cloning and Aliasing <a href="slides/09-cloning-aliasing-listcomp.pdf">PDF</a> (M Feb 17)</li>
-<li>Notebook: <a href="./code/20250217_cloning_aliasing_listcomp.html">Cloning and Aliasing</a></li>
-<li>Copied Pages: <a href="images/p100-101.pdf">Guttag p100-101</a></li>
-</ul>
-</details>
-</section>
-<section id="recursion" class="level2">
-<h2 class="anchored" data-anchor-id="recursion">7. Recursion</h2>
-<!-- out T Feb 25, quiz W Feb 26, due T Feb Mar 4 -->
-<!-- SPRING BREAK out F Feb 28, NO QUIZ, due T Mar 11 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 6</a></li>
-<li><em>Engineering Lab: Intersection Algorithms</em>
-<ul>
-<li>40 Points</li>
-<li>Due Date: Tu Mar 4 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/A7lyo5T7">GitHub Classroom Link</a><br>
-</li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/intersection-algorithms-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-<li><em>Specification Lab: Cloning vs Aliasing</em>
-<ul>
-<li>20 Points</li>
-<li>Due Date: Tu Mar 11 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/VSd0LY4u">GitHub Classroom Link</a><br>
-</li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/container-cloning-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li>Slides: Recursion <a href="slides/10-recursion.pdf">PDF</a> (M Feb 24)</li>
-<li>Notebook: <a href="./code/20250224_recursion.html">Recursion</a></li>
-</ul>
-</details>
-</section>
-<section id="modules-and-files" class="level2">
-<h2 class="anchored" data-anchor-id="modules-and-files">9. Modules and Files</h2>
-<!-- out T Mar 11, quiz W Mar 12, due T Mar 18 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 7</a></li>
-<li><em>Engineering Lab: Palindromes</em>
-<ul>
-<li>40 Points</li>
-<li>Due Date: Tu Mar 18 at 2:30pm</li>
-<li><a href="https://classroom.github.com/a/SV9QbIqo">GitHub Classroom Link</a><br>
-</li>
-<li><a href="https://github.com/allegheny-college-cmpsc-101-spring-2025/palindrome-checker-starter/blob/main/README.md">Starter Repo</a></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li>Slides: Modules <a href="slides/11-importing.pdf">PDF</a> (M Mar 10)</li>
-<li>Notebook: <a href="./code/20250310_importing.html">Modules</a></li>
-<li>Slides: Testing <a href="slides/12-testing%2Bdebugging.pdf">PDF</a></li>
-<li>Notebook: <a href="./code/20250317_testing_debugging.html">Testing</a></li>
-</ul>
-</details>
-</section>
-<section id="testing-and-handling-exceptions" class="level2">
-<h2 class="anchored" data-anchor-id="testing-and-handling-exceptions">10. Testing and Handling Exceptions</h2>
-<!-- out T Mar 18, quiz W Mar 19, due T Mar 25 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 8 &amp; 9</a></li>
-<li><em>Engineering Lab: Fibonacci Algorithms</em>
-<ul>
-<li>40 Points <!-- - Due Date: Tu Mar 25 at 2:30pm
-- [GitHub Classroom Link]()  
-- [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/fibonacci-algorithms-starter/blob/main/README.md) --></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li></li>
-</ul>
-</details>
-</section>
-<section id="object-oriented-programming" class="level2">
-<h2 class="anchored" data-anchor-id="object-oriented-programming">11. Object-Oriented Programming</h2>
-<!-- out T Mar 25, quiz W Mar 26, due T Apr 1 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 10</a></li>
-<li><em>Specification Lab: Debugging</em>
-<ul>
-<li>20 Points <!-- - Due Date: Tu Apr 1 at 2:30pm
-- [GitHub Classroom Link]()  
-- [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) --></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li></li>
-</ul>
-</details>
-</section>
-<section id="algorithmic-complexity" class="level2">
-<h2 class="anchored" data-anchor-id="algorithmic-complexity">12. Algorithmic Complexity</h2>
-<!-- out T Apr 1, quiz W Apr 2, due T Apr 8 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 11</a></li>
-<li><em>Engineering Lab: Object Processing</em>
-<ul>
-<li>40 Points <!-- - Due Date: Tu Apr 8 at 2:30pm
-- [GitHub Classroom Link]()  
-- [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) --></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li></li>
-</ul>
-</details>
-</section>
-<section id="data-structures" class="level2">
-<h2 class="anchored" data-anchor-id="data-structures">13. Data Structures</h2>
-<!-- out T Apr 8, quiz W Apr 9, due T Apr 15 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 12</a></li>
-<li><em>Engineering Lab: Containment Checking</em>
-<ul>
-<li>40 Points <!-- - Due Date: Tu Apr 15 at 2:30pm
-- [GitHub Classroom Link]()  
-- [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) --></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li></li>
-</ul>
-</details>
-</section>
-<section id="data-structures-continued" class="level2">
-<h2 class="anchored" data-anchor-id="data-structures-continued">14. Data Structures Continued</h2>
-<!-- out T Apr 15, quiz W Apr 16, due T Apr 22 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 12 Cont.</a></li>
-<li><em>Engineering Lab: Sorting Algorithms</em>
-<ul>
-<li>40 Points <!-- - Due Date: Tu Apr 22 at 2:30pm
-- [GitHub Classroom Link]()  
-- [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) --></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-<ul>
-<li></li>
-</ul>
-</details>
-</section>
-<section id="optimization-problems" class="level2">
-<h2 class="anchored" data-anchor-id="optimization-problems">15. Optimization Problems</h2>
-<!-- out T Apr 22, quiz W Apr 23, due T Apr 29 -->
-<details>
-<summary>
-Assignments
-</summary>
-<ul>
-<li><a href="./syll/syllabus.html#online-resources-and-course-materials">Required Reading: Guttag Chapter 14</a></li>
-<li><em>Specification Lab: Matrix Processing</em>
-<ul>
-<li>20 Points <!-- - Due Date: Tu Apr 29 at 2:30pm
-- [GitHub Classroom Link]()  
-- [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/matrix-processing-starter/blob/main/README.md) --></li>
-</ul></li>
-</ul>
-</details>
-<details>
-<summary>
-Files
-</summary>
-</details>
-</section>
-<section id="review" class="level2">
-<h2 class="anchored" data-anchor-id="review">16. Review</h2>
-</section>
-<section id="final" class="level2">
-<h2 class="anchored" data-anchor-id="final">Final</h2>
-<!-- GIVEN AS FINAL Th May 1, 9am -->
-<ul>
-<li>Thursday, May 1, 2025 at 9:00 AM</li>
-</ul>
-<!-- _Final: Knapsack Solvers_ -->
-<!-- ## Notes
-
-[notebook in repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb) -->
 
 
 </section>
