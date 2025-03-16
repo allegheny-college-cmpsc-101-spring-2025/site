@@ -206,8 +206,6 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - Slides: Modules [PDF](slides/11-importing.pdf) (M Mar 10)
 - Notebook: [Modules](code/20250310_importing.ipynb)
-- Slides: Testing [PDF](slides/12-testing-debugging.pdf)
-- Notebook: [Testing](code/20250317_testing_debugging.ipynb)
 
 </details>
 
@@ -221,16 +219,17 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - [Required Reading: Guttag Chapter 8 & 9](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Fibonacci Algorithms_
   - 40 Points
-  <!-- - Due Date: Tu Mar 25 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/fibonacci-algorithms-starter/blob/main/README.md) -->
+  - Due Date: Tu Mar 25 at 2:30pm
+  - [GitHub Classroom Link](https://classroom.github.com/a/T72tG_49)  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/fibonacci-algorithms-starter/blob/main/README.md)
 
 </details>
 
 <details>
 <summary>Files</summary>
 
-- 
+- Slides: Testing [PDF](slides/12-testing-debugging.pdf)
+- Notebook: [Testing](code/20250317_testing_debugging.ipynb)
 
 </details>
 
