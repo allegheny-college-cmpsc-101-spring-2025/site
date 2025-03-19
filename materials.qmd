@@ -230,6 +230,8 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - Slides: Testing [PDF](slides/12-testing-debugging.pdf)
 - Notebook: [Testing](code/20250317_testing_debugging.ipynb)
+- Slides: Exception Handling [PDF](slides/13-exception-handling.pdf)
+- Notebook: [Exception Handling](code/20250319_exception_handling.ipynb)
 
 </details>
 
