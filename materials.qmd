@@ -245,9 +245,9 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - [Required Reading: Guttag Chapter 10](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Debugging_
   - 20 Points
-  <!-- - Due Date: Tu Apr 1 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) -->
+  - Due Date: Tu Apr 1 at 2:30pm
+  - [GitHub Classroom Link](https://classroom.github.com/a/jHygamEQ)  
+  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-functions-starter/blob/main/README.md)
 
 </details>
 
