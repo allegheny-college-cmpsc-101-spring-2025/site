@@ -254,7 +254,12 @@ repos by navigating to the repositories tab from the course GitHub organization 
 <details>
 <summary>Files</summary>
 
-- 
+- Slides: Classes [PDF](slides/14-classes.pdf)
+- Notebook: [Classes](code/20250326_classes.ipynb)
+- Slides: Inheritance [PDF](slides/15-inheritance.pdf)
+- Notebook: [Inheritance](code/20250326_inheritance.ipynb)
+- Slides: Object Processing [PDF](slides/16-object-processing.pdf)
+- Notebook: [Object Processing](code/20250326_object_processing.ipynb)
 
 </details>
 

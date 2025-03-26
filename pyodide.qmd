@@ -140,3 +140,68 @@ title-block-categories: false
 
 
 </details>
+
+
+<details>
+<summary>Testing and Debugging</summary>
+{{< embed code/20250317_testing_debugging.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
+
+
+<details>
+<summary>Exception Handling</summary>
+{{< embed code/20250319_exception_handling.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
+
+
+<details>
+<summary>Classes</summary>
+{{< embed code/20250326_classes.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
+
+
+<details>
+<summary>Inheritance</summary>
+{{< embed code/20250326_inheritance.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
+
+
+<details>
+<summary>Object Processing</summary>
+{{< embed code/20250326_object_processing.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
