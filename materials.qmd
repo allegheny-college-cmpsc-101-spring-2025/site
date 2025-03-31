@@ -13,247 +13,113 @@ repos by navigating to the repositories tab from the course GitHub organization 
 :::
 
 ## 1. Software Operations
-<!-- out T Jan 14, quiz W jan 15, due T Jan 21 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 1](https://mitpress.ublish.com/ebook/itcapup3-preview/12609/1)
-- _Specification Lab: CLI vs Script vs Notebook_
-  - 20 Points
-  - Due Date: Tu Jan 28 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/zOUX3b76)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/cli-vs-script-starter/blob/main/README.md)
+- _Specification Lab: CLI vs Script vs Notebook_ (20 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/zOUX3b76) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/cli-vs-script-starter/blob/main/README.md)
+  Due Date: Tu Jan 28 at 2:30pm
+- Slides: Welcome [Reveal](slides/01-welcome.qmd), [PDF](slides/01-welcome.pdf)
+- Slides: Software installation instructions [PDF](slides/01-software-installation.pdf)
+- Slides: Workflow for 101 labs [PDF](slides/02-workflow.pdf)
 
-</details>
-
-<details>
-<summary>Files</summary>
-
-- Slides: Welcome [Reveal](slides/01-welcome.qmd), [PDF](slides/01-welcome.pdf) (M Jan 13)
-- Slides: Software installation instructions [PDF](slides/01-software-installation.pdf) (Tu Jan 14)
-- Slides: Workflow for 101 labs [PDF](slides/02-workflow.pdf) (W Jan 15)
-
-</details>
-<!-- need to separate and focus on running a script with python interpreter, not in 100 -->
+<!-- need to separate and focus on running a script with python interpreter, not in 100! -->
 
 ## 2. Python Foundations
 
-<details>
-<summary>Assignments</summary>
-
 - [Required Reading: Guttag Chapter 2](https://mitpress.ublish.com/ebook/itcapup3-preview/12609/11)
-- _Engineering Lab: Integer Squaring_
-  - 40 Points
-  - Due Date: Tu Jan 28 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/ooW4JapU)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/integer-squaring-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- Slides: Linting [Reveal](slides/03-linting.qmd) (Tu Jan 21)
-- Slides: Python Foundations [Reveal](slides/04-python-foundations.qmd), [PDF](slides/04-python-foundations.pdf) (W Jan 22)
-
-</details>
+- _Engineering Lab: Integer Squaring_ (40 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/ooW4JapU) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/integer-squaring-starter/blob/main/README.md)
+  Due Date: Tu Jan 28 at 2:30pm
+- Slides: Linting [Reveal](slides/03-linting.qmd)
+- Slides: Python Foundations [Reveal](slides/04-python-foundations.qmd), [PDF](slides/04-python-foundations.pdf)
 
 ## 3. Numerical Programs
 
-<details>
-<summary>Assignments</summary>
-
 - [Required Reading: Guttag Chapter 3](https://books.google.com/books?id=f57uDwAAQBAJ&pg=PA45&source=gbs_toc_r&cad=1#v=onepage&q&f=false)
 - [Missing Pages](/images/pages.pdf)
-- _Specification Lab: Number Comparison_
-  - 20 Points
-  - Due Date: Tu Feb 4 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/mICABI0R)
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/number-comparison-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- Slides: Numerical Computation [Reveal](slides/05-numerical-computation.qmd), [PDF](slides/05-numerical-computation.pdf) (W Jan 29)
-
-</details>
-
+- _Specification Lab: Number Comparison_ (20 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/mICABI0R) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/number-comparison-starter/blob/main/README.md)
+  Due Date: Tu Feb 4 at 2:30pm
+- Slides: Numerical Computation [Reveal](slides/05-numerical-computation.qmd), [PDF](slides/05-numerical-computation.pdf)
 
 ## 4. Function Scope
-<!-- out T Feb 4, quiz W Feb 5, due T Feb 11 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 4](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Specification Lab: Square Roots_
-  - 20 Points
-  - Due Date: Tu Feb 11 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/QWIz3_-k)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/square-roots-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- Slides: Function Scope [Reveal](slides/07-function-scope.qmd), [PDF](slides/07-function-scope.pdf) (M Feb 3)
-
-</details>
-
+- _Specification Lab: Square Roots_ (20 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/QWIz3_-k) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/square-roots-starter/blob/main/README.md)
+  Due Date: Tu Feb 11 at 2:30pm
+- Slides: Function Scope [Reveal](slides/07-function-scope.qmd), [PDF](slides/07-function-scope.pdf)
 
 ## 5. Structured Types
-<!-- out T Feb 11, quiz W Feb 12, due T Feb 18 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 5](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Engineering Lab: Prime Testing_
-  - 40 Points
-  - Due Date: Tu Feb 18 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/SarG04oP)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/prime-testing-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- Slides: Structured Types [PDF](slides/08-structured-types.pdf) (M Feb 10)
+- _Engineering Lab: Prime Testing_ (40 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/SarG04oP)  &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/prime-testing-starter/blob/main/README.md)
+  Due Date: Tu Feb 18 at 2:30pm
+- Slides: Structured Types [PDF](slides/08-structured-types.pdf)
 - Notebook: [Tuples](code/20250210_structured_types_tuples.ipynb)
 - Notebook: [Lists](code/20250210_structured_types_lists.ipynb)
 - Notebook: [Slicing](code/20250210_strings_and_slicing.ipynb)
 
-</details>
-
-
 ## 6. Mutability and Aliasing
-<!-- out T Feb 18, quiz W Feb 19, due T Feb 25 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 5 Cont.](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Specification Lab: Structured Types_
-  - 20 Points
-  - Due Date: Tu Feb 25 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/QbhzLzHP)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/structured-types-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- Slides: Cloning and Aliasing [PDF](slides/09-cloning-aliasing-listcomp.pdf) (M Feb 17)
+- _Specification Lab: Structured Types_ (20 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/QbhzLzHP) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/structured-types-starter/blob/main/README.md)
+  Due Date: Tu Feb 25 at 2:30pm
+- Slides: Cloning and Aliasing [PDF](slides/09-cloning-aliasing-listcomp.pdf)
 - Notebook: [Cloning and Aliasing](code/20250217_cloning_aliasing_listcomp.ipynb)
 - Copied Pages: [Guttag p100-101](images/p100-101.pdf)
 
-</details>
-
-
 ## 7. Recursion
-<!-- out T Feb 25, quiz W Feb 26, due T Feb Mar 4 -->
-<!-- SPRING BREAK out F Feb 28, NO QUIZ, due T Mar 11 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 6](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Engineering Lab: Intersection Algorithms_
-  - 40 Points
-  - Due Date: Tu Mar 4 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/A7lyo5T7)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/intersection-algorithms-starter/blob/main/README.md)
-- _Specification Lab: Cloning vs Aliasing_
-  - 20 Points
-  - Due Date: Tu Mar 11 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/VSd0LY4u)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/container-cloning-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- Slides: Recursion [PDF](slides/10-recursion.pdf) (M Feb 24)
+- _Engineering Lab: Intersection Algorithms_ (40 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/A7lyo5T7) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/intersection-algorithms-starter/blob/main/README.md)
+  Due Date: Tu Mar 4 at 2:30pm
+- _Specification Lab: Cloning vs Aliasing_ (20 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/VSd0LY4u) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/container-cloning-starter/blob/main/README.md)
+  Due Date: Tu Mar 11 at 2:30pm
+- Slides: Recursion [PDF](slides/10-recursion.pdf)
 - Notebook: [Recursion](code/20250224_recursion.ipynb)
 
-</details>
-
-
 ## 9. Modules and Files
-<!-- out T Mar 11, quiz W Mar 12, due T Mar 18 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 7](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Engineering Lab: Palindromes_
-  - 40 Points
-  - Due Date: Tu Mar 18 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/SV9QbIqo)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/palindrome-checker-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- Slides: Modules [PDF](slides/11-importing.pdf) (M Mar 10)
+- _Engineering Lab: Palindromes_ (40 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/SV9QbIqo) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/palindrome-checker-starter/blob/main/README.md)
+  Due Date: Tu Mar 18 at 2:30pm
+- Slides: Modules [PDF](slides/11-importing.pdf)
 - Notebook: [Modules](code/20250310_importing.ipynb)
 
-</details>
-
-
 ## 10. Testing and Handling Exceptions
-<!-- out T Mar 18, quiz W Mar 19, due T Mar 25 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 8 & 9](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Engineering Lab: Fibonacci Algorithms_
-  - 40 Points
-  - Due Date: Tu Mar 25 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/T72tG_49)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/fibonacci-algorithms-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
+- _Engineering Lab: Fibonacci Algorithms_ (40 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/T72tG_49)  
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/fibonacci-algorithms-starter/blob/main/README.md)
+  Due Date: Tu Mar 25 at 2:30pm
 - Slides: Testing [PDF](slides/12-testing-debugging.pdf)
 - Notebook: [Testing](code/20250317_testing_debugging.ipynb)
 - Slides: Exception Handling [PDF](slides/13-exception-handling.pdf)
 - Notebook: [Exception Handling](code/20250319_exception_handling.ipynb)
 
-</details>
-
-
 ## 11. Object-Oriented Programming
-<!-- out T Mar 25, quiz W Mar 26, due T Apr 1 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 10](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Specification Lab: Debugging_
-  - 20 Points
-  - Due Date: Tu Apr 1 at 2:30pm
-  - [GitHub Classroom Link](https://classroom.github.com/a/jHygamEQ)  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-functions-starter/blob/main/README.md)
-
-</details>
-
-<details>
-<summary>Files</summary>
-
+- _Specification Lab: Debugging_ (20 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/jHygamEQ) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-functions-starter/blob/main/README.md)
+  Due Date: Tu Apr 1 at 2:30pm
 - Slides: Classes [PDF](slides/14-classes.pdf)
 - Notebook: [Classes](code/20250326_classes.ipynb)
 - Slides: Inheritance [PDF](slides/15-inheritance.pdf)
@@ -261,108 +127,46 @@ repos by navigating to the repositories tab from the course GitHub organization 
 - Slides: Object Processing [PDF](slides/16-object-processing.pdf)
 - Notebook: [Object Processing](code/20250326_object_processing.ipynb)
 
-</details>
-
-
 ## 12. Algorithmic Complexity
-<!-- out T Apr 1, quiz W Apr 2, due T Apr 8 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 11](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Engineering Lab: Object Processing_
-  - 40 Points
-  <!-- - Due Date: Tu Apr 8 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) -->
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- 
-
-</details>
-
-
+- _Engineering Lab: Object Processing_  (40 Points)  
+  [GitHub Classroom Link](https://classroom.github.com/a/y_mPxZgB) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md)
+  Due Date: Tu Apr 8 at 2:30pm
+ 
 ## 13. Data Structures
-<!-- out T Apr 8, quiz W Apr 9, due T Apr 15 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 12](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Engineering Lab: Containment Checking_
-  - 40 Points
-  <!-- - Due Date: Tu Apr 15 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) -->
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- 
-
-</details>
-
+- _Engineering Lab: Containment Checking_ (40 Points)  
+  <!-- [GitHub Classroom Link]() &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md)
+  Due Date: Tu Apr 15 at 2:30pm -->
 
 ## 14. Data Structures Continued
-<!-- out T Apr 15, quiz W Apr 16, due T Apr 22 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 12 Cont.](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Engineering Lab: Sorting Algorithms_
-  - 40 Points
-  <!-- - Due Date: Tu Apr 22 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md) -->
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-- 
-
-</details>
-
+- _Engineering Lab: Sorting Algorithms_ (40 Points)  
+  <!-- [GitHub Classroom Link]() &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md)
+  Due Date: Tu Apr 22 at 2:30pm -->
 
 ## 15. Optimization Problems
-<!-- out T Apr 22, quiz W Apr 23, due T Apr 29 -->
-
-<details>
-<summary>Assignments</summary>
 
 - [Required Reading: Guttag Chapter 14](syll/syllabus.qmd#online-resources-and-course-materials)
-- _Specification Lab: Matrix Processing_
-  - 20 Points
-  <!-- - Due Date: Tu Apr 29 at 2:30pm
-  - [GitHub Classroom Link]()  
-  - [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/matrix-processing-starter/blob/main/README.md) -->
-
-</details>
-
-<details>
-<summary>Files</summary>
-
-</details>
-
+- _Specification Lab: Matrix Processing_ (20 Points)  
+  <!-- [GitHub Classroom Link]() &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/matrix-processing-starter/blob/main/README.md)
+  Due Date: Tu Apr 29 at 2:30pm -->
+- _Specification Lab: Knapsack Solver_ (20 Points)  
+  <!-- [GitHub Classroom Link]() &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/knapsack-solver-starter/blob/main/README.md)
+  Due Date: May 1 at 11:59 am -->
 
 ## 16. Review
 
+- last quiz
+
 ## Final
-<!-- GIVEN AS FINAL Th May 1, 9am -->
 
-- Thursday, May 1, 2025 at 9:00 AM
-
-<!-- _Final: Knapsack Solvers_ -->
-
-<!-- ## Notes
-
-[notebook in repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb) -->
+- Thursday, May 1, 2025 at 9:00 AM - Extra Lab Session to complete Knapsack Solver Lab.

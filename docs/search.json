@@ -1194,111 +1194,111 @@
     "href": "materials.html#software-operations",
     "title": "Materials",
     "section": "1. Software Operations",
-    "text": "1. Software Operations\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 1\nSpecification Lab: CLI vs Script vs Notebook\n\n20 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Welcome Reveal, PDF (M Jan 13)\nSlides: Software installation instructions PDF (Tu Jan 14)\nSlides: Workflow for 101 labs PDF (W Jan 15)"
+    "text": "1. Software Operations\n\nRequired Reading: Guttag Chapter 1\nSpecification Lab: CLI vs Script vs Notebook (20 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Jan 28 at 2:30pm\nSlides: Welcome Reveal, PDF\nSlides: Software installation instructions PDF\nSlides: Workflow for 101 labs PDF"
   },
   {
     "objectID": "materials.html#python-foundations",
     "href": "materials.html#python-foundations",
     "title": "Materials",
     "section": "2. Python Foundations",
-    "text": "2. Python Foundations\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 2\nEngineering Lab: Integer Squaring\n\n40 Points\nDue Date: Tu Jan 28 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Linting Reveal (Tu Jan 21)\nSlides: Python Foundations Reveal, PDF (W Jan 22)"
+    "text": "2. Python Foundations\n\nRequired Reading: Guttag Chapter 2\nEngineering Lab: Integer Squaring (40 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Jan 28 at 2:30pm\nSlides: Linting Reveal\nSlides: Python Foundations Reveal, PDF"
   },
   {
     "objectID": "materials.html#numerical-programs",
     "href": "materials.html#numerical-programs",
     "title": "Materials",
     "section": "3. Numerical Programs",
-    "text": "3. Numerical Programs\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 3\nMissing Pages\nSpecification Lab: Number Comparison\n\n20 Points\nDue Date: Tu Feb 4 at 2:30pm\nGitHub Classroom Link\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Numerical Computation Reveal, PDF (W Jan 29)"
+    "text": "3. Numerical Programs\n\nRequired Reading: Guttag Chapter 3\nMissing Pages\nSpecification Lab: Number Comparison (20 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Feb 4 at 2:30pm\nSlides: Numerical Computation Reveal, PDF"
   },
   {
     "objectID": "materials.html#function-scope",
     "href": "materials.html#function-scope",
     "title": "Materials",
     "section": "4. Function Scope",
-    "text": "4. Function Scope\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 4\nSpecification Lab: Square Roots\n\n20 Points\nDue Date: Tu Feb 11 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Function Scope Reveal, PDF (M Feb 3)"
+    "text": "4. Function Scope\n\nRequired Reading: Guttag Chapter 4\nSpecification Lab: Square Roots (20 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Feb 11 at 2:30pm\nSlides: Function Scope Reveal, PDF"
   },
   {
     "objectID": "materials.html#structured-types",
     "href": "materials.html#structured-types",
     "title": "Materials",
     "section": "5. Structured Types",
-    "text": "5. Structured Types\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 5\nEngineering Lab: Prime Testing\n\n40 Points\nDue Date: Tu Feb 18 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Structured Types PDF (M Feb 10)\nNotebook: Tuples\nNotebook: Lists\nNotebook: Slicing"
+    "text": "5. Structured Types\n\nRequired Reading: Guttag Chapter 5\nEngineering Lab: Prime Testing (40 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Feb 18 at 2:30pm\nSlides: Structured Types PDF\nNotebook: Tuples\nNotebook: Lists\nNotebook: Slicing"
   },
   {
     "objectID": "materials.html#mutability-and-aliasing",
     "href": "materials.html#mutability-and-aliasing",
     "title": "Materials",
     "section": "6. Mutability and Aliasing",
-    "text": "6. Mutability and Aliasing\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 5 Cont.\nSpecification Lab: Structured Types\n\n20 Points\nDue Date: Tu Feb 25 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Cloning and Aliasing PDF (M Feb 17)\nNotebook: Cloning and Aliasing\nCopied Pages: Guttag p100-101"
+    "text": "6. Mutability and Aliasing\n\nRequired Reading: Guttag Chapter 5 Cont.\nSpecification Lab: Structured Types (20 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Feb 25 at 2:30pm\nSlides: Cloning and Aliasing PDF\nNotebook: Cloning and Aliasing\nCopied Pages: Guttag p100-101"
   },
   {
     "objectID": "materials.html#recursion",
     "href": "materials.html#recursion",
     "title": "Materials",
     "section": "7. Recursion",
-    "text": "7. Recursion\n\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 6\nEngineering Lab: Intersection Algorithms\n\n40 Points\nDue Date: Tu Mar 4 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\nSpecification Lab: Cloning vs Aliasing\n\n20 Points\nDue Date: Tu Mar 11 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Recursion PDF (M Feb 24)\nNotebook: Recursion"
+    "text": "7. Recursion\n\nRequired Reading: Guttag Chapter 6\nEngineering Lab: Intersection Algorithms (40 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Mar 4 at 2:30pm\nSpecification Lab: Cloning vs Aliasing (20 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Mar 11 at 2:30pm\nSlides: Recursion PDF\nNotebook: Recursion"
   },
   {
     "objectID": "materials.html#modules-and-files",
     "href": "materials.html#modules-and-files",
     "title": "Materials",
     "section": "9. Modules and Files",
-    "text": "9. Modules and Files\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 7\nEngineering Lab: Palindromes\n\n40 Points\nDue Date: Tu Mar 18 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Modules PDF (M Mar 10)\nNotebook: Modules"
+    "text": "9. Modules and Files\n\nRequired Reading: Guttag Chapter 7\nEngineering Lab: Palindromes (40 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Mar 18 at 2:30pm\nSlides: Modules PDF\nNotebook: Modules"
   },
   {
     "objectID": "materials.html#testing-and-handling-exceptions",
     "href": "materials.html#testing-and-handling-exceptions",
     "title": "Materials",
     "section": "10. Testing and Handling Exceptions",
-    "text": "10. Testing and Handling Exceptions\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 8 & 9\nEngineering Lab: Fibonacci Algorithms\n\n40 Points\nDue Date: Tu Mar 25 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Testing PDF\nNotebook: Testing\nSlides: Exception Handling PDF\nNotebook: Exception Handling"
+    "text": "10. Testing and Handling Exceptions\n\nRequired Reading: Guttag Chapter 8 & 9\nEngineering Lab: Fibonacci Algorithms (40 Points)\nGitHub Classroom Link\nStarter Repo Due Date: Tu Mar 25 at 2:30pm\nSlides: Testing PDF\nNotebook: Testing\nSlides: Exception Handling PDF\nNotebook: Exception Handling"
   },
   {
     "objectID": "materials.html#object-oriented-programming",
     "href": "materials.html#object-oriented-programming",
     "title": "Materials",
     "section": "11. Object-Oriented Programming",
-    "text": "11. Object-Oriented Programming\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 10\nSpecification Lab: Debugging\n\n20 Points\nDue Date: Tu Apr 1 at 2:30pm\nGitHub Classroom Link\n\nStarter Repo\n\n\n\n\n\nFiles\n\n\nSlides: Classes PDF\nNotebook: Classes\nSlides: Inheritance PDF\nNotebook: Inheritance\nSlides: Object Processing PDF\nNotebook: Object Processing"
+    "text": "11. Object-Oriented Programming\n\nRequired Reading: Guttag Chapter 10\nSpecification Lab: Debugging (20 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Apr 1 at 2:30pm\nSlides: Classes PDF\nNotebook: Classes\nSlides: Inheritance PDF\nNotebook: Inheritance\nSlides: Object Processing PDF\nNotebook: Object Processing"
   },
   {
     "objectID": "materials.html#algorithmic-complexity",
     "href": "materials.html#algorithmic-complexity",
     "title": "Materials",
     "section": "12. Algorithmic Complexity",
-    "text": "12. Algorithmic Complexity\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 11\nEngineering Lab: Object Processing\n\n40 Points \n\n\n\n\n\nFiles"
+    "text": "12. Algorithmic Complexity\n\nRequired Reading: Guttag Chapter 11\nEngineering Lab: Object Processing (40 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Apr 8 at 2:30pm"
   },
   {
     "objectID": "materials.html#data-structures",
     "href": "materials.html#data-structures",
     "title": "Materials",
     "section": "13. Data Structures",
-    "text": "13. Data Structures\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 12\nEngineering Lab: Containment Checking\n\n40 Points \n\n\n\n\n\nFiles"
+    "text": "13. Data Structures\n\nRequired Reading: Guttag Chapter 12\nEngineering Lab: Containment Checking (40 Points)"
   },
   {
     "objectID": "materials.html#data-structures-continued",
     "href": "materials.html#data-structures-continued",
     "title": "Materials",
     "section": "14. Data Structures Continued",
-    "text": "14. Data Structures Continued\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 12 Cont.\nEngineering Lab: Sorting Algorithms\n\n40 Points \n\n\n\n\n\nFiles"
+    "text": "14. Data Structures Continued\n\nRequired Reading: Guttag Chapter 12 Cont.\nEngineering Lab: Sorting Algorithms (40 Points)"
   },
   {
     "objectID": "materials.html#optimization-problems",
     "href": "materials.html#optimization-problems",
     "title": "Materials",
     "section": "15. Optimization Problems",
-    "text": "15. Optimization Problems\n\n\n\nAssignments\n\n\nRequired Reading: Guttag Chapter 14\nSpecification Lab: Matrix Processing\n\n20 Points \n\n\n\n\n\nFiles"
+    "text": "15. Optimization Problems\n\nRequired Reading: Guttag Chapter 14\nSpecification Lab: Matrix Processing (20 Points)\n\nSpecification Lab: Knapsack Solver (20 Points)"
   },
   {
     "objectID": "materials.html#review",
     "href": "materials.html#review",
     "title": "Materials",
     "section": "16. Review",
-    "text": "16. Review"
+    "text": "16. Review\n\nlast quiz"
   },
   {
     "objectID": "materials.html#final",
     "href": "materials.html#final",
     "title": "Materials",
     "section": "Final",
-    "text": "Final\n\n\nThursday, May 1, 2025 at 9:00 AM"
+    "text": "Final\n\nThursday, May 1, 2025 at 9:00 AM - Extra Lab Session to complete Knapsack Solver Lab."
   }
 ]
