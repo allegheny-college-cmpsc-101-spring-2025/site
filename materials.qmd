@@ -134,8 +134,11 @@ repos by navigating to the repositories tab from the course GitHub organization 
   [GitHub Classroom Link](https://classroom.github.com/a/y_mPxZgB) &
   [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md)
   Due Date: Tu Apr 8 at 2:30pm
+- Slides: Algorithmic Complexity I [PDF](slides/17-algorithmic-complexity-1.pdf)
+- Slides: Algorithmic Complexity II [PDF](slides/18-algorithmic-complexity-2.pdf)
+- Notebook: [Classes](code/20250401_complexity.ipynb)
  
-## 13. Data Structures
+## 13. Sorting
 
 - [Required Reading: Guttag Chapter 12](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Containment Checking_ (40 Points)  
@@ -143,12 +146,12 @@ repos by navigating to the repositories tab from the course GitHub organization 
   [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md)
   Due Date: Tu Apr 15 at 2:30pm -->
 
-## 14. Data Structures Continued
+## 14. Data Structures
 
 - [Required Reading: Guttag Chapter 12 Cont.](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Sorting Algorithms_ (40 Points)  
   <!-- [GitHub Classroom Link]() &
-  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/debugging-starter/blob/main/README.md)
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/sorting-algorithms-starter/blob/main/README.md)
   Due Date: Tu Apr 22 at 2:30pm -->
 
 ## 15. Optimization Problems
@@ -165,7 +168,8 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 ## 16. Review
 
-- last quiz
+- Last quiz
+- Work Session
 
 ## Final
 
