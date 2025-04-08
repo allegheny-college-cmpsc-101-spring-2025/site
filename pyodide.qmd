@@ -205,3 +205,15 @@ title-block-categories: false
 
 
 </details>
+
+<details>
+<summary>Worst Case Complexity</summary>
+{{< embed code/20250401_complexity.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>

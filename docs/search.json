@@ -812,6 +812,27 @@
     "text": "Usage\n\n# create instances of the person class\np1 = Person(\"Emily Graber\", \"USA\", \"0123456789\", \"Musician\", \"egraber@allegheny.edu\")\np2 = Person(\"Emily Graber\", \"USA\", \"0123456789\", \"Student\", \"egraber@allegheny.edu\")\np3 = Person(\"Emily Graber\", \"France\", \"0123456789\", \"Student\", \"egraber@allegheny.edu\")\np4 = Person(\"Emily Graber\", \"USA\", \"0123456789\", \"Musician\", \"allegheny@allegheny.edu\")\n\n\n# TODO: create as least 1 additional instance of the Person class of a classmate you do not yet know\n\n\n# TODO: print out a person and identify which part of the class was responsible for the printout\n\n\n# TODO: create the list version of a single person using the create_list method and display your results\n\n\n# TODO: compare the printouts from the two previous cells; why are they different?\n\n\n# Combine all the people into one large list\nlist_of_person_objects = [p1,p2,p3,p4]\nprint(list_of_person_objects)\n\n\n# TODO: define variables and write a call to the function `find_matching_people`, and print out the results\n\n\n# Call create_display_text, then print the results\ndisplay_text = create_display_text(list_of_person_objects)\nprint(display_text)\n\n\n# TODO: what are the differences between the printout of the return value of `find_matching_people` and `display_text`?\n# TODO: what code is called by `str` in `str(current_person)`?"
   },
   {
+    "objectID": "pyodide.html#worst-case-complexity",
+    "href": "pyodide.html#worst-case-complexity",
+    "title": "Pyodide",
+    "section": "Worst Case Complexity",
+    "text": "Worst Case Complexity\n\nimport random\n\n\narray = [random.randint(0,100) for _ in range(1000)]\nn = len(array)\n\ncounter = 0\nfor i in range(n):\n    # do a constant number of things for each element\n  counter += 1\n\nprint(counter)\n\n\narray = [random.randint(0,100) for _ in range(1000)]\nn = len(array)\n\ncounter = 0\nfor i in range(n):\n    # do a constant number of things for each element\n  counter += 1\n  if array[i] &gt; 50:\n    break\n\nprint(counter)\nprint(array[:20])\n\n\narray = [random.randint(0,100) for _ in range(1000)]\nn = len(array)\n\ncounter = 0\nfor i in range(n):\n    # do a constant number of things for each element\n  counter += 1\n  if array[i] &gt; 100:\n    break\n\nprint(counter)\nprint(array[:20])"
+  },
+  {
+    "objectID": "pyodide.html#empirical-analysis",
+    "href": "pyodide.html#empirical-analysis",
+    "title": "Pyodide",
+    "section": "Empirical Analysis",
+    "text": "Empirical Analysis\n\n### Containment Lab\n\n# Perform timing experiments using the timeit package\n\n# NOTE: these experiments are not rigorous doubling\n# experiments but rather small-scale experiments that\n# illustrate how the timing package works in Python\n\n# Refer to the documentation of timeit for more details:\n# https://docs.python.org/3/library/timeit.html\n\n# import the timeit package used to collect\n# performance data about the function's execution\nimport timeit\n\n# define the function to analyze in a string\n# so that it can be passed to the timeit function\ncode_to_time = \"\"\"def factorial(n: int) -&gt; int:\n    answer = 1\n    while n &gt; 1:\n        answer *= n\n        n -= 1\n    return answer\n\nfactorial(100)\"\"\"\n\n# repeatedly run the code_to_time and\n# report the performance results; this\n# runs a total of three benchmarking campaigns\n# that will individually run the code a\n# total of 10000 times. It then reports\n# the total execution time for each campaign\nprint (timeit.repeat(stmt = code_to_time,\n                     repeat = 3,\n                     number = 10000))\n\n\n### alternate method\n\ndef factorial(n) -&gt; int:\n  answer = 1\n  while n &gt;= 1:\n    answer *= n\n    n -= 1\n  return answer\n\n%timeit -n 10000 -r 3 factorial(100)\n\n\n# Questions and TODOs\n\n# If the total time is reported for each run, how can the average time be found?\n# TODO: write an algorithm to compute the average time it took for each repetion within a run\n# TODO: write an algorithm to compute the average time it took for a single repeition"
+  },
+  {
+    "objectID": "pyodide.html#doubling-experiment",
+    "href": "pyodide.html#doubling-experiment",
+    "title": "Pyodide",
+    "section": "Doubling Experiment",
+    "text": "Doubling Experiment\n\n# TODO: Using one of the methods shown above, run a doubling experiment on this code\n# Start by making a random list of length input_size, then pass actual parameters to the function\n# Record relevant results into the Markdown table\n# Repeat above with doubled input serval times\n\n\nfrom typing import List\n\ndef function(array: List[int], n: int) -&gt; int:\n  counter = 0\n  for i in range(n):\n    array[i] += 1\n    for j in range(n):\n      array[j] += 1\n      for k in range(n):\n        array[k] += 1\n        counter += 1\n  return counter\n\n\ninput_size = 50\n\n\ninput_size = 100\n\n\ninput_size = 200\n\n\ninput_size = 400\n\n\n\n\ninput size\nduration\n\n\n\n\nTODO\nTODO\n\n\nTODO\nTODO\n\n\nTODO\nTODO\n\n\nTODO\nTODO\n\n\n\nDoubling ratios - row2:row1 =&gt; - row3:row2 =&gt; - row4:row3 =&gt;"
+  },
+  {
     "objectID": "code/20250217_cloning_aliasing_listcomp.html",
     "href": "code/20250217_cloning_aliasing_listcomp.html",
     "title": "Cloning and Aliasing",
@@ -1292,7 +1313,7 @@
     "href": "materials.html#algorithmic-complexity",
     "title": "Materials",
     "section": "12. Algorithmic Complexity",
-    "text": "12. Algorithmic Complexity\n\nRequired Reading: Guttag Chapter 11\nEngineering Lab: Object Processing (40 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Apr 8 at 2:30pm\nSlides: Algorithmic Complexity I PDF\nSlides: Algorithmic Complexity II PDF\nNotebook: Classes"
+    "text": "12. Algorithmic Complexity\n\nRequired Reading: Guttag Chapter 11\nEngineering Lab: Object Processing (40 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Apr 8 at 2:30pm\nSlides: Algorithmic Complexity I PDF\nSlides: Algorithmic Complexity II PDF\nNotebook: Worst Case Complexity"
   },
   {
     "objectID": "materials.html#sorting",
