@@ -217,3 +217,16 @@ title-block-categories: false
 
 
 </details>
+
+
+<details>
+<summary>Sorting</summary>
+{{< embed code/20250409_sorting.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>

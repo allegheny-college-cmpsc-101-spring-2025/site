@@ -145,6 +145,8 @@ repos by navigating to the repositories tab from the course GitHub organization 
   [GitHub Classroom Link](https://classroom.github.com/a/klhVmI-v) &
   [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/containment-checking-starter/blob/main/README.md)
   Due Date: Tu Apr 15 at 2:30pm
+- Slides: Sorting [PDF](slides/19-sorting.pdf)
+- Notebook: [Sorting](code/20250409_sorting.ipynb)
 
 ## 14. Data Structures
 
