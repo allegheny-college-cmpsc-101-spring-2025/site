@@ -139,8 +139,8 @@ grades. Adjustments to grades will be applied on top of base grades according to
 - **Week Ten**: March 17: Testing and Handling Exceptions (Guttag Chapter 8 and 9)
 - **Week Eleven**: March 24: Object-Oriented Programming (Guttag Chapter 10)
 - **Week Twelve**: March 31: Algorithmic Complexity (Guttag Chapter 11)
-- **Week Thirteen**: April 7: Data Structures (Guttag Chapter 12)
-- **Week Fourteen**: April 14: Data Structures Continued (Guttag Chapter 12)
+- **Week Thirteen**: April 7: Sorting (Guttag Chapter 12)
+- **Week Fourteen**: April 14: Data Structures (Guttag Chapter 12 cont)
 - **Week Fifteen**: April 21: Optimization Problems (Guttag Chapter 14)
 - **Week Sixteen**: April 28: Review
 

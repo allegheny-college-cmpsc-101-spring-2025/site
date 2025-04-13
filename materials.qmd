@@ -155,6 +155,8 @@ repos by navigating to the repositories tab from the course GitHub organization 
   <!-- [GitHub Classroom Link]() &
   [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/sorting-algorithms-starter/blob/main/README.md)
   Due Date: Tu Apr 22 at 2:30pm -->
+- Slides: Data Structures [PDF](slides/20-data-structures.pdf)
+- Notebook: [Data Structures](code/20250414_data_structures.ipynb)
 
 ## 15. Optimization Problems
 

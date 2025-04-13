@@ -230,3 +230,16 @@ title-block-categories: false
 
 
 </details>
+
+
+<details>
+<summary>Data Structures</summary>
+{{< embed code/20250414_data_structures.ipynb echo=true >}}
+
+
+```{pyodide}
+
+```
+
+
+</details>
