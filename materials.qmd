@@ -152,9 +152,9 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - [Required Reading: Guttag Chapter 12 Cont.](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Engineering Lab: Sorting Algorithms_ (40 Points)  
-  <!-- [GitHub Classroom Link]() &
+  [GitHub Classroom Link](https://classroom.github.com/a/dJOP_g4B) &
   [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/sorting-algorithms-starter/blob/main/README.md)
-  Due Date: Tu Apr 22 at 2:30pm -->
+  Due Date: Tu Apr 22 at 2:30pm
 - Slides: Data Structures [PDF](slides/20-data-structures.pdf)
 - Notebook: [Data Structures](code/20250414_data_structures.ipynb)
 
