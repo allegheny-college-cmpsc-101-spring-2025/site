@@ -169,9 +169,9 @@ repos by navigating to the repositories tab from the course GitHub organization 
 ## 16. Knapsack Solver
 
 - _Specification Lab: Knapsack Solver_ (20 Points)  
-  <!-- [GitHub Classroom Link]() &
+  [GitHub Classroom Link](https://classroom.github.com/a/nzhl5S8B) &
   [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/knapsack-solver-starter/blob/main/README.md)
-  Due Date: May 6 at 11:59 pm -->
+  Due Date: May 6 at 11:59 pm
 
 ## Final (Optional)
 
