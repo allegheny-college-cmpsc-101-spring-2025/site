@@ -165,6 +165,8 @@ repos by navigating to the repositories tab from the course GitHub organization 
   [GitHub Classroom Link](https://classroom.github.com/a/8a4B6vlM) &
   [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/matrix-starter/blob/main/README.md)
   Due Date: Tu Apr 29 at 2:30pm
+- Slides: Optimization [PDF](slides/21-optimization.pdf)
+- Notebook: [Optimization](code/20250422_optimization.ipynb)
 
 ## 16. Knapsack Solver
 
