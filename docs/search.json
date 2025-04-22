@@ -1460,20 +1460,20 @@
     "href": "materials.html#optimization-problems",
     "title": "Materials",
     "section": "15. Optimization Problems",
-    "text": "15. Optimization Problems\n\nRequired Reading: Guttag Chapter 14\nSpecification Lab: Matrix Processing (20 Points)\n\nSpecification Lab: Knapsack Solver (20 Points)"
+    "text": "15. Optimization Problems\n\nRequired Reading: Guttag Chapter 14\nSpecification Lab: Matrix Processing (20 Points)\nGitHub Classroom Link & Starter Repo Due Date: Tu Apr 29 at 2:30pm"
   },
   {
-    "objectID": "materials.html#review",
-    "href": "materials.html#review",
+    "objectID": "materials.html#knapsack-solver",
+    "href": "materials.html#knapsack-solver",
     "title": "Materials",
-    "section": "16. Review",
-    "text": "16. Review\n\nLast quiz\nWork Session"
+    "section": "16. Knapsack Solver",
+    "text": "16. Knapsack Solver\n\nSpecification Lab: Knapsack Solver (20 Points)"
   },
   {
-    "objectID": "materials.html#final",
-    "href": "materials.html#final",
+    "objectID": "materials.html#final-optional",
+    "href": "materials.html#final-optional",
     "title": "Materials",
-    "section": "Final",
-    "text": "Final\n\nThursday, May 1, 2025 at 9:00 AM - Extra Lab Session to complete Knapsack Solver Lab."
+    "section": "Final (Optional)",
+    "text": "Final (Optional)\n\nThursday, May 1, 2025 9:00 AM to noon - Extra Lab Session to complete Knapsack Solver Lab."
   }
 ]

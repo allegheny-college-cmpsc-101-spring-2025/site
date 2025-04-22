@@ -162,19 +162,17 @@ repos by navigating to the repositories tab from the course GitHub organization 
 
 - [Required Reading: Guttag Chapter 14](syll/syllabus.qmd#online-resources-and-course-materials)
 - _Specification Lab: Matrix Processing_ (20 Points)  
-  <!-- [GitHub Classroom Link]() &
-  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/matrix-processing-starter/blob/main/README.md)
-  Due Date: Tu Apr 29 at 2:30pm -->
+  [GitHub Classroom Link](https://classroom.github.com/a/8a4B6vlM) &
+  [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/matrix-starter/blob/main/README.md)
+  Due Date: Tu Apr 29 at 2:30pm
+
+## 16. Knapsack Solver
+
 - _Specification Lab: Knapsack Solver_ (20 Points)  
   <!-- [GitHub Classroom Link]() &
   [Starter Repo](https://github.com/allegheny-college-cmpsc-101-spring-2025/knapsack-solver-starter/blob/main/README.md)
-  Due Date: May 1 at 11:59 am -->
+  Due Date: May 6 at 11:59 pm -->
 
-## 16. Review
+## Final (Optional)
 
-- Last quiz
-- Work Session
-
-## Final
-
-- Thursday, May 1, 2025 at 9:00 AM - Extra Lab Session to complete Knapsack Solver Lab.
+- Thursday, May 1, 2025 9:00 AM to noon - Extra Lab Session to complete Knapsack Solver Lab.
